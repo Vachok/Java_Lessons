@@ -53,6 +53,8 @@ class Human {
     Car car = new Car();
 
     public static void main(String[] args) {
+        Human vachok = new Human();
+        System.out.println(vachok.car.speed);
 
     }
 
