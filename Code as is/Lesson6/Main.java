@@ -53,9 +53,10 @@ class Human {
     Car car = new Car();
 
     public static void main(String[] args) {
-        Human vachok = new Human();
-        System.out.println(vachok.car.speed);
-
+        System.out.println("Имя переменной может быть любого размера");
+        System.out.println("И не может начинаться с цифр или дугих символов");
+        System.out.println("Кроме _ и $");
+        System.out.println("Имена ДОЛЖНЫ быть логичными");
     }
 
 }
