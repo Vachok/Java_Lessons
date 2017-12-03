@@ -2,8 +2,12 @@ package two;
 
 import one.TestClass;
 
-public class OtherClass {
+public class OtherClass extends TestClass {
     void method(){
-        TestClass testClass = new TestClass();
-        System.out.println(testClass);
+        j = 9;
+  //      i = не берёт
+    }
+/*        TestClass testClass = new TestClass();
+        System.out.println(testClass);*/
+
 }
