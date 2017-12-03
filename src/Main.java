@@ -6,8 +6,7 @@ public class Main {
         System.out.println(car.getNumOfSeat());
     }
     public static void main(String[] args){
-        Main main = new Main();
-        Car car = new Toyota();
-        main.useCar(car);
+        Person person = new Person();
+        System.out.println(person.getName());
     }
 }
