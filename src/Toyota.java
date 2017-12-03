@@ -1,4 +1,9 @@
+
 public class Toyota extends Car {
-    public int numOfSeat = 2;
+
+    @Override
+   public int getNumOfSeat() {
+       return 2;
+   }
 
 }
