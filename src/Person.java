@@ -1,8 +1,17 @@
 public class Person {
-    private String mr = "Mr";
-    private String name = "Max";
 
-    public String getName() {
-        return mr + name;
+    private String myName;
+    private boolean blond;
+
+    public boolean isBlond(){
+        return blond;
+    }
+
+    public String getMyNameName() {
+        return setMyName();
+    }
+
+    public void setMyName( String name ) {
+        this.setMyName(); = name;
     }
 }
