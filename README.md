@@ -2,4 +2,4 @@
 by https://www.youtube.com/playlist?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX
 
 HEAD
-https://youtu.be/7TVvlPLtrws
+https://youtu.be/7TVvlPLtrws?t=32s
