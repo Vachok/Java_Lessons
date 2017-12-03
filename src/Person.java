@@ -1,4 +1,5 @@
 public class Person {
+
     private String myName;
     private boolean blond;
 
