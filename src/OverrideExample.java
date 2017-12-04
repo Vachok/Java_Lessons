@@ -1,12 +1,12 @@
 class Parent{
-    public int method() {
+    synchronized int method() {
         return 1;
     }
 }
 
 class Child extends Parent {
     @Override
-   protected int method() {
+   strictfp int method() {
         return 2;
     }
 }
