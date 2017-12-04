@@ -20,7 +20,7 @@ public class EnumsExample {
     }
 
     public static void main( String[] args ) {
-        CoffeSize coffeSize = CoffeSize.BIG;
+        CoffeSize coffeSize = CoffeSize.SMALL;
         System.out.println(coffeSize); //выводим BIG
         System.out.println(coffeSize.getMl());
         System.out.println(coffeSize.getCoffeClass());
