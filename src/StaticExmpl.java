@@ -12,10 +12,13 @@ public class StaticExmpl {
         System.out.println("Constructor");
     }
     static void staticMethod() {
+        i = 7;
         System.out.println("static method");
     }
 
     public static void main( String[] args ) {
         System.out.println(i);
+        StaticExmpl.staticMethod();
+        System.out.println(StaticExmpl.i);
     }
 }
