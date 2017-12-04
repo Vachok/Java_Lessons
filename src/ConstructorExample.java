@@ -1,11 +1,12 @@
 class MyParent{
-    MyParent() {
+    MyParent(int i) {
         System.out.println("MyParrentConstructor");
     }
 }
 
 public class ConstructorExample extends MyParent {
     ConstructorExample() {
+        super();
         System.out.println("Constructor Example");
     }
 
