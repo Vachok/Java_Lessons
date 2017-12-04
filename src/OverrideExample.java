@@ -1,12 +1,12 @@
 class Parent{
-    int method() {
+    protected int method() {
         return 1;
     }
 }
 
 class Child extends Parent {
     @Override
-    int method() {
+   public int method() {
         return 2;
     }
 }
