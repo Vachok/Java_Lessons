@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 class Parent{
      Parent method() {
         return new Parent();
@@ -6,7 +9,7 @@ class Parent{
 
 class Child extends Parent {
     @Override
-    Child method() throws RuntimeException {
+    Child method() {
         return new Child();
     }
 }
