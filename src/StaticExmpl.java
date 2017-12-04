@@ -15,11 +15,6 @@ public class StaticExmpl {
     }
 
     public static void main( String[] args ) {
-        StaticExmpl staticExmpl = new StaticExmpl();
-        StaticExmpl staticExmpl2 = new StaticExmpl();
-        i = 1;
-        i =2;
-        System.out.println(i);
         System.out.println(i);
     }
 }
