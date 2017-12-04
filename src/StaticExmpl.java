@@ -22,6 +22,6 @@ public class StaticExmpl {
     public static void main( String[] args ) {
         System.out.println(StaticExmpl.g);
         new StaticExmpl(); //причина step3
-        //new StaticExmpl(); //причина step3 новые СтатикКлассы
+        new StaticExmpl(); //причина step3 новые СтатикКлассы
     }
 }
