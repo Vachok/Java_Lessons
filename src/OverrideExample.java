@@ -1,18 +1,18 @@
 class Parent{
-     Parent method(Parent parent)  {
+     Parent method() {
         return new Parent();
     }
 }
 
 class Child extends Parent {
     @Override
-    Child method(Child child) {
+    Child method() throws RuntimeException {
         return new Child();
     }
 }
 
 public class OverrideExample {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
         Parent parent = new Parent();
         Parent child = new Child();
 
