@@ -9,6 +9,9 @@ public class StaticExmpl {
     {
         System.out.println("initializator"); //шаг 4 (не статический иниц.
     }
+    {
+        System.out.println("secondInitializator");
+    }
     StaticExmpl() {
         System.out.println("Constructor"); //step5
     }
