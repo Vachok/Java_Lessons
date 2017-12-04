@@ -2,6 +2,7 @@ public class StaticExmpl {
     static int i = 5;
     int j;
     static {
+        i = 6; //static-поле
         System.out.println("static initializer");
     }
     {
