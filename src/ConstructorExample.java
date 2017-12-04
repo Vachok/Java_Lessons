@@ -4,7 +4,7 @@ class MyParent{
     }
 }
 
-public class ConstructorExample extends Object {
+public class ConstructorExample extends MyParent {
     ConstructorExample() {
         System.out.println("Constructor Example");
     }
