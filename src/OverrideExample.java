@@ -1,13 +1,13 @@
 class Parent{
-     StaticExample method() {
-        return null;
+     Parent method() {
+        return new Parent();
     }
 }
 
 class Child extends Parent {
     @Override
-    Parent method() {
-        return null;
+    Child method() {
+        return new Child();
     }
 }
 
