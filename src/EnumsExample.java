@@ -1,6 +1,10 @@
 public class EnumsExample {
     enum CoffeSize {
-        SMALL(100), MEDIUM(200), BIG(300); //создание перечисления
+        SMALL(100), MEDIUM(200), BIG(300) {
+            String getCoffeClass() {
+                return "B";
+            }
+        }; //создание перечисления
         String coffeClass = "A";
         int ml;
 
