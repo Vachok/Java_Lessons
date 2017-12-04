@@ -10,6 +10,7 @@ public class ConstructorExample {
 class Run {
     public static void main (String[] args) {
         ConstructorExample constructorExample = new ConstructorExample();
+        constructorExample.ConstructorExample("hi", 2);
         System.out.println(constructorExample.i);
     }
 }
