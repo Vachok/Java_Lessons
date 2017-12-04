@@ -1,3 +1,4 @@
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
@@ -22,5 +23,4 @@ public class OverrideExample {
         System.out.println(parent.method());
         System.out.println(child.method());
     }
-
 }
