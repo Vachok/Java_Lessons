@@ -1,15 +1,17 @@
 public class EnumsExample {
     enum CoffeSize {SMALL, MEDIUM, BIG}
 
-/*    То, что происходит в enum
-class CoffeSize {
-        public static final EnumsExample.CoffeSize SMALL = new EnumsExample.CoffeSize(1);
-        CoffeSize(int i);
-
-    }*/
-
     public static void main(String[] args) {
         CoffeSize coffeSize = CoffeSize.BIG;
         System.out.println(coffeSize);
     }
+}
+
+class CoffeSize2 {
+    public static final  CoffeSize2 SMALL = new CoffeSize2();
+    public static final  CoffeSize2 MEDIUM = new CoffeSize2();
+    public static final  CoffeSize2 BIG = new CoffeSize2();
+
+
+}
 }
