@@ -4,8 +4,7 @@ public class EnumsExample {
             String getCoffeClass() {
                 return "B";
             }
-        }; //создание перечисления
-        String coffeClass = "A";
+        };
         int ml;
 
         CoffeSize( int ml ) {
