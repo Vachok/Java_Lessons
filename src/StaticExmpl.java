@@ -17,9 +17,9 @@ public class StaticExmpl {
     public static void main( String[] args ) {
         StaticExmpl staticExmpl = new StaticExmpl();
         StaticExmpl staticExmpl2 = new StaticExmpl();
-        staticExmpl.j = 1;
-        staticExmpl2.j =2;
-        System.out.println(staticExmpl.j);
-        System.out.println(staticExmpl2.j);
+        i = 1;
+        i =2;
+        System.out.println(i);
+        System.out.println(i);
     }
 }
