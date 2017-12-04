@@ -1,8 +1,9 @@
 public class StaticExmpl {
-    static int i; // вначале 0
+    static int i; //Шаг1 инициализация переменных
+    static int g = 6; //static
     int j;
     static {
-        System.out.println("static initializer");
+        System.out.println("static initializer"); //шаг2 инициализаторы
     }
     {
         System.out.println("initializator");
@@ -16,10 +17,6 @@ public class StaticExmpl {
     }
 
     public static void main( String[] args ) {
-     new StaticExmpl();
-     new StaticExmpl();
-     new StaticExmpl();
-     new StaticExmpl();
-        System.out.println(StaticExmpl.i);
+        System.out.println(StaticExmpl.g);
     }
 }
