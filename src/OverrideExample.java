@@ -1,6 +1,6 @@
 class Parent{
     int method() {
-        return i;
+        return 1;
     }
 }
 
@@ -14,7 +14,10 @@ class Child extends Parent {
 public class OverrideExample {
     public static void main( String[] args ) {
         Parent parent = new Parent();
-        Child child = new Parent();
+        Parent child = new Child();
+
+        System.out.println(parent.method());
+        System.out.println(child.method());
     }
 
 }
