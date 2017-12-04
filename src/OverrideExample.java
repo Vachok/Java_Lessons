@@ -1,12 +1,12 @@
 class Parent{
-     Parent method() {
+     Parent method(Parent parent)  {
         return new Parent();
     }
 }
 
 class Child extends Parent {
     @Override
-    Child method() {
+    Child method(Child child) {
         return new Child();
     }
 }
