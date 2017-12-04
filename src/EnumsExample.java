@@ -1,5 +1,5 @@
 public class EnumsExample {
-    enum CoffeSize {SMALL(100), MEDIUM(200), BIG(300)} //создание перечисления
+    enum CoffeSize { SMALL(100), MEDIUM(200), BIG(300) //создание перечисления
         int ml;
         CoffeSize(int ml) {
             this.ml = ml;
