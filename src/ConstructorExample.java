@@ -1,5 +1,7 @@
-public class ConstructorExample { //https://youtu.be/Se9yZGZg9-w?t=1m
-     ConstructorExample(String hello) { //не может быть статик, абстракт, финал
+public class ConstructorExample {
+    int i;
+    ConstructorExample(String hello, int i) { //не может быть статик, абстракт, финал
+        this.i = i; //https://youtu.be/Se9yZGZg9-w?t=3m21s
         System.out.println("run");
         System.out.println(hello);
     }
