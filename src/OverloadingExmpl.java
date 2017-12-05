@@ -2,10 +2,9 @@ public class OverloadingExmpl {
     public static void main( String[] args ) {
         OverloadingExmpl overloadingExmpl = new OverloadingExmpl();
         short b = 5;
-        overloadingExmpl.method((byte)b);
+        overloadingExmpl.method(b); //преобразуется к ближайшему целочисл.
 
     }
-// Что стартует первым?
 
     void method(int i) {
         System.out.println("int");
