@@ -2,24 +2,18 @@ public class OverloadingExmpl {
     public static void main( String[] args ) {
         OverloadingExmpl overloadingExmpl = new OverloadingExmpl();
         short b = 5;
-        overloadingExmpl.method(b); //преобразуется к ближайшему целочисл.
+        overloadingExmpl.method(b); //когда нет примитивов - автобокс
 
     }
 
-    void method(long i) {
-        System.out.println("long"); //лонг
-    }
     void method(Integer i) {
         System.out.println("Integer");
-    }
-    void method(double i) {
-        System.out.println("double");
     }
     void method(short... i) {
         System.out.println("byte...");
     }
     void method(Short i) {
-        System.out.println("Byte");
+        System.out.println("Short");
     }
     void method(Object i) {
         System.out.println("Object");
