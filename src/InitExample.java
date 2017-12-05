@@ -1,6 +1,4 @@
-
-
-public class Main {
+public class InitExample {
     public static void main( String[] args ) {
 
     }
