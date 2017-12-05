@@ -3,6 +3,7 @@ public class AutoBox {
         Integer i = new Integer(5);
         Integer j = new Integer("6");
         int k = Integer.parseInt("2");
-        Integer.valueOf("3")
+        int g =  Integer.valueOf("3"); //парсит строку
+        short s = i.shortValue(); //возвращает переконвертированное значение
     }
 }
