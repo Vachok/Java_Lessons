@@ -6,13 +6,10 @@ public class OverloadingExmpl {
     }
 
     void method(Integer i) {
-        System.out.println("Integer");
+        System.out.println("Integer"); //не запустится
     }
-    void method(short... i) {
-        System.out.println("byte...");
-    }
-    void method(Object i) {
-        System.out.println("Object");
+    void method(short... i) { //массивы запускаются последними
+        System.out.println("short...");
     }
     void method(Object... i) {
         System.out.println("Object");
