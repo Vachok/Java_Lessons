@@ -20,10 +20,7 @@ public class AutoBox {
         Double doubl;
 
         List<Integer> list;
-
-    }
-
-    Object method() {
-        return 1;// = new Integer(1;) обёртка приводит этот Object к Integer
+//      int j = "5" не сработает. сработает через обёртку:
+        int j = new Integer("5")
     }
 }
