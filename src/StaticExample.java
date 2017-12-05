@@ -1,4 +1,5 @@
 public class StaticExample {
+
     static StaticExample staticExample = new StaticExample(); //записываем в static class конструктор. может запустить обычные поля ДО статик
     static int n = 4; //стaтика инициализируется первая. по-очереди
     static int i = returnIntStatic(); //но в этом примере статичный StaticExample инициализирует конструктор
