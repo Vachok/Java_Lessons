@@ -6,6 +6,6 @@ public class InitExample {
         System.out.println("init block");
     } //обычный код инициализации. запуск при создании экземпляра
     public static void main( String[] args ) {
-
+        new InitExample();
     }
 }
