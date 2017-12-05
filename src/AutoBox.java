@@ -7,8 +7,12 @@ public class AutoBox {
         String s2 = "string";
         Object o1 = new Object();
         Object o2 = o1;
-        if(o1.equals(o2)) {
+        if(o1.equals(o2)) { //проверяет значение объекта, а не область памяти. см строку 17
             System.out.println("equals");
         }
     }
+}
+class  MyClass{
+    public boolean equals(Object obj) {
+        return (this == obj)} //можно переопределить
 }
