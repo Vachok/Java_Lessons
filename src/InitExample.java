@@ -12,7 +12,6 @@ public class InitExample extends Parrent { //1.Обратились в клас�
         System.out.println("init block");//5.вывод
     }
     InitExample() { //2.после static попадаем сюда, в конструктор
-        super(); //3.отправляет вначало. в класс Parrent
         System.out.println("constructor"); //6.вывод
     }
         public static void main( String[] args ) {
