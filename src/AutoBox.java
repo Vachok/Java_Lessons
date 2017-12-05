@@ -7,8 +7,8 @@ public class AutoBox {
         String s2 = "string";
         Object o1 = new Object();
         Object o2 = o1;
-        if(s.equals(s2)) { //проверяет значение объекта, а не область памяти. см строку 17
-            System.out.println("equals");
+        if(s == s2) { //не рекомендуется так. т.к. область памяти String *может* быть разной
+            System.out.println("==");
         }
     }
 }
