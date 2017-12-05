@@ -23,4 +23,7 @@ public class InitExample extends Parrent {
     {
         System.out.println("init block3");
     }
+    static {
+        System.out.println("static init block2");
+    }
 }
