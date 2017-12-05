@@ -11,10 +11,5 @@ public class OverloadingExmpl {
     void method(short... i) { //массивы запускаются последними
         System.out.println("short...");
     }
-    void method(Object... i) {
-        System.out.println("Object");
-    }
-    void method(byte i) {
-        System.out.println("byte");
-    }
+
 }
