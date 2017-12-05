@@ -1,4 +1,7 @@
 class Parrent {
+    static {
+        System.out.println("static parrent block"); //https://youtu.be/oXtAi0Z2IkE?t=6m34s
+    }
     Parrent() {
         System.out.println("Parrent cons");
     }
