@@ -6,11 +6,8 @@ public class OverloadingExmpl {
 
     }
 
-    void method(int i) {
-        System.out.println("int");
-    }
     void method(long i) {
-        System.out.println("long");
+        System.out.println("long"); //лонг
     }
     void method(Integer i) {
         System.out.println("Integer");
