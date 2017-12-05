@@ -8,8 +8,4 @@ public class OverloadingExmpl {
     void method(Integer i) {
         System.out.println("Integer"); //не запустится
     }
-
-    void method(Object... i) {
-        System.out.println("Object"); //компилятор в ступоре - что запусквть?
-    }
 }
