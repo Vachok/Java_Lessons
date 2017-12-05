@@ -1,20 +1,26 @@
 class Parrent {
     Parrent() {
-        System.out.println("Parrent cons"); //4.вывод
+        System.out.println("Parrent cons");
     }
 }
 
-public class InitExample extends Parrent { //1.Обратились в класс
+public class InitExample extends Parrent {
     static {
-        System.out.println("static init block"); //1,1.вывод
+        System.out.println("static init block");
     }
     {
-        System.out.println("init block");//5.вывод
+        System.out.println("init block1");
     }
-    InitExample() { //2.после static попадаем сюда, в конструктор
-        System.out.println("constructor"); //6.вывод
+    {
+        System.out.println("init block2");
+    }
+    InitExample() {
+        System.out.println("constructor");
     }
         public static void main( String[] args ) {
-        new InitExample();//0.запуск
+        new InitExample();
+    }
+    {
+        System.out.println("init block3");
     }
 }
