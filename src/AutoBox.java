@@ -7,8 +7,8 @@ public class AutoBox {
         String s2 = "string";
         Object o1 = new Object();
         Object o2 = o1;
-        if(o1 == o2) { //сравнивает, находится ли объект в одной и той же области памяти
-            System.out.println("==");
+        if(o1.equals(o2)) {
+            System.out.println("equals");
         }
     }
 }
