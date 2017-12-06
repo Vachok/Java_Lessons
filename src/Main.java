@@ -1,4 +1,9 @@
-/*45.35-operatory_JAVA
+/*46.36-methodMainandHisProps
+    public static void main( String[] myArgs ) {
+        for (String s : myArgs) { 
+            System.out.println(s);
+
+45.35-operatory_JAVA
     }
 }
 
@@ -20,7 +25,7 @@ import java.util.Date;
 import java.util.List;
 
 public class Main {
-    static Main main;
+/*  static Main main;
 
     public static void main( String[] args ) {
         method();
