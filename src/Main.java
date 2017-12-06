@@ -4,11 +4,16 @@ public class Main {
     public static void main( String[] args ) {
         int a = 1;
         int b = 6;
-        boolean bl = a==b;
-        if (bl = true) {
+        if (a > b) {
             System.out.println("a > b");
-        } else {
+        }
+        if (a < b) {
             System.out.println("a < b");
+        }
+        if(false) {
+
+    } else {
+        System.out.println("a = b");
         }
     }
 }
