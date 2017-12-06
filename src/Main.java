@@ -27,6 +27,7 @@ public class Main {
         System.gc();
         System.out.println("total memory after gc: " + runTime.totalMemory());
         System.out.println("free memory after gc: " + runTime.freeMemory());
+        Main main = new Main();
     }
 
     @Override
