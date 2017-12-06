@@ -2,8 +2,8 @@
 
 public class Main {
     public static void main( String[] args ) {
-        double a = 5;
-        double b = 6;
-        System.out.println(a / b);
+        double a = 13;
+        double b = 5;
+        System.out.println(a % b);// остаток от деления
     }
 }
