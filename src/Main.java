@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Main extends Object {
     public static void main( String[] args ) {
-        System.out.println(5 > 4 && returnBool()); //
+        System.out.println(5 > 4 & returnBool()); //
     }
 
     private static boolean returnBool() {
