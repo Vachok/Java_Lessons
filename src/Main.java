@@ -2,7 +2,6 @@ import java.util.List;
 
 public class Main extends Object {
     public static void main( String[] args ) {
-        int a = false ? 1 + 3 : 2 + 5;
-        System.out.println(a);
+        System.out.println(5 > 4 && 6 > 5);// если оба верны
     }
 }
