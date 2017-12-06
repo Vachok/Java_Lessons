@@ -10,7 +10,8 @@ public class Main {
             if (c == d) {
                 System.out.println("a > b");
             }
-        }
-        System.out.println("bla");
+        } if(false) {
+        } else
+            System.out.println("bla");
     }
 }
