@@ -1,3 +1,4 @@
+/* Java_Lessons-44 Java 34: Garbage Collector
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -21,4 +22,4 @@ public class Main {
     public void finalize() {
         Main.main = this;
     }
-}
+}*/
