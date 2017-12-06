@@ -12,7 +12,9 @@ public class Main {
 
     private static void method() {
         Main main = new Main();
+        Main main2 = new Main();
         main = null;
+        main2 = null;
         System.gc();
     }
 
