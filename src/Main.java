@@ -1,7 +1,18 @@
-import java.util.List;
 
-public class Main extends Object {
+
+public class Main {
     public static void main( String[] args ) {
-        System.out.println(true ^ false); // проверяе что операторы разные
     }
 }
+
+/*
++ - / *
+%  остаток деления
+< > <= >=
+== != reference сравнение
+instanceof для ссылок
+string + переопределён для класса String
+++ -- увеличивает/уменьшает на 1
+?:  проверка правда/ложь
+& | ^ ! && || и/или
+ */
