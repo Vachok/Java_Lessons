@@ -2,8 +2,9 @@ import java.util.Date;
 
 public class Main {
     public static void main( String[] args ) {
-        Date dt = method(); //пока есть ссылка - объект не удаляется
-        dt = null; //пометить на удаление
+        Date dt = method();
+        dt = null;
+        System.gc(); // "предлагает" вирт.машине запустить Garbage collector
         method2();
     }
 
