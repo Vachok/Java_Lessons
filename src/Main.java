@@ -18,6 +18,7 @@ public class Main {
             dateList.add(date);
             //date = null;
         }
+        dateList = null; //освобождаем память
         System.out.println("total memory after: " + runTime.totalMemory());
         System.out.println("free memory after: " + runTime.freeMemory());
         System.gc();
