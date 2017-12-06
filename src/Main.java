@@ -7,7 +7,7 @@ public class Main {
         int c = 4;
         int d = 5;
         if (a == b)
-            if(c < d)
+            if(c == d)
             System.out.println("a > b");
         System.out.println("bla");
     }
