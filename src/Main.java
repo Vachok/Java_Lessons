@@ -9,7 +9,7 @@ public class Main {
             case 1:
                 System.out.println(1);
             default:
-                System.out.println("default");
+                System.out.println("default"); //не обязательно последний
             case 2:
                 System.out.println(2);
             case 3:
