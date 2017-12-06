@@ -4,7 +4,7 @@ public class Main {
 
 
     public static void main( String[] myArgs ) {
-        int i = 5;
+        int i = 10;
         switch (i) {
             case 1:
                 System.out.println(1);
