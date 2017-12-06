@@ -3,6 +3,9 @@ import java.util.Date;
 import java.util.List;
 
 public class Main {
+
+    Object o;
+
     public static void main( String[] args ) {
         method();
     }
@@ -18,7 +21,7 @@ public class Main {
             dateList.add(date);
             //date = null;
         }
-        dateList = null; //освобождаем память
+        dateList = null;
         System.out.println("total memory after: " + runTime.totalMemory());
         System.out.println("free memory after: " + runTime.freeMemory());
         System.gc();
@@ -26,6 +29,9 @@ public class Main {
         System.out.println("free memory after gc: " + runTime.freeMemory());
     }
 
-    private static void method2() {
+    @Override
+    public void finalize() {
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAa");
+
     }
 }
