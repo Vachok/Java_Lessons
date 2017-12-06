@@ -12,6 +12,7 @@ public class Main {
 
     private static void method() {
         Main main = new Main();
+        main = null;
         System.gc();
     }
 
