@@ -12,6 +12,7 @@ public class Main {
                 System.out.println(2);
             case 3:
                 System.out.println(3);
+                break;
             case 5:
                 System.out.println(5);
             case 6:
