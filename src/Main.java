@@ -2,12 +2,9 @@
 
 public class Main {
 
-    enum Days{MONDAY, TUESDAY, WEDNESDAY}
 
     public static void main( String[] myArgs ) {
         int i = 5;
-        String s = "";
-        Days days = Days.MONDAY;
 
         switch (s) {
             case "1":
