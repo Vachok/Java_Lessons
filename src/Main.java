@@ -1,10 +1,8 @@
 
 
-public class Main {
+public class Main extends Object {
     public static void main( String[] args ) {
-        Object o = new Object();
-        Object o2 = o;
-
-        System.out.println(o == o2);
+        Main main = new Main();
+        System.out.println(main instanceof Object);
     }
 }
