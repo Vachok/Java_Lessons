@@ -3,8 +3,7 @@ import java.util.Date;
 import java.util.List;
 
 public class Main {
-
-    Object o;
+    static Main main;
 
     public static void main( String[] args ) {
         method();
@@ -20,7 +19,6 @@ public class Main {
 
     @Override
     public void finalize() {
-        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAa");
-
+        Main.main = this;
     }
 }
