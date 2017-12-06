@@ -8,17 +8,16 @@ public class Main {
         switch (i) {
             case 1:
                 System.out.println(1);
+            default:
+                System.out.println("default");
             case 2:
                 System.out.println(2);
             case 3:
                 System.out.println(3);
-                break;
             case 5:
                 System.out.println(5);
             case 6:
                 System.out.println(6);
-            default:
-                System.out.println("default");
         }
     }
 }
