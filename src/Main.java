@@ -5,7 +5,7 @@ public class Main {
         int a = 1;
         int b = 6;
         boolean bl = a==b;
-        if (bl) {
+        if (bl = true) {
             System.out.println("a > b");
         } else {
             System.out.println("a < b");
