@@ -11,8 +11,8 @@ public class Main {
         Runtime runTime = Runtime.getRuntime();
         System.out.println("total memory before: " + runTime.totalMemory());
         System.out.println("free memory before: " + runTime.freeMemory());
-        List<Date> dateList = new ArrayList<>(2000000000);
-        for (int i = 0; i < 2000000000; i++) ;
+        List<Date> dateList = new ArrayList<>(200000000);
+        for (int i = 0; i < 200000000; i++) ;
         {
             Date date = new Date();
             dateList.add(date);
