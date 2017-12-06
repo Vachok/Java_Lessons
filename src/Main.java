@@ -1,3 +1,19 @@
+/*45.35-operatory_JAVA
+    }
+}
+
+/*
++ - / *
+%  остаток деления
+< > <= >=
+== != reference сравнение
+instanceof для ссылок
+string + переопределён для класса String
+++ -- увеличивает/уменьшает на 1
+?:  проверка правда/ложь
+& | ^ ! && || и/или
+ */
+=======
 /* Java_Lessons-44 Java 34: Garbage Collector
 import java.util.ArrayList;
 import java.util.Date;
