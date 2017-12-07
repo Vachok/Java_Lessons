@@ -1,21 +1,21 @@
-import java.io.IOException;
-
 public class Main {
 
     public static void main( String[] args ) {
-        new Main().someMethod();
+        new Main().meMethod();
     }
 
-    void someMethod() {
+    void meMethod() {
         try {
             System.out.println("try");
-            //Object o = null;
-            // o.hashCode();
-        } catch (ArrayIndexOutOfBoundsException e) {
-            try {
-                throw new ArrayIndexOutOfBoundsException();
-            } catch (ArrayIndexOutOfBoundsException e)
-        } catch (RuntimeException e) {
-        }
+            throw new Error();
+        } catch (Error e) {
+            System.out.println("catch");
         }
     }
+}
+
+/* Иерархия Exceptions
+1. Throwable
+    2. Error
+    2. Exception
+ */
