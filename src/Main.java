@@ -16,9 +16,6 @@ public class Main {
             System.out.println("catch");
             return "catch2";
             //e.printStackTrace();
-        } finally {
-            System.out.println("finally");
-            //return "finally2";
         }
         }
     }
