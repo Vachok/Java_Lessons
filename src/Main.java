@@ -9,7 +9,7 @@ public class Main {
         try {
             System.out.println("try");
             Object o = null;
-            o.hashCode();
+            //o.hashCode();
         } catch (NullPointerException e) {
             System.out.println("catch");
             //e.printStackTrace();
