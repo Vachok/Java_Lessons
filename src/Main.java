@@ -6,11 +6,9 @@ public class Main {
         new Main().meMethod();
     }
 
-    void meMethod() {
+    void meMethod() throws IOException {
         //    throw new RuntimeException();
-        try {
             throw new IOException();
-        } catch (IOException e)
     }
 }
 
