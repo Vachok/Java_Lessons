@@ -6,12 +6,12 @@ public class Main {
     }
 
     void someMethod() {
-//        try {
+        try {
             Object o = null;
             o.hashCode();
             // throw new Exception();
-//        } catch (Exception e) {
-//
-//        }
+        } catch (Exception e) {
+
+        }
     }
 }
