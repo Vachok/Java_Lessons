@@ -1,5 +1,5 @@
 import java.io.Serializable;
 
-public class Sword implements Serializable {
+public class Sword {
     int level;
 }

@@ -8,6 +8,7 @@ public class Main {
         Sword sword = new Sword();
         sword.level = 5;
         user.sword = sword;
+
         FileOutputStream fileOutputStream = new FileOutputStream("tempfile");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(user);
