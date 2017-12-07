@@ -22,6 +22,6 @@ public class Main {
         objectInputStream.close();
         System.out.println(newUser.lifeLevel);
         System.out.println(User.staticField);
-        System.out.println(newUser.sword.level);
+        System.out.println(newUser.sword);
     }
 }

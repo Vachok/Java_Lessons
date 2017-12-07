@@ -1,7 +1,7 @@
 import java.io.Serializable;
 
 public class User implements Serializable {
-    int lifeLevel;
+    transient int lifeLevel;
     static int staticField;
-    Sword sword;
+    transient Sword sword;
 }
