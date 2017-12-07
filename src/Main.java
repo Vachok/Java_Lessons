@@ -7,7 +7,6 @@ public class Main {
         System.out.println(s);
         System.out.println(s2);
         StringBuilder stringBuilder;
-        StringBuffer stringBuffer;
-
+        StringBuffer stringBuffer; //синхронизирован. для многопотоков
     }
 }
