@@ -10,6 +10,7 @@ public class Main {
         }
         i = 0;
         do {
+            System.out.println("do");
             System.out.println(arr[i]);
             i++;
         } while (false);
