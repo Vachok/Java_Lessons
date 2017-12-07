@@ -17,5 +17,6 @@ public class Main {
         User newUser = (User) objectInputStream.readObject();
         objectInputStream.close();
         System.out.println(newUser.lifeLevel);
+        System.out.println(User.staticField);
     }
 }
