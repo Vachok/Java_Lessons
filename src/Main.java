@@ -12,10 +12,9 @@ public class Main {
             Object o = null;
             // o.hashCode();
             return "try1";
-        } catch (NullPointerException e) {
-            System.out.println("catch");
-            return "catch2";
-            //e.printStackTrace();
+        } finally {
+            System.out.println("finally");
+            //return "finally2";
         }
         }
     }
