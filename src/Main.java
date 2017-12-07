@@ -1,3 +1,4 @@
+import java.io.File;
 import java.io.IOException;
 
 public class Main {
@@ -5,15 +6,12 @@ public class Main {
     public static void main( String[] args ) {
         if (args.length > 5)
             System.out.println(args[5]);
-            new Main().meMethod();
+        new Main().meMethod();
     }
 
-    void meMethod() throws RuntimeException {
-        try {
-            throw new RuntimeException();
-        } catch (RuntimeException e) {
-        }
-        //    throw new IOException();
+    void meMethod() throws IOException {
+        File file = new File("");
+        file.createNewFile();
     }
 }
 
