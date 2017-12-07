@@ -12,9 +12,8 @@ public class Main {
             throw new IOException();
             //Object o = null;
             // o.hashCode();
+        } catch (RuntimeException e) {
         } catch (ArrayIndexOutOfBoundsException e) {
-        } catch (ArrayIndexOutOfBoundsException e) {
-        } catch (IOException e) {
         }
         }
     }
