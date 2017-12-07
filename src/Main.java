@@ -5,17 +5,13 @@ public class Main {
     }
 
     void meMethod() {
-        try {
-            System.out.println("try");
-            throw new MyException();
-        } catch (MyException e) {
-            System.out.println("catch");
-        }
-    }
-
-    private class MyException extends Throwable {
+        throw new RuntimeException();
     }
 }
+
+
+
+
 
 /* Иерархия Exceptions
 1. Throwable
