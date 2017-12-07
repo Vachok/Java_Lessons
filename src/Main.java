@@ -3,7 +3,10 @@ import java.io.IOException;
 public class Main {
 
     public static void main( String[] args ) {
-        new Main().meMethod();
+        try {
+            new Main().meMethod();
+        } catch (IOException e) {
+        }
     }
 
     void meMethod() throws IOException {
