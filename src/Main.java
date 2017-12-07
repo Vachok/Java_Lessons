@@ -12,8 +12,8 @@ public class Main {
         FileWriter fileWriter = new FileWriter(file);
         fileWriter.write("1\n");
         fileWriter.write("2\n");
-        //fileWriter.flush();
-        //fileWriter.close();
+        fileWriter.flush();
+        fileWriter.close();
 
         FileReader fileReader = new FileReader(file);
         char[] chars = new char[20];
