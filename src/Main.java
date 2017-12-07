@@ -10,10 +10,11 @@ public class Main {
     void someMethod() {
         try {
             System.out.println("try");
+            System.exit(0);
             Object o = null;
             // o.hashCode();
         } finally {
-            System.out.println("before exit");
+            System.out.println("finally");
             throw new RuntimeException();
         }
         }
