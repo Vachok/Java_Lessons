@@ -15,6 +15,7 @@ public class Main {
             //e.printStackTrace();
         } finally {
             System.out.println("finally");
+        } finally{
         }
     }
 }
