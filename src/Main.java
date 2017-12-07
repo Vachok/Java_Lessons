@@ -5,6 +5,7 @@ public class Main {
         StringBuilder stringBuilder = new StringBuilder("abc");
         stringBuilder.append("def");
         stringBuilder.insert(0 , "-");
-        System.out.println(stringBuilder);
+        int i = stringBuilder.length();
+        System.out.println(i);
     }
 }
