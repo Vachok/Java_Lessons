@@ -8,5 +8,11 @@ public class Main {
             System.out.println(arr[i]);
             i++;
         }
+        i = 0;
+        do {
+            System.out.println(arr[i]);
+            i++;
+        } while (i < arr.length);
+
     }
 }
