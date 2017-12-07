@@ -14,8 +14,7 @@ public class Main {
             // o.hashCode();
         } finally {
             System.out.println("before exit");
-            while (true) {
-            }
+            throw new Error();
         }
         }
     }
