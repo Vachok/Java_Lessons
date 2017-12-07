@@ -14,7 +14,7 @@ public class Main {
             // o.hashCode();
         } finally {
             System.out.println("before exit");
-            throw new Error();
+            throw new RuntimeException();
         }
         }
     }
