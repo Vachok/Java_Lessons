@@ -18,7 +18,7 @@ public class Main {
             //e.printStackTrace();
         } finally {
             System.out.println("finally");
-            return "finally2";
+            //return "finally2";
 
         }
         }
