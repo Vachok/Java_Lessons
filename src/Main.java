@@ -2,12 +2,15 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main( String[] args ) throws Exception {
+    public static void main( String[] args ) {
             new Main().meMethod();
     }
 
     void meMethod() throws RuntimeException {
-        throw new RuntimeException();
+        try {
+            throw new RuntimeException();
+        } catch (RuntimeException e) {
+        }
         //    throw new IOException();
     }
 }
