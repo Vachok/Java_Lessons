@@ -1,4 +1,4 @@
-
+import java.io.IOException;
 
 public class Main {
     public static void main( String[] args ) {
@@ -9,9 +9,8 @@ public class Main {
         try {
             Object o = null;
             o.hashCode();
-            // throw new Exception();
-        } catch (Exception e) {
-
+        } catch (RuntimeException e) {
+            e.printStackTrace();
         }
     }
 }
