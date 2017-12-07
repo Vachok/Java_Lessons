@@ -9,11 +9,8 @@ public class Main {
             i++;
         }
         i = 0;
-        do {
+        do
             System.out.println("do");
-            System.out.println(arr[i]);
-            i++;
-        } while (false);
-
+        while (false);
     }
 }
