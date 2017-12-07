@@ -2,11 +2,8 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main( String[] args ) {
-        try {
+    public static void main( String[] args ) throws Exception {
             new Main().meMethod();
-        } catch (IOException e) {
-        }
     }
 
     void meMethod() throws IOException {
@@ -14,8 +11,6 @@ public class Main {
             throw new IOException();
     }
 }
-
-
 
 
 
