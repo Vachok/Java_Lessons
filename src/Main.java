@@ -16,6 +16,7 @@ public class Main {
 
 /* Иерархия Exceptions
 1. Throwable
-    2. Error
-    2. Exception
+    2. Error - не нужно ловить! Это риторические проблемы - сами придут.
+    2. Exception - можно добавить свои подклассы
+        3. RuntimeException
  */
