@@ -9,11 +9,12 @@ public class Main {
     void someMethod() {
         try {
             System.out.println("try");
-            throw new Error();
+            throw new IOException();
             //Object o = null;
             // o.hashCode();
-        } finally {
-            System.out.println("finally");
+        } catch (ArrayIndexOutOfBoundsException e) {
+        } catch (RuntimeException e) {
+        } catch (IOException e) {
         }
         }
     }
