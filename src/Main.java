@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 public class Main {
 
     public static void main( String[] args ) {
@@ -5,7 +7,10 @@ public class Main {
     }
 
     void meMethod() {
-        throw new RuntimeException();
+        //    throw new RuntimeException();
+        try {
+            throw new IOException();
+        } catch (IOException e)
     }
 }
 
