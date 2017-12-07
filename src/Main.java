@@ -23,6 +23,8 @@ public class Main {
     2. Exception -
         3. RuntimeException - это "ошибки программирования"
         3. IO
+            3.1 Если работаем с "чужими" - нужно помещать в try/catch
+            3.2 Если пишем сами. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
 
  */
