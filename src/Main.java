@@ -4,14 +4,19 @@ import java.io.IOException;
 public class Main {
 
     public static void main( String[] args ) {
-        if (args.length > 5)
-            System.out.println(args[5]);
-        new Main().meMethod();
+
     }
 
-    void meMethod() throws IOException {
-        File file = new File("");
-        file.createNewFile();
+    void meMethod() {
+        /*chk
+        throw new Throwable();
+        throw new Exception();
+        throw new IOException();
+//////////|||||||||||||||||||||||||||||||||||||||\\
+        /*UNchk
+        throw new Error();
+        throw new RuntimeException();
+         */
     }
 }
 
@@ -21,10 +26,10 @@ public class Main {
 1. Throwable
     2. Error - не нужно ловить! Это риторические проблемы - сами придут.
     2. Exception -
-        3. RuntimeException - это "ошибки программирования"
-        3. IO
-            3.1 Если работаем с "чужими" - нужно помещать в try/catch
-            3.2 Если пишем сами. https://youtu.be/mLpMtc62530?t=39m25s
+        3. RuntimeException - это "ошибки программирования" (unchk)
+        3. IO (chk)
+            3.1 Если работаем с "чужими" - нужно помещать в try/catch.
+            3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
 
  */
