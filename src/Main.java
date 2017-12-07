@@ -15,7 +15,7 @@ public class Main {
         FileReader fileReader = new FileReader(file);
 
         BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
-        bufferedWriter.write("str4");
+        bufferedWriter.write("str3");
         bufferedWriter.newLine();
         bufferedWriter.write("str4");
         bufferedWriter.flush();
