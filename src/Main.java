@@ -3,7 +3,6 @@ import java.io.File;
 import java.io.IOException;
 
 public class Main {
-*/
 /*46.36-methodMainandHisProps
     public static void main( String[] myArgs ) {
         for (String s : myArgs) { 
@@ -12,8 +11,6 @@ public class Main {
 45.35-operatory_JAVA
     }
 }
-
-/*
 + - / *
 %  остаток деления
 < > <= >=
@@ -45,9 +42,16 @@ public static void main( String[] myArgs ) {
             case 6:
                 System.out.println(6);
         }
-/*  static Main main;
+        static Main main;
 
     public static void main( String[] args ) {
+/*54.43-Assertions
+        new Main().myMethod(-5);
+    }
+
+    private void myMethod( int a ) {
+        assert (a > 0);
+        System.out.println(a);
 /*52.40-for_enchanced
         int[] arr = {1 , 2 , 3};
         int i = 0;
