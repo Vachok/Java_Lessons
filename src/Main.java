@@ -6,5 +6,8 @@ public class Main {
         String s2 = s.concat("def");
         System.out.println(s);
         System.out.println(s2);
+        StringBuilder stringBuilder;
+        StringBuffer stringBuffer;
+
     }
 }
