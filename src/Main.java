@@ -12,7 +12,7 @@ public class Main {
             o.hashCode();
         } catch (NullPointerException e) {
             System.out.println("catch");
-            e.printStackTrace();
+            //e.printStackTrace();
         } finally {
             System.out.println("finally");
         }
