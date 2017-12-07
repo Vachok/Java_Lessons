@@ -9,7 +9,7 @@ public class Main {
         try {
             Object o = null;
             o.hashCode();
-        } catch (RuntimeException e) {
+        } catch (NullPointerException e) {
             e.printStackTrace();
         }
     }
