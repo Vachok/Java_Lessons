@@ -14,8 +14,8 @@ public class Main {
             // o.hashCode();
         } finally {
             System.out.println("before exit");
-            System.exit(0);
-            System.out.println("after exit");
+            while (true) {
+            }
         }
         }
     }
