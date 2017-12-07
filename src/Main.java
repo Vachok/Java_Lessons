@@ -9,7 +9,7 @@ public class Main {
     void someMethod() {
         try {
             System.out.println("try");
-            throw new RuntimeException();
+            throw new Error();
             //Object o = null;
             // o.hashCode();
         } finally {
