@@ -3,7 +3,8 @@
 public class Main {
     public static void main( String[] args ) {
         String s = new String("abc");
-        s.concat("def");
+        String s2 = s.concat("def");
         System.out.println(s);
+        System.out.println(s2);
     }
 }
