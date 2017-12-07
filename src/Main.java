@@ -10,7 +10,7 @@ public class Main {
         try {
             System.out.println("try");
             Object o = null;
-            o.hashCode();
+            // o.hashCode();
             return "try1";
         } catch (NullPointerException e) {
             System.out.println("catch");
@@ -19,7 +19,6 @@ public class Main {
         } finally {
             System.out.println("finally");
             //return "finally2";
-
         }
         }
     }
