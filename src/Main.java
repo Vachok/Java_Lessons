@@ -5,7 +5,9 @@ public class Main {
         User user = new User();
         user.lifeLevel = 55;
         User.staticField = 45;
-        user.sword.level = 5;
+        Sword sword = new Sword();
+        sword.level = 5;
+        user.sword = sword;
         FileOutputStream fileOutputStream = new FileOutputStream("tempfile");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(user);
