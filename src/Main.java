@@ -13,7 +13,7 @@ public class Main {
             //Object o = null;
             // o.hashCode();
         } catch (ArrayIndexOutOfBoundsException e) {
-        } catch (RuntimeException e) {
+        } catch (ArrayIndexOutOfBoundsException e) {
         } catch (IOException e) {
         }
         }
