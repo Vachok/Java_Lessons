@@ -9,10 +9,12 @@ public class Main {
     void someMethod() {
         try {
             System.out.println("try");
-            throw new IOException();
             //Object o = null;
             // o.hashCode();
         } catch (ArrayIndexOutOfBoundsException e) {
+            try {
+                throw new ArrayIndexOutOfBoundsException();
+            } catch (ArrayIndexOutOfBoundsException e)
         } catch (RuntimeException e) {
         }
         }
