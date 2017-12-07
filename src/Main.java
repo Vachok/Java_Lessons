@@ -3,7 +3,8 @@ import java.io.IOException;
 public class Main {
 
     public static void main( String[] args ) {
-        System.out.println(args[5]);
+        if (args.length > 5)
+            System.out.println(args[5]);
             new Main().meMethod();
     }
 
