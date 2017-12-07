@@ -3,18 +3,19 @@ import java.io.IOException;
 public class Main {
 
     public static void main( String[] args ) {
-        System.out.println(new Main().someMethod());
+        new Main().someMethod();
+        System.out.println("after method");
     }
 
-    String someMethod() {
+    void someMethod() {
         try {
             System.out.println("try");
             Object o = null;
             // o.hashCode();
-            return "try1";
         } finally {
-            System.out.println("finally");
-            //return "finally2";
+            System.out.println("before exit");
+            System.exit(0);
+            System.out.println("after exit");
         }
         }
     }
