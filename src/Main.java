@@ -1,3 +1,9 @@
+/*53.42-Exception
+import java.io.File;
+import java.io.IOException;
+
+public class Main {
+*/
 /*46.36-methodMainandHisProps
     public static void main( String[] myArgs ) {
         for (String s : myArgs) { 
@@ -18,15 +24,12 @@ string + переопределён для класса String
 ?:  проверка правда/ложь
 & | ^ ! && || и/или
  */
-//
 /* Java_Lessons-44 Java 34: Garbage Collector
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-
-
-    public static void main( String[] myArgs ) {
+public static void main( String[] myArgs ) {
         int i = 10;
         switch (i) {
             case 1:
@@ -45,13 +48,12 @@ import java.util.List;
 /*  static Main main;
 
     public static void main( String[] args ) {
-//52.40-for_enchanced
+/*52.40-for_enchanced
         int[] arr = {1 , 2 , 3};
         int i = 0;
         for (System.out.println("hello this is first state"); i < arr.length; i++)
             System.out.println(arr[i]);
-=======
-//51.39-Cycles_whileDowhile
+/*51.39-Cycles_whileDowhile
         int[] arr = {1 , 2 , 3};
         int i = 0;
         while (i == 5) {
@@ -62,8 +64,7 @@ import java.util.List;
         do
             System.out.println("do");
         while (false);
-=======
-47.37-if_else
+/*47.37-if_else
         int a = 6;
         int b = 6;
         int c = 4;
@@ -75,7 +76,6 @@ import java.util.List;
         } if(false) {
         } else
             System.out.println("bla");
-//
         method();
     }
 
@@ -90,6 +90,31 @@ import java.util.List;
     @Override
     public void finalize() {
         Main.main = this;
-//
     }
-}*/
+
+    void meMethod() {
+        /*chk
+        throw new Throwable();
+        throw new Exception();
+        throw new IOException();
+//////////|||||||||||||||||||||||||||||||||||||||\\
+        /*UNchk
+        throw new Error();
+        throw new RuntimeException();
+         */
+//    }
+//}
+
+
+
+/* Иерархия Exceptions
+1. Throwable
+    2. Error - не нужно ловить! Это риторические проблемы - сами придут.
+    2. Exception -
+        3. RuntimeException - это "ошибки программирования" (unchk)
+        3. IO (chk)
+            3.1 Если работаем с "чужими" - нужно помещать в try/catch.
+            3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
+        3 ....можно добавить свои подклассы
+
+ */
