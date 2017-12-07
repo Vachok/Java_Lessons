@@ -5,6 +5,7 @@ public class Main {
         User user = new User();
         user.lifeLevel = 55;
         User.staticField = 45;
+        user.sword.level = 5;
         FileOutputStream fileOutputStream = new FileOutputStream("tempfile");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(user);
@@ -18,5 +19,6 @@ public class Main {
         objectInputStream.close();
         System.out.println(newUser.lifeLevel);
         System.out.println(User.staticField);
+        System.out.println(newUser.sword.level);
     }
 }
