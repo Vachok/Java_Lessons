@@ -45,6 +45,12 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+/*55.44-StringBuilder
+        StringBuilder stringBuilder = new StringBuilder("abc");
+        stringBuilder.append("def");
+        stringBuilder.insert(0 , "-");
+        int i = stringBuilder.length();
+        System.out.println(i);
 /*54.43-Assertions
         new Main().myMethod(-5);
     }
