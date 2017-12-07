@@ -1,4 +1,3 @@
-import javax.jws.soap.SOAPBinding;
 import java.io.*;
 
 public class Main {
@@ -13,5 +12,7 @@ public class Main {
         FileInputStream fileInputStream = new FileInputStream("tempfile");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
         User newUser = (User) objectInputStream.readObject();
-
+        objectInputStream.close();
+        System.out.println(newUser.lifeLevel);
     }
+}
