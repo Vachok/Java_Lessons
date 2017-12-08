@@ -11,7 +11,7 @@ class Ticket {
     String libraryName;
 
     @Override
-    public boolean equals( Object o ) {
+    public boolean equals( Object o ) { // сверяет совпадения, если по-хэшу несколько объектов
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
@@ -22,7 +22,7 @@ class Ticket {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode() { // адресует
         int result = number;
         result = 31 * result + libraryName.hashCode();
         return result;
