@@ -1,11 +1,15 @@
 import java.util.Set;
 import java.util.TreeSet;
 
-class Person {
+class Person implements Comparable<Person> {
     int age;
 
     public Person( int age ) {
         this.age = age;
+    }
+
+    public int compareTo( Person p ) {
+        return this.age - p.age;
     }
 }
 
