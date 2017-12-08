@@ -1,3 +1,26 @@
+//63.48-Date_calend
+/*import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+public class Main {
+    public static void main( String[] args ) throws ParseException {
+        Date date = new Date();
+        System.out.println(date);
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.add(Calendar.MINUTE , 1);
+        System.out.println(calendar.getTime());
+        DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
+        System.out.println(dateFormat.format(calendar.getTime()));
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        System.out.println(simpleDateFormat.format(calendar.getTime()));
+        Date newDate = simpleDateFormat.parse("05/12/1985 05:22");
+        System.out.println(newDate);
+    }
+}*/
 /*62.47-Serializ_nasleduem_obj
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -56,7 +79,7 @@ public class Main {
         System.out.println(newUser.lifeLevel);
         System.out.println(User.staticField);
         System.out.println(newUser.sword);
-=======
+        
 /*60-45.files_directories
 import java.io.*;
 
@@ -95,7 +118,7 @@ public class Main {
         for (String s : myArgs) { 
             System.out.println(s);
 
-45.35-operatory_JAVA
+//45.35-operatory_JAVA
     }
 }
 + - / *
