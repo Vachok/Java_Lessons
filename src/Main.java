@@ -8,21 +8,24 @@ class Book {
 
 class Ticket {
     int number;
-
+    String libraryName;
 
     @Override
-    public boolean equals( Object o ) { // передаём объект
-        if (this == o) return true; // проверяем, что разные
-        if (o == null || getClass() != o.getClass()) return false; // проверяем, что класс одинаковый
+    public boolean equals( Object o ) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
 
-        Ticket ticket = (Ticket) o; // проверяем параметр
+        Ticket ticket = (Ticket) o;
 
-        return number == ticket.number;
+        if (number != ticket.number) return false;
+        return libraryName.equals(ticket.libraryName);
     }
 
     @Override
     public int hashCode() {
-        return number;
+        int result = number;
+        result = 31 * result + libraryName.hashCode();
+        return result;
     }
 }
 
