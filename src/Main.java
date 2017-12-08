@@ -1,20 +1,6 @@
 import java.util.*;
 
-class Book {
-    String nameAuthor;
-
-    public Book( String nameAuthor ) {
-        this.nameAuthor = nameAuthor;
-    }
-
-    @Override
-    public String toString() {
-        return "Book{" +
-                "nameAuthor='" + nameAuthor + '\'' +
-                '}';
-    }
-}
-
+//Map - коллекция с ключами
 public class Main {
     public static void main( String[] args ) {
         Map collection = new HashMap();
