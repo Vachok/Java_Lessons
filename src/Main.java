@@ -7,7 +7,7 @@ public class Main {
         System.out.println(date);
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
-        System.out.println(calendar);
+        calendar.add(Calendar.WEEK_OF_MONTH , 1);
         System.out.println(calendar.getTime());
     }
 }
