@@ -22,5 +22,9 @@ public class Main {
         collection.put("2" , "Kernegi");
         collection.put("3" , "Jack London");
         System.out.println(collection.get("2"));
+        Set set = collection.entrySet();
+        for (Object o : set) {
+            System.out.println(o);
+        }
     }
 }
