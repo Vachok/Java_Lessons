@@ -9,7 +9,7 @@ class Book {
 class Ticket {
     int number;
 
-    @Override
+/*    @Override
     public boolean equals( Object o ) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -17,7 +17,7 @@ class Ticket {
         Ticket ticket = (Ticket) o;
 
         return number == ticket.number;
-    }
+    }*/
 
     @Override
     public int hashCode() {
