@@ -6,6 +6,7 @@ public class Main {
         collection.add("1");
         collection.add("2");
         collection.add("3");
+        collection.set(2 , "5");
         for (int i = 0; i < collection.size(); i++) {
             System.out.println(collection.get(i));
         }
