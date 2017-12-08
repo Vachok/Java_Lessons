@@ -5,12 +5,13 @@ import java.io.ObjectOutputStream;
 
 public class Main {
     public static void main( String[] args ) throws Exception {
-        User user = new User();
+        UserChild user = new UserChild();
         user.lifeLevel = 55;
         User.staticField = 45;
         Sword sword = new Sword();
         sword.level = 5;
         user.sword = sword;
+        user.childLevel = 65;
 
         FileOutputStream fileOutputStream = new FileOutputStream("tempfile");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
@@ -21,10 +22,11 @@ public class Main {
 
         FileInputStream fileInputStream = new FileInputStream("tempfile");
         ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        User newUser = (User) objectInputStream.readObject();
+        UserChild newUser = (UserChild) objectInputStream.readObject();
         objectInputStream.close();
         System.out.println(newUser.lifeLevel);
         System.out.println(User.staticField);
         System.out.println(newUser.sword);
+        System.out.println(newUser.childLevel);
     }
 }
