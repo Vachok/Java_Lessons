@@ -8,7 +8,7 @@ public class Main {
         collection.offer("3");
         Iterator iterator = collection.iterator();
         while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+            System.out.println(collection.poll());
         }
         System.out.println("num of elements: " + collection.size());
     }
