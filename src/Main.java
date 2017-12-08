@@ -7,7 +7,7 @@ public class Main {
         collection.offer("2");
         collection.offer("3");
         for (int i = 0; i < collection.size(); i++) {
-            System.out.println(collection.peek());
+            System.out.println(collection.poll());
         }
         System.out.println("num of elements: " + collection.size());
     }
