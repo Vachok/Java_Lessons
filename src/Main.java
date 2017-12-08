@@ -1,3 +1,35 @@
+//64.49-Equals_HashCode
+/*import java.util.HashMap;
+import java.util.Map;
+
+class Book {
+    String author;
+    String name;
+}
+
+class Ticket {
+    int number;
+    String libraryName;
+
+    @Override
+    public boolean equals( Object o ) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Ticket ticket = (Ticket) o;
+
+        if (number != ticket.number) return false;
+        return libraryName.equals(ticket.libraryName);
+    }
+
+    @Override
+    public int hashCode() {
+        int result = number;
+        result = 31 * result + libraryName.hashCode();
+        return result;
+    }
+}
+=======
 //63.48-Date_calend
 /*import java.text.DateFormat;
 import java.text.ParseException;
@@ -112,6 +144,7 @@ public class Main {
 import java.io.File;
 import java.io.IOException;
 
+
 public class Main {
 /*46.36-methodMainandHisProps
     public static void main( String[] myArgs ) {
@@ -155,6 +188,22 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//64.49-Equals_HashCode
+        Ticket ticket = new Ticket();
+        ticket.number = 1123;
+        Book book = new Book();
+        book.author = "Kernegi";
+        book.name = "how to get friends";
+        Map<Ticket, Book> library = new HashMap<>();
+        library.put(ticket , book);
+
+        Ticket ticket2 = new Ticket();
+        ticket2.number = 1123;
+
+        Book karnegiBook = library.get(ticket2);
+        System.out.println(karnegiBook.author);
+    }
+}*/
 /*55.44-StringBuilder
         StringBuilder stringBuilder = new StringBuilder("abc");
         stringBuilder.append("def");
