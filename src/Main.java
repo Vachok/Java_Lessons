@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Main {
     public static void main( String[] args ) {
-        Collection collection = new HashSet();
+        Collection collection = new LinkedHashSet();
         collection.add("3");
         collection.add("2");
         collection.add("1");
