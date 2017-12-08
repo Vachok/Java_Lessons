@@ -9,12 +9,13 @@ class Book {
 class Ticket {
     int number;
 
-    @Override
-    public boolean equals( Object o ) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
 
-        Ticket ticket = (Ticket) o;
+    @Override
+    public boolean equals( Object o ) { // передаём объект
+        if (this == o) return true; // проверяем, что разные
+        if (o == null || getClass() != o.getClass()) return false; // проверяем, что класс одинаковый
+
+        Ticket ticket = (Ticket) o; // проверяем параметр
 
         return number == ticket.number;
     }
