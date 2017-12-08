@@ -1,3 +1,6 @@
+//65.50-Collection
+/*import java.util.*;
+=======
 //64.49-Equals_HashCode
 /*import java.util.HashMap;
 import java.util.Map;
@@ -188,6 +191,16 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//65.50-Collection
+        Collection collection = new TreeSet();
+        collection.add("2");
+        collection.add("3");
+        collection.add("1");
+        for (Object o : collection) {
+            System.out.println(o);
+        }
+    }
+}*/
 //64.49-Equals_HashCode
         Ticket ticket = new Ticket();
         ticket.number = 1123;
