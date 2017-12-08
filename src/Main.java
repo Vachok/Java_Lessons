@@ -16,5 +16,7 @@ public class Main {
 
         Book karnegiBook = library.get(book.name);
         System.out.println(karnegiBook.author);
+
+        System.out.println(book.hashCode());
     }
 }
