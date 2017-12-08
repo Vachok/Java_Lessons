@@ -9,6 +9,6 @@ public class Main {
         for (int i = 0; i < collection.size(); i++) {
             System.out.println(collection.peek());
         }
-        System.out.println(collection.size());
+        System.out.println("num of elements: " + collection.size());
     }
 }
