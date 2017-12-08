@@ -8,6 +8,21 @@ class Book {
 
 class Ticket {
     int number;
+
+    @Override
+    public boolean equals( Object o ) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Ticket ticket = (Ticket) o;
+
+        return number == ticket.number;
+    }
+
+    @Override
+    public int hashCode() {
+        return number;
+    }
 }
 
 public class Main {
