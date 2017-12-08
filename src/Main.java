@@ -1,4 +1,4 @@
-import java.util.HashMap;
+/*import java.util.HashMap;
 import java.util.Map;
 
 class Book {
@@ -11,7 +11,7 @@ class Ticket {
     String libraryName;
 
     @Override
-    public boolean equals( Object o ) { // сверяет совпадения, если по-хэшу несколько объектов
+    public boolean equals( Object o ) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
@@ -22,7 +22,7 @@ class Ticket {
     }
 
     @Override
-    public int hashCode() { // адресует
+    public int hashCode() {
         int result = number;
         result = 31 * result + libraryName.hashCode();
         return result;
@@ -45,4 +45,4 @@ public class Main {
         Book karnegiBook = library.get(ticket2);
         System.out.println(karnegiBook.author);
     }
-}
+}*/
