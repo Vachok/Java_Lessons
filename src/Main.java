@@ -20,7 +20,10 @@ public class Main {
         Map<Ticket, Book> library = new HashMap<>();
         library.put(ticket , book);
 
-        Book karnegiBook = library.get(ticket);
+        Ticket ticket2 = new Ticket();
+        ticket2.number = 1123;
+
+        Book karnegiBook = library.get(ticket2);
         System.out.println(karnegiBook.author);
     }
 }
