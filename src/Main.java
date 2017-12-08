@@ -18,5 +18,6 @@ public class Main {
         System.out.println(karnegiBook.author);
 
         System.out.println(book.hashCode());
+        System.out.println(new Book().hashCode());
     }
 }
