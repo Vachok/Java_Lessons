@@ -8,5 +8,6 @@ public class Main {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(date);
         System.out.println(calendar);
+        System.out.println(calendar.getTime());
     }
 }
