@@ -1,3 +1,5 @@
+// hashCode - возвращает адрес объекта
+// equals - проверяет, находится ли объект по тому же адресу
 import java.util.HashMap;
 import java.util.Map;
 
