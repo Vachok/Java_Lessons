@@ -1,15 +1,17 @@
+import java.util.HashMap;
+import java.util.Map;
 
+class Book {
+    String author;
+}
 
 public class Main {
     int value;
-    public static void main( String[] args ) {
-        Main main = new Main();
-        main.value = 5;
-        System.out.println(main + "");
-    }
 
-    @Override
-    public String toString() {
-        return "value=" + value;
+    public static void main( String[] args ) {
+        Book book = new Book();
+        book.author = "Kernegi"
+        Map<String, Book> library = new HashMap<>();
+        library.put("How to get friends" , book);
     }
 }
