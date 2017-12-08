@@ -6,8 +6,9 @@ public class Main {
         collection.offer("1");
         collection.offer("2");
         collection.offer("3");
-        for (int i = 0; i < collection.size(); i++) {
-            System.out.println(collection.poll());
+        Iterator iterator = collection.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
         System.out.println("num of elements: " + collection.size());
     }
