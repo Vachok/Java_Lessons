@@ -1,4 +1,5 @@
 import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -12,5 +13,8 @@ public class Main {
         System.out.println(calendar.getTime());
         DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT);
         System.out.println(dateFormat.format(calendar.getTime()));
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        //Google: java SimpleDateFormat
+        System.out.println(simpleDateFormat.format(calendar.getTime()));
     }
 }
