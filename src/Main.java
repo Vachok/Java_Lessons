@@ -1,3 +1,9 @@
+//76.52-Spiski_List 
+/*import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Vector;
+=======
 /*75.52-SortCollection
 import java.util.Comparator;
 import java.util.Set;
@@ -175,7 +181,6 @@ public class Main {
 import java.io.File;
 import java.io.IOException;
 
-
 public class Main {
 /*46.36-methodMainandHisProps
     public static void main( String[] myArgs ) {
@@ -219,6 +224,19 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//76.52-Spiski_List
+        List list = new ArrayList(); // коллек. на основании индекса
+        System.out.print(list.size() + " /// ");
+        List list1 = new Vector(); // ArrayList synchronized
+        List linked = new LinkedList(); // implements Queue. Двунаправленный список
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i));
+        }
+        
 //75.52-SortCollection
         Set set = new TreeSet(new ComparePerson());
         set.add(new Person(4));
@@ -298,6 +316,7 @@ public static void main( String[] myArgs ) {
         } else
             System.out.println("bla");
         method();
+        
     }
 
     private static void method() {
