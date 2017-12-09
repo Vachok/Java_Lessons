@@ -1,3 +1,6 @@
+//77.53-queue
+/*import java.util.*;
+=======
 //76.52-Spiski_List 
 /*import java.util.ArrayList;
 import java.util.LinkedList;
@@ -224,6 +227,16 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//77.53-queue
+        Queue queue = new LinkedList();
+        Queue queue2 = new PriorityQueue();
+        queue.offer("1");
+        queue.offer("3");
+        queue.offer("2");
+        while (queue.size() > 0) {
+            System.out.print(queue.poll());
+        }
+=======
 //76.52-Spiski_List
         List list = new ArrayList(); // коллек. на основании индекса
         System.out.print(list.size() + " /// ");
