@@ -1,16 +1,12 @@
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 
-class Person implements Comparable<Person> {
+class Person {
     int age;
 
     public Person( int age ) {
         this.age = age;
-    }
-
-    @Override
-    public int compareTo( Person p ) {
-        return this.age - p.age;
     }
 
     @Override
@@ -19,13 +15,20 @@ class Person implements Comparable<Person> {
     }
 }
 
+class ComparePerson implements Comparator<Person> {
+    @Override
+    public int compare( Person o1 , Person o2 ) {
+
+    }
+}
+
 public class Main {
-    public static void main( String[] args ) { //https://youtu.be/x4CUbW-K8E8?t=7m7s
-        Set set = new TreeSet<>(); //создание отсортированной коллекции
-        set.add(new Person(4)); // элемент коллекции
-        set.add(new Person(6)); // элемент коллекции
-        set.add(new Person(5)); // элемент коллекции
-        set.add(new Person(2)); // элемент коллекции
+    public static void main( String[] args ) {
+        Set set = new TreeSet<>();
+        set.add(new Person(4));
+        set.add(new Person(6));
+        set.add(new Person(5));
+        set.add(new Person(2));
         for (Object o : set) {
             System.out.println(o);
         }
