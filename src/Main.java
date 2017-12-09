@@ -18,13 +18,14 @@ class Person {
 class ComparePerson implements Comparator<Person> {
     @Override
     public int compare( Person o1 , Person o2 ) {
-
+        return o1.age - o2.age;
     }
 }
 
 public class Main {
     public static void main( String[] args ) {
-        Set set = new TreeSet<>();
+        ComparePerson comparePerson = new ComparePerson();
+        Set set = new TreeSet<>(comparePerson);
         set.add(new Person(4));
         set.add(new Person(6));
         set.add(new Person(5));
