@@ -7,8 +7,6 @@ public class Main {
         queue.offer("1");
         queue.offer("3");
         queue.offer("2");
-        List list = (List) queue;
-        Collections.sort(list);
         while (queue.size() > 0) {
             System.out.print(queue.poll());
         }
