@@ -4,11 +4,11 @@ import java.util.Queue;
 
 public class Main {
     public static void main( String[] args ) {
-        Queue queue = new LinkedList();
+        Queue queue = new LinkedList(); //двунапр. список
         Queue queue2 = new PriorityQueue();
-        queue.add("1");
-        queue.add("2");
-        queue.add("3");
+        queue.offer("1");
+        queue.offer("3");
+        queue.offer("2");
         while (queue.size() > 0) {
             System.out.print(queue.poll());
         }
