@@ -2,9 +2,9 @@ import java.util.*;
 
 public class Main {
     public static void main( String[] args ) {
-        Map map = new HashMap();
-        Map map2 = new Hashtable(); // синхронизир. HashMap
-        Map map3 = new LinkedHashMap();
+        Map map3 = new HashMap();
+        Map map2 = new Hashtable();
+        Map map = new LinkedHashMap(); // упорядоченный HM
         Map map4 = new TreeMap();
         map.put("1" , "one");
         map.put("3" , "three");
