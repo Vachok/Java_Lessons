@@ -4,8 +4,8 @@ public class Main {
     public static void main( String[] args ) {
         Map map3 = new HashMap();
         Map map2 = new Hashtable();
-        Map map = new LinkedHashMap();
-        Map map4 = new TreeMap(); //отсортированный список
+        Map map4 = new LinkedHashMap();
+        Map map = new TreeMap();
         map.put("1" , "one");
         map.put("3" , "three");
         map.put("2" , "two");
