@@ -1,3 +1,31 @@
+/*75.52-SortCollection
+import java.util.Comparator;
+import java.util.Set;
+import java.util.TreeSet;
+
+class Person {
+    private int age;
+
+    public Person( int age ) {
+        this.age = age;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" + "age=" + age + '}';
+    }
+}
+
+class ComparePerson implements Comparator<Person> {
+    @Override
+    public int compare( Person o1 , Person o2 ) {
+        return o1.getAge() - o2.getAge();
+    }
+}
 //65.50-Collection
 /*import java.util.*;
 =======
@@ -191,6 +219,16 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//75.52-SortCollection
+        Set set = new TreeSet(new ComparePerson());
+        set.add(new Person(4));
+        set.add(new Person(6));
+        set.add(new Person(5));
+        set.add(new Person(2));
+        for (Object o : set) {
+            System.out.println(o);
+        }
+=======
 //65.50-Collection
         Collection collection = new TreeSet();
         collection.add("2");
@@ -202,6 +240,7 @@ public static void main( String[] myArgs ) {
     }
 }*/
 //64.49-Equals_HashCode
+/*
         Ticket ticket = new Ticket();
         ticket.number = 1123;
         Book book = new Book();
