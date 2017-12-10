@@ -1,7 +1,12 @@
-class Car {
+class Car implements Comparable {
+    @Override
+    public int compareTo( Object o ) {
 
+        return 0;
+    }
 }
-public class Main<T> {
+
+public class Main<T extends Comparable> {
 
     T war;
 
@@ -13,7 +18,9 @@ public class Main<T> {
     }
 
     T method( T type ) {
-        System.out.print(type);
+
+        type.
+                System.out.print(type);
         return type;
     }
 }
