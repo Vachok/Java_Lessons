@@ -16,11 +16,10 @@ public class Main<T extends Main & Comparable & Serializable> {
 
         Main<Car> main = new Main<>();
         main.war = new Car();
-        System.out.print(main.war);
+        main.method(new Car());
     }
 
     T method( T type ) {
-
         type.meMethods();
         return type;
     }
