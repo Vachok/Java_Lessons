@@ -1,13 +1,16 @@
 
 
-public class Main {
+public class Main<T, U, K> {
     public static void main( String[] args ) {
+
+        T war;
+        U u
         Main main = new Main();
         main.method("123");
     }
 
-    <T, U, K> void method( T type , U u , K k ) {
-        System.out.print(s);
-        //return type;
+    T method( T type ) { // <Название переменной> ТИП
+        System.out.print(type);
+        return type;
     }
 }
