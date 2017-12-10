@@ -1,13 +1,14 @@
+class Car {
 
-
+}
 public class Main<T> {
 
     T war;
 
     public static void main( String[] args ) {
 
-        Main<String> main = new Main<>();
-        main.war = "sdf";
+        Main<Car> main = new Main<>();
+        main.war = new Car();
         System.out.print(main.war);
     }
 
