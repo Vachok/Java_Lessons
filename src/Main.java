@@ -5,7 +5,7 @@ import java.util.TreeSet;
 
 public class Main {
     public static void main( String[] args ) {
-        Set set = new HashSet(); // неупорядоченные
+        Set set = new HashSet();
         Set set2 = new LinkedHashSet(); // в порядке добавления
         Set set3 = new TreeSet(); // сортировка
         set.add("1 ");
