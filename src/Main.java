@@ -1,4 +1,6 @@
-class Car implements Comparable {
+import java.io.Serializable;
+
+class Car extends Main implements Comparable, Serializable {
     @Override
     public int compareTo( Object o ) {
 
@@ -6,7 +8,7 @@ class Car implements Comparable {
     }
 }
 
-public class Main<T extends Comparable> {
+public class Main<T extends Main & Comparable & Serializable> {
 
     T war;
 
@@ -19,8 +21,12 @@ public class Main<T extends Comparable> {
 
     T method( T type ) {
 
-        type.
-                System.out.print(type);
+        type.meMethods();
         return type;
+    }
+
+    void meMethods() {
+
+        System.out.println("bla");
     }
 }
