@@ -1,5 +1,5 @@
+//79.55-Sets
 //78.54-Maps
-import java.util.*;
 
 /*public class Main {
     public static void main( String[] args ) {
@@ -245,6 +245,19 @@ public static void main( String[] myArgs ) {
         static Main main;
 
     public static void main( String[] args ) {
+//79.55-Sets
+        Set set = new HashSet();
+        Set set2 = new LinkedHashSet();
+        Set set3 = new TreeSet();
+        set.add("1 ");
+        set.add("2 ");
+        set.add("2 ");
+        set.add("1 ");
+        set.add("1 ");
+        for (Object o : set) {
+            System.out.print(o);
+        }
+=======
 //77.53-queue
         Queue queue = new LinkedList();
         Queue queue2 = new PriorityQueue();
@@ -347,7 +360,7 @@ public static void main( String[] myArgs ) {
         } else
             System.out.println("bla");
         method();
-        
+       
     }
 
     private static void method() {
