@@ -1,11 +1,10 @@
-import java.util.Map;
-
 public class Main {
     private int i = 5;
     static int q = 5;
 
     public static void main( String[] args ) {
-        StaticClass.mthod();
+        StaticClass staticClass = new StaticClass();
+        staticClass.mthod();
         Main main = new Main();
         main.method();
         Inner inner = main.new Inner();
@@ -13,28 +12,35 @@ public class Main {
     }
 
     Inner inner3 = new Inner();
+    void method() {
+        class NewInner {
+            void newMethod() {
+
+            }
+        }
+    }
+
+
 
     static class StaticClass {
-        static void mthod() {
+        void mthod() {
             System.out.println(q);
         }
     }
 
-    void method() {
-        Inner inner = new Inner();
-        inner.method2();
-        System.out.println(inner.k);
-        inner3.method2();
-    }
+
 
     class Inner {
         int k = 6;
 
         void method2() {
+            System.out.println(q);
             System.out.println(i);
         }
     }
 }
+
+
 
 class Second {
     void method() {
@@ -44,5 +50,8 @@ class Second {
 }
 /* Inner
 Существуют inner-классы, без экземпляра внешнего класса, не создаётся внутренний
-
+Обычные и статичные
+Обычные имеют полный доступ ко всем полям, static - к static
+Класс внутри МЕТОДА!
+Создать можно - пользоваться сложно
  */
