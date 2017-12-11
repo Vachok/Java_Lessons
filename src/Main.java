@@ -11,12 +11,13 @@ class Popcorn {
 
 public class Main {
     public static void main( String[] args ) {
-        Comparable comparable = new Comparable() {
-            @Override
-            public int compareTo( Object o ) {
-                return 0;
+        method(new Popcorn() {
+            void doSome() {
+                System.out.println("bla");
             }
-        };
-        comparable.compareTo(new Object());
+        });
+    }
+    static void method( Popcorn popcorn ) {
+        popcorn.doSome();
     }
 }
