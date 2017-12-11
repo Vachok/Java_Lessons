@@ -1,15 +1,23 @@
-
+import java.util.Map;
 
 public class Main {
-    int i = 5;
+    private int i = 5;
 
     public static void main( String[] args ) {
+        Main main = new Main();
+        main.method();
+    }
+
+    void method() {
+        Inner inner = new Inner();
+        inner.method2();
+        System.out.println(inner.k);
     }
 
     class Inner {
         int k = 6;
 
-        void method() {
+        void method2() {
             System.out.println(i);
         }
     }
