@@ -5,8 +5,8 @@ public class Main {
 
     public static void main( String[] args ) {
         Main main = new Main();
-        main.method();
-        Inner inner = new Inner();
+        Inner inner = main.new Inner();
+        inner.method2();
     }
 
     void method() {
