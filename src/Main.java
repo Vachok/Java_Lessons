@@ -13,7 +13,9 @@ class Child extends Parrent {
 }
 
 class Son extends Child {
-
+    void method() {
+        System.out.println("son");
+    }
 }
 public class Main {
 
@@ -26,7 +28,6 @@ public class Main {
     }
 
     void method( List<? super Child> list ) {
-        list.add(new Child());
         list.add(new Son());
         for (Object o : list) {
             Parrent p = (Parrent) o;
