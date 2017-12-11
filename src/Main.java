@@ -1,7 +1,19 @@
+//87.58_AnonClas
+/*class Popcorn {
+    void doSome() {
+        System.out.println("popcorn");
+    }
+    void secondMethhod() {
+        System.out.println("second");
+    }
+}
+
+=======
 //86.57-InnerClases
 /*public class Main {
     private int i = 5;
     static int q = 5;
+
 
     public static void main( String[] args ) {
         StaticClass staticClass = new StaticClass();
@@ -310,6 +322,18 @@ public static void main( String[] myArgs ) {
 
 
     public static void main( String[] args ) {
+//87.58_AnonClas
+        method(new Popcorn() {
+            void doSome() {
+                System.out.println("bla");
+            }
+        });
+    }
+    static void method( Popcorn popcorn ) {
+        popcorn.doSome();
+    }
+}
+=======
 //79.55-Sets
         Set set = new HashSet();
         Set set2 = new LinkedHashSet();
