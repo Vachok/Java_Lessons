@@ -20,7 +20,7 @@ public class Main {
         main.method(list);
     }
 
-    void method( List<? extends Parrent> list ) {
+    void method( List<Parrent> list ) {
         for (Parrent parrent : list) {
             System.out.println(parrent);
         }
