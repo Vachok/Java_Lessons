@@ -4,10 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Parrent<T> {
+    void method() {
+        System.out.println("b");
+    }
 }
 
 class Child extends Parrent {
-
 }
 
 class Son extends Child {
@@ -25,7 +27,8 @@ public class Main {
 
     void method( List<? super Child> list ) {
         for (Object o : list) {
-            System.out.println(o);
+            Parrent p = (Parrent) o;
+            p.method();
         }
     }
 }
