@@ -30,5 +30,7 @@ public class Main {
             Parrent p = (Parrent) o;
             p.method();
         }
+        list.add(new Child());
+        list.add(new Son());
     }
 }
