@@ -10,7 +10,7 @@ class Child extends Parrent {
 
 }
 
-class Son extends Parrent {
+class Son extends Child {
 
 }
 public class Main {
