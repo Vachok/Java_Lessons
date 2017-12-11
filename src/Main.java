@@ -7,15 +7,16 @@ class Popcorn {
     }
 }
 
+
+
 public class Main {
     public static void main( String[] args ) {
-        Popcorn popcorn = new Popcorn()
-        {
-            void doSome() {
-            System.out.println("main");
-        }
+        Comparable comparable = new Comparable() {
+            @Override
+            public int compareTo( Object o ) {
+                return 0;
+            }
         };
-        popcorn.doSome();
-        popcorn.secondMethhod();
+        comparable.compareTo(new Object());
     }
 }
