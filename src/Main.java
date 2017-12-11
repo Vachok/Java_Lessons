@@ -251,6 +251,52 @@ import java.io.*;
 
 public class Main {
     public static void main( String[] args ) throws Exception {
+//88.59-Clon
+        MyObject myObject = new MyObject();
+        myObject.i = 1;
+        NewObject newObject = new NewObject();
+        newObject.j = 3;
+        myObject.newObject = newObject;
+        MyObject myObject1 = myObject.clone();
+        myObject1.i = 2;
+        System.out.println(myObject.i);
+        myObject1.newObject.j = 4;
+        System.out.print(myObject.newObject.j);
+    }
+}
+
+
+
+class MyObject implements Cloneable {
+    int i;
+    NewObject newObject;
+    @Override
+    protected MyObject clone() throws CloneNotSupportedException {
+        MyObject myObject = (MyObject) super.clone();
+        myObject.newObject = newObject.clone();
+        return myObject;
+    }
+}
+
+
+
+class NewObject implements Cloneable {
+    int j;
+
+
+    @Override
+    protected NewObject clone() throws CloneNotSupportedException {
+        return (NewObject) super.clone();
+    }
+}
+
+/*
+2 вида клонирования - поверхностное и глубокое
+для клонирования нужно имплементить инт. Cloneable
+@Override метод clone()
+При глубоком клоне, во всех внутренних типах, необходимо
+клонировать объекты, и сделать ссылки на них
+=======
         File file = new File("temp.txt");
         if (!file.exists()) {
             file.createNewFile();
@@ -506,5 +552,4 @@ public static void main( String[] myArgs ) {
             3.1 Если работаем с "чужими" - нужно помещать в try/catch.
             3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
-
  */
