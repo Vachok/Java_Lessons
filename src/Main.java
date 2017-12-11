@@ -3,28 +3,29 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main<T extends Main & Comparable & Serializable> {
+class Parrent {
+
+}
+
+class Child extends Parrent {
+
+}
+
+public class Main {
 
     public static void main( String[] args ) {
 
-        List<File> list = new ArrayList<>();
+        List<Child> list = new ArrayList<Child>(); // сюда нельзя записать Parrent
+        List<Child>[] arr = new ArrayList<Child>[5]; // массив в Generic тоже нельзя
         Main main = new Main();
         main.method(list);
 
-        for (File file : list) {
-            System.out.println(file.getAbsoluteFile());
+        for (Child child : list) {
+            System.out.println(child);
         }
     }
 
-    void method( List list ) {
+    void method( List<Parrent> list ) {
         list.add(new Main());
-    }
-}
-
-class MyClass<T> {
-    T t; //LOCALVARIABLE t Ljava/lang/Object; L0 L1 1
-
-    T method( T t ) {
-        return t;
     }
 }
