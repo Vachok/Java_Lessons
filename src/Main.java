@@ -17,16 +17,15 @@ public class Main {
 
     public static void main( String[] args ) {
 
-        List<Child> list = new ArrayList<>();
-        list.add(new Child());
+        List<Main> list = new ArrayList<>();
+        list.add(new Main());
         Main main = new Main();
         main.method(list);
     }
 
-    void method( List<? extends Parrent> list ) {
-        for (Parrent parrent : list) {
-            System.out.println(parrent);
+    void method( List<? extends Object> list ) {
+        for (Object o : list) {
+            System.out.println(o);
         }
-        list.add(new Son());
     }
 }
