@@ -10,6 +10,9 @@ class Child extends Parrent {
 
 }
 
+class Son extends Parrent {
+
+}
 public class Main {
 
     public static void main( String[] args ) {
@@ -20,10 +23,10 @@ public class Main {
         main.method(list);
     }
 
-    void method( List<Parrent> list ) {
+    void method( List<? extends Parrent> list ) {
         for (Parrent parrent : list) {
             System.out.println(parrent);
         }
-        list.add(new Parrent());
+        list.add(new Son());
     }
 }
