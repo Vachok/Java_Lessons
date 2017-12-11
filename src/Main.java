@@ -2,6 +2,7 @@ import java.util.Map;
 
 public class Main {
     private int i = 5;
+    Inner inner = new Inner();
 
     public static void main( String[] args ) {
         Main main = new Main();
