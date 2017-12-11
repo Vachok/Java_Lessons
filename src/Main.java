@@ -2,10 +2,11 @@ import java.util.Map;
 
 public class Main {
     private int i = 5;
-    Inner inner = new Inner();
+    Inner inner3 = new Inner();
 
     public static void main( String[] args ) {
         Main main = new Main();
+        main.method();
         Inner inner = main.new Inner();
         inner.method2();
     }
@@ -14,6 +15,7 @@ public class Main {
         Inner inner = new Inner();
         inner.method2();
         System.out.println(inner.k);
+        inner3.method2();
     }
 
     class Inner {
