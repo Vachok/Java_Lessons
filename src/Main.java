@@ -15,12 +15,13 @@ public class Main {
     void method() {
         class NewInner {
             void newMethod() {
+                System.out.println("bla");
 
             }
         }
+        NewInner newInner = new NewInner();
+        newInner.newMethod();
     }
-
-
 
     static class StaticClass {
         void mthod() {
@@ -37,15 +38,6 @@ public class Main {
             System.out.println(q);
             System.out.println(i);
         }
-    }
-}
-
-
-
-class Second {
-    void method() {
-        Main.Inner inner = new Main().new Inner();
-        inner.method2();
     }
 }
 /* Inner
