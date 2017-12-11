@@ -24,5 +24,6 @@ public class Main {
         for (Parrent parrent : list) {
             System.out.println(parrent);
         }
+        list.add(new Parrent());
     }
 }
