@@ -12,7 +12,7 @@ public class Main {
 
 
 
-class MyObject {
+class MyObject implements Cloneable {
     int i;
     @Override
     protected MyObject clone() throws CloneNotSupportedException {
