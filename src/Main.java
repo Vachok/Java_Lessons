@@ -2,13 +2,22 @@ import java.util.Map;
 
 public class Main {
     private int i = 5;
-    Inner inner3 = new Inner();
+    static int q = 5;
 
     public static void main( String[] args ) {
+        StaticClass.mthod();
         Main main = new Main();
         main.method();
         Inner inner = main.new Inner();
         inner.method2();
+    }
+
+    Inner inner3 = new Inner();
+
+    static class StaticClass {
+        static void mthod() {
+            System.out.println(q);
+        }
     }
 
     void method() {
@@ -33,3 +42,7 @@ class Second {
         inner.method2();
     }
 }
+/* Inner
+Существуют inner-классы, без экземпляра внешнего класса, не создаётся внутренний
+
+ */
