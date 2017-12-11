@@ -24,3 +24,10 @@ public class Main {
         }
     }
 }
+
+class Second {
+    void method() {
+        Main.Inner inner = new Main().new Inner();
+        inner.method2();
+    }
+}
