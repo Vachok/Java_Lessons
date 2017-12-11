@@ -26,11 +26,11 @@ public class Main {
     }
 
     void method( List<? super Child> list ) {
+        list.add(new Child());
+        list.add(new Son());
         for (Object o : list) {
             Parrent p = (Parrent) o;
             p.method();
         }
-        list.add(new Child());
-        list.add(new Son());
     }
 }
