@@ -19,17 +19,23 @@ public class Main {
 
 class MyObject implements Cloneable {
     int i;
-
     NewObject newObject;
     @Override
     protected MyObject clone() throws CloneNotSupportedException {
-        return (MyObject) super.clone();
+        MyObject myObject = (MyObject) super.clone();
+        myObject.newObject = newObject.clone();
+        return myObject;
     }
 }
 
 
 
-class NewObject {
-
+class NewObject implements Cloneable {
     int j;
+
+
+    @Override
+    protected NewObject clone() throws CloneNotSupportedException {
+        return (NewObject) super.clone();
+    }
 }
