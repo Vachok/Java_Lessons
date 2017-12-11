@@ -14,22 +14,17 @@ public class Main {
 
     public static void main( String[] args ) {
 
-        List<Child> list = new ArrayList<Child>();
+        List<Parrent> list = new ArrayList<Parrent>();
+        list.add(new Parrent());
+        list.add(new Child());
         Main main = new Main();
         main.method(list);
 
-        for (Child child : list) {
-            System.out.println(child);
+        for (Parrent parrent : list) {
+            System.out.println(parrent);
         }
     }
 
     void method( List<Parrent> list ) {
-        list.add(new Main());
     }
 }
-
-/* Generic
-не может быть static
-нельзя создать их Array
-в списках определённого типа может быть только этот тип
- */
