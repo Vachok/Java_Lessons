@@ -3,8 +3,8 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Parrent {
-
+class Parrent<T> {
+    static T t; // static - нельзя
 }
 
 class Child extends Parrent {
@@ -15,8 +15,7 @@ public class Main {
 
     public static void main( String[] args ) {
 
-        List<Child> list = new ArrayList<Child>(); // сюда нельзя записать Parrent
-        List<Child>[] arr = new ArrayList<Child>[5]; // массив в Generic тоже нельзя
+        List<Child> list = new ArrayList<Child>();
         Main main = new Main();
         main.method(list);
 
