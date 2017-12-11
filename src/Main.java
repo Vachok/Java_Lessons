@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 class Parrent<T> {
-    static T t; // static - нельзя
 }
 
 class Child extends Parrent {
@@ -28,3 +27,9 @@ public class Main {
         list.add(new Main());
     }
 }
+
+/* Generic
+не может быть static
+нельзя создать их Array
+в списках определённого типа может быть только этот тип
+ */
