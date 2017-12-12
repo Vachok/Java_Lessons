@@ -35,6 +35,7 @@ public class Main {
                 System.out.println(parameter.getType().getName());
             }
             System.out.println(Modifier.toString(method.getModifiers()));
+            System.out.println(method.getReturnType().getName());
         }
     }
 }
