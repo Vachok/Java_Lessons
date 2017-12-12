@@ -1,7 +1,4 @@
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
-import java.lang.reflect.Parameter;
+import java.lang.reflect.*;
 
 public class Main {
     public static void main(String[] args) throws Exception {
@@ -36,6 +33,14 @@ public class Main {
             }
             System.out.println(Modifier.toString(method.getModifiers()));
             System.out.println(method.getReturnType().getName());
+        }
+        System.out.println("");
+        System.out.println("Fields: ");
+        Field[] fields = clss.getDeclaredFields();
+        for (Field field : fields) {
+            System.out.println(field.getName());
+            System.out.println(field.getType().getName());
+            System.out.println(Modifier.toString(field.getModifiers()));
         }
     }
 }
