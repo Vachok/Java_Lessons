@@ -41,6 +41,7 @@ public class Main {
             System.out.println(field.getName());
             System.out.println(field.getType().getName());
             System.out.println(Modifier.toString(field.getModifiers()));
+            System.out.println(field.getInt(someClass));
         }
     }
 }
@@ -48,13 +49,13 @@ public class Main {
 
 class SomeClass {
     private static transient int i;
-    String s;
+//    String s;
 
     public SomeClass() {
     }
 
     SomeClass(String s) {
-        this.s = s;
+//        this.s = s;
     }
 
     public synchronized String someMethod(String s) {
