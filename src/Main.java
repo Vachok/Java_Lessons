@@ -1,11 +1,12 @@
 import java.lang.reflect.*;
 
+        /**/
+
 public class Main {
     public static void main(String[] args) throws Exception {
+        //1
         SomeClass someClass = new SomeClass();
         Class clss = someClass.getClass();
-        System.out.println(clss.getName());
-
         Class clss2 = SomeClass.class;
         Class clss3 = Class.forName("SomeClass");
         SomeClass someClass1 = (SomeClass) clss.newInstance();
@@ -33,6 +34,7 @@ public class Main {
             }
             System.out.println(Modifier.toString(method.getModifiers()));
             System.out.println(method.getReturnType().getName());
+            method.invoke(someClass, " test");
         }
         System.out.println("");
         System.out.println("Fields: ");
