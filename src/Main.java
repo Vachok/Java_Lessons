@@ -1,4 +1,5 @@
 import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 
 public class Main {
@@ -11,10 +12,23 @@ public class Main {
         Class clss3 = Class.forName("SomeClass");
         SomeClass someClass1 = (SomeClass) clss.newInstance();
 
+        System.out.println("");
+        System.out.println("Constructors: ");
         Constructor[] constructors = clss.getDeclaredConstructors();
         for (Constructor constructor : constructors) {
-            System.out.print("Constructors: " + constructor.getName() + " ");
+            System.out.println(constructor.getName());
             Parameter[] parameters = constructor.getParameters();
+            for (Parameter parameter : parameters) {
+                System.out.print(parameter.getName());
+                System.out.println(parameter.getType().getName());
+            }
+        }
+        System.out.println("");
+        System.out.println("Methods: ");
+        Method[] methods = clss.getDeclaredMethods();
+        for (Method method : methods) {
+            System.out.print(method.getName());
+            Parameter[] parameters = method.getParameters();
             for (Parameter parameter : parameters) {
                 System.out.println(parameter.getName());
                 System.out.print(parameter.getType().getName());
