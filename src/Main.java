@@ -5,11 +5,13 @@ public class Main {
     public static void main(String[] args) throws Exception {
         SomeClass someClass = new SomeClass();
         Class clss = someClass.getClass();
+        System.out.println(clss.getName());
+
         Class clss2 = SomeClass.class;
         Class clss3 = Class.forName("SomeClass");
         SomeClass someClass1 = (SomeClass) clss.newInstance();
 
-        Constructor[] constructors = clss.getDeclaredConstructors();
+/*        Constructor[] constructors = clss.getDeclaredConstructors();
         for (Constructor constructor : constructors) {
             System.out.println(constructor.getName());
             Parameter[] parameters = constructor.getParameters();
@@ -17,7 +19,7 @@ public class Main {
                 System.out.println(parameter.getName());
                 System.out.println(parameter.getType().getName());
             }
-        }
+        }*/
     }
 }
 
@@ -29,7 +31,7 @@ class SomeClass {
     public SomeClass() {
     }
 
-    SomeClass(String s, String ss) {
+    SomeClass(String s) {
         this.s = s;
     }
 
