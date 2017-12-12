@@ -1,5 +1,6 @@
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
+import java.lang.reflect.Modifier;
 import java.lang.reflect.Parameter;
 
 public class Main {
@@ -31,8 +32,9 @@ public class Main {
             Parameter[] parameters = method.getParameters();
             for (Parameter parameter : parameters) {
                 System.out.println(parameter.getName());
-                System.out.print(parameter.getType().getName());
+                System.out.println(parameter.getType().getName());
             }
+            System.out.println(Modifier.toString(method.getModifiers()));
         }
     }
 }
@@ -49,7 +51,7 @@ class SomeClass {
         this.s = s;
     }
 
-    public String someMethod(String s) {
+    public synchronized String someMethod(String s) {
         System.out.println("this is" + s);
         return s;
     }
