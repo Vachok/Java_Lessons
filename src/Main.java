@@ -29,7 +29,7 @@ class SomeClass {
     public SomeClass() {
     }
 
-    SomeClass(String s) {
+    SomeClass(String s, String ss) {
         this.s = s;
     }
 
