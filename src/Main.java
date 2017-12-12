@@ -48,7 +48,7 @@ public class Main {
 
 
 class SomeClass {
-    private static transient int i;
+    private int i;
 //    String s;
 
     public SomeClass() {
