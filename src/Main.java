@@ -11,15 +11,15 @@ public class Main {
         Class clss3 = Class.forName("SomeClass");
         SomeClass someClass1 = (SomeClass) clss.newInstance();
 
-/*        Constructor[] constructors = clss.getDeclaredConstructors();
+        Constructor[] constructors = clss.getDeclaredConstructors();
         for (Constructor constructor : constructors) {
-            System.out.println(constructor.getName());
+            System.out.print("Constructors: " + constructor.getName() + " ");
             Parameter[] parameters = constructor.getParameters();
             for (Parameter parameter : parameters) {
                 System.out.println(parameter.getName());
-                System.out.println(parameter.getType().getName());
+                System.out.print(parameter.getType().getName());
             }
-        }*/
+        }
     }
 }
 
