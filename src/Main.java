@@ -43,7 +43,7 @@ public class Main {
             System.out.println(Modifier.toString(field.getModifiers()));
             field.setAccessible(true);
             System.out.println(field.getInt(someClass));
-            field.getInt(someClass, 5);
+            field.setInt(someClass, 5);
             System.out.println(field.getInt(someClass));
         }
     }
