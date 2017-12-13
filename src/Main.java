@@ -9,6 +9,28 @@ import java.lang.reflect.*;
         /*
 
 public class Main {
+//103.66-multithread
+
+    public static void main( String[] args ) {
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+    }
+}
+
+
+
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+        for (int i = 0; i < 400; i++) {
+            System.out.println("Thread name is " + Thread.currentThread().getName() + " i = " + i);
+        }
+=======
 //102.65-console
     public static void main(String[] args) {
        Scanner scanner = new Scanner(System.in);
