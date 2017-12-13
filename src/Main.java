@@ -6,6 +6,9 @@ public class Main {
         new MyThread().start();
         new MyThread().start();
         new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
     }
 }
 
