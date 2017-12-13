@@ -3,11 +3,23 @@
 public class Main {
 
     public static void main( String[] args ) {
-        otherMethod();
+        MyThread myThread = new MyThread();
+        myThread.start();
+    }
+}
+
+
+
+class MyThread extends Thread {
+
+    @Override
+    public void run() {
+        System.out.print("this is new thread");
+        domeMethod();
     }
 
 
-    private static void otherMethod() {
+    private void domeMethod() {
         throw new RuntimeException();
     }
 }
