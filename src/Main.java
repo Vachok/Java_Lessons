@@ -1,9 +1,23 @@
+/*
+//102.65-console
+import java.io.Console;
+import java.util.Scanner;
+=======
 //89.60-Reflection
 import java.lang.reflect.*;
 
-        /**/
+        /*
 
 public class Main {
+//102.65-console
+    public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+       String s = "";
+       while(!s.equals("exit")){
+          s = scanner.nextLine();
+            System.out.println(s);
+        }
+=======
     public static void main(String[] args) throws Exception {
         //1
         SomeClass someClass = new SomeClass();
