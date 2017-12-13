@@ -6,6 +6,9 @@ public class Main {
         MyThread myThread = new MyThread();
         myThread.start();
         System.out.println(Thread.currentThread().getName());
+        MyRunnable myRunnable = new MyRunnable();
+        Thread thread2 = new Thread(myRunnable);
+        thread2.start();
     }
 }
 
@@ -16,12 +19,15 @@ class MyThread extends Thread {
     @Override
     public void run() {
         System.out.println(Thread.currentThread().getName());
-        System.out.print("this is new thread");
-        domeMethod();
     }
+}
 
 
-    private void domeMethod() {
-        throw new RuntimeException();
+
+class MyRunnable implements Runnable {
+
+    @Override
+    public void run() {
+        System.out.println(Thread.currentThread().getName());
     }
 }
