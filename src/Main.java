@@ -4,8 +4,8 @@ public class Main {
 
     public static void main( String[] args ) {
         MyThread myThread = new MyThread();
-        myThread.run();
-        // myThread.start();
+        myThread.start(); // вызов потока (run - метод в потоке)
+        myThread.start();
     }
 }
 
