@@ -33,7 +33,20 @@ class Resource {
 
     public void changeI() {
         int i = this.i;
-        i++;
+
+        //thread1
+        int i = this.i;
+        //i =5;
+        //thread2
         this.i = i;
+        //thread2 i = 5;
+        i++;
+        //thread2 i = 6;
+        this.i = i;
+        //thread1
+        //i = 5;
+        i++;
+        //i = 6;
+        this.i = i; //i = 6;
     }
 }
