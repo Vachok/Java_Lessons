@@ -2,10 +2,10 @@
 
 public class Main {
 
-   public static void main(String[] args) throws InterruptedException {
+   public static void main(String[] args) {
         MyThread myThread = new MyThread();
         myThread.start();
-      Thread.sleep(3000);
+      Thread.yield();
         System.out.println("thread main");
     }
 }
