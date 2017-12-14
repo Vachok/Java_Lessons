@@ -1,6 +1,4 @@
-
-
-public class Main {
+/*public class Main {
 
    public static void main(String[] args) {
       MyThread myThread = new MyThread();
@@ -31,4 +29,4 @@ class MyThread extends Thread {
          System.out.println(i);
       }
    }
-}
+}*/
