@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args ) throws Exception {
         Resource resource = new Resource();
-        resource.i = 5;
+        resource.setI(5);
         MyThread myThread = new MyThread();
         myThread.setName("one");
         MyThread myThread2 = new MyThread();
@@ -13,7 +13,7 @@ public class Main {
         myThread2.start();
         myThread.join();
         myThread2.join();
-        System.out.println(resource.i);
+        System.out.println(resource.getI());
     }
 }
 
@@ -30,8 +30,14 @@ class MyThread extends Thread {
 }
 
 class Resource {
-    int i;
+    private int i;
 
+    int getI() {
+        return i;
+    }
+    public synchronized void setI(int i) {
+        this.i = i;
+    }
     public void changeI() {
         synchronized(this) {
             int i = this.i;
