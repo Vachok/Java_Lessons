@@ -32,12 +32,14 @@ class MyThread extends Thread {
 class Resource {
     int i;
 
-    public synchronized void changeI() {
-        int i = this.i;
-        if(Thread.currentThread().getName().equals("one")){
-            Thread.yield();
+    public void changeI() {
+        synchronized(this) {
+            int i = this.i;
+            if(Thread.currentThread().getName().equals("one")){
+                Thread.yield();
+            }
+            i++;
+            this.i = i;
         }
-        i++;
-        this.i = i;
     }
 }
