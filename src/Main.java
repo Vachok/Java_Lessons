@@ -7,8 +7,7 @@ public class Main {
         MyThread myThread = new MyThread();
         myThread.setName("one");
         MyThread myThread2 = new MyThread();
-        myThread.setResource(resource);
-        myThread2.setResource(resource);
+        myThread.setResource(resource); //синхрунизируется ОБЪЕКТ, а не сам метод.        myThread2.setResource(resource);
         myThread.start();
         myThread2.start();
         myThread.join();
