@@ -1,4 +1,4 @@
-/*public class Main {
+public class Main {
 
    public static void main(String[] args) {
       MyThread myThread = new MyThread();
@@ -9,6 +9,8 @@
       catch(InterruptedException e){
          e.printStackTrace();
       }
+      Thread.yield();
+      myThread.sleep;
       System.out.println("thread main");
    }
 }
@@ -29,4 +31,4 @@ class MyThread extends Thread {
          System.out.println(i);
       }
    }
-}*/
+}
