@@ -37,14 +37,12 @@ class Resource {
     public synchronized void setI(int i) {
         this.i = i;
     }
-    public void changeI() {
-        synchronized(this) {
+    public synchronized void changeI() {
             int i = this.i;
             if(Thread.currentThread().getName().equals("one")){
                 Thread.yield();
             }
             i++;
             this.i = i;
-        }
     }
 }
