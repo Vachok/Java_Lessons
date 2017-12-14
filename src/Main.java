@@ -1,3 +1,19 @@
+//105.67-MTH-Lifecycle
+
+public class Main {
+
+   public static void main(String[] args) {
+      MyThread myThread = new MyThread();
+      myThread.start();
+      try{
+         myThread.join();
+      }
+      catch(InterruptedException e){
+         e.printStackTrace();
+      }
+      Thread.yield();
+      System.out.println("thread main");
+   }
 /*
 //102.65-console
 import java.io.Console;
@@ -373,6 +389,23 @@ public class Main {
 
 
 
+//105.67-MTH-Lifecycle
+class MyThread extends Thread {
+
+   @Override
+   public void run() {
+      for(int i = 0; i < 50; i++){
+         try{
+            Thread.sleep(100);
+         }
+         catch(InterruptedException e){
+            e.printStackTrace();
+         }
+         System.out.println(i);
+      }
+   }
+}
+=======
 class MyObject implements Cloneable {
     int i;
     NewObject newObject;
