@@ -5,7 +5,7 @@ public class Main {
    public static void main(String[] args) throws InterruptedException {
         MyThread myThread = new MyThread();
         myThread.start();
-      Thread.sleep(1000);
+      Thread.sleep(3000);
         System.out.println("thread main");
     }
 }
