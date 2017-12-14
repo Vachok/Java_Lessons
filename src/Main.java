@@ -5,6 +5,7 @@ public class Main {
         Resource resource = new Resource();
         resource.i = 5;
         MyThread myThread = new MyThread();
+        myThread.setName("one");
         MyThread myThread2 = new MyThread();
         myThread.setResource(resource);
         myThread2.setResource(resource);
@@ -33,20 +34,10 @@ class Resource {
 
     public void changeI() {
         int i = this.i;
-
-        //thread1
-        int i = this.i;
-        //i =5;
-        //thread2
-        this.i = i;
-        //thread2 i = 5;
+        if(Thread.currentThread().getName().equals("one")){
+            Thread.yield();
+        }
         i++;
-        //thread2 i = 6;
         this.i = i;
-        //thread1
-        //i = 5;
-        i++;
-        //i = 6;
-        this.i = i; //i = 6;
     }
 }
