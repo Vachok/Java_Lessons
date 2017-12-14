@@ -32,7 +32,7 @@ class MyThread extends Thread {
 class Resource {
     int i;
 
-    public void changeI() {
+    public synchronized void changeI() {
         int i = this.i;
         if(Thread.currentThread().getName().equals("one")){
             Thread.yield();
