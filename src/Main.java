@@ -10,7 +10,6 @@ public class Main {
          e.printStackTrace();
       }
       Thread.yield();
-      myThread.sleep;
       System.out.println("thread main");
    }
 }
