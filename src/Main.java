@@ -1,8 +1,9 @@
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class Main {
 
-    static int i;
+    static AtomicInteger atomicInteger = new AtomicInteger(0);
 
 
     public static void main( String[] args ) throws Exception {
@@ -10,7 +11,7 @@ public class Main {
             new MyThread().start();
         }
         Thread.sleep(2000);
-        System.out.println(i);
+        System.out.println(atomicInteger.get());
     }
 
 
@@ -18,7 +19,7 @@ public class Main {
 
         @Override
         public void run() {
-            Main.i++;
+            Main.atomicInteger.incrementAndGet();
         }
     }
 }
