@@ -19,7 +19,9 @@ public class Main {
                 System.out.println(nameList.removeFirst());
             }
         }
-        new MyThread().start();
+        MyThread myThread = new MyThread();
+        myThread.setName("one");
+        myThread.start();
         new MyThread().start();
     }
 
