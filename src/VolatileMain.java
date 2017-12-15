@@ -15,9 +15,9 @@ public class VolatileMain {
         public void run() {
             while (VolatileMain.i < 5) {
                 //noinspection NonAtomicOperationOnVolatileField
-                System.out.print("incr i to " + (++VolatileMain.i));
+                System.out.println("incr i to " + (++VolatileMain.i));
                 try {
-                    Thread.sleep(500);
+                    Thread.sleep(1500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
