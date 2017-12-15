@@ -27,6 +27,8 @@ class MyThread extends Thread {
     @Override
     public void run() {
         Resource.changeStaticI();
+        new Resource().changeI();
+
     }
 }
 
