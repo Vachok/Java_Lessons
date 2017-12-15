@@ -1,6 +1,14 @@
 
 
 public class Main {
-    public static void main( String[] args ) throws Exception {
+
+    // all non atmic!
+    int i;
+    Integer I;
+    double d;
+    Double D;
+
+
+    public static void main( String[] args ) {
     }
 }
