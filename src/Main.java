@@ -38,6 +38,9 @@ public class Main {
 
         public String removeFirst() {
             if (list.size() > 0) {
+                if (Thread.currentThread().getName().equals("one")) {
+                    Thread.yield();
+                }
                 return (String) list.remove(0);
             }
             return null;
