@@ -1,4 +1,4 @@
-public class VolatileMain {
+/*public class VolatileMain {
 
     private volatile static int i;
 
