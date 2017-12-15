@@ -1,6 +1,6 @@
 public class VolatileMain {
 
-    volatile int i;
+    static int i;
 
 
     public static void main( String[] args ) {
@@ -13,7 +13,9 @@ public class VolatileMain {
 
         @Override
         public void run() {
-
+            while (VolatileMain.i < 5) {
+                System.out.println("incr i to " + (++VolatileMain.i));
+            }
         }
     }
 
@@ -23,7 +25,14 @@ public class VolatileMain {
 
         @Override
         public void run() {
-\}
+            int localvar = VolatileMain.i;
+            while (localvar < 5) {
+                if (localvar != VolatileMain.i) {
+                    System.out.println("new value of i is " + VolatileMain.i);
+                    localvar = VolatileMain.i;
+                }
+            }
+        }
     }
 }
 
