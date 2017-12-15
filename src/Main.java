@@ -28,7 +28,7 @@ public class Main {
 
     static class NameList {
 
-        private List list = new ArrayList<>();
+        private List list = Collections.synchronizedList(new ArrayList<>());
 
 
         public synchronized void add( String name ) {
@@ -36,6 +36,9 @@ public class Main {
         }
 
 
+        public List getList() {
+            return list;
+        }
         public synchronized String removeFirst() {
             if (list.size() > 0) {
                 if (Thread.currentThread().getName().equals("one")) {
