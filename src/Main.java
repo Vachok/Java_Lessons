@@ -1,4 +1,8 @@
+//Java_Lessons-114
+import java.util.concurrent.atomic.AtomicInteger;
+=======
 //105.67-MTH-Lifecycle
+
 
 public class Main {
 
@@ -170,6 +174,28 @@ class SomeClass {
 
 public class Main {
 
+//Java_Lessons-114
+    static AtomicInteger atomicInteger = new AtomicInteger(0);
+
+
+    public static void main( String[] args ) throws Exception {
+        for (int j = 0; j < 10000; j++) {
+            new MyThread().start();
+        }
+        Thread.sleep(1000);
+        System.out.println(atomicInteger.get());
+    }
+
+
+    static class MyThread extends Thread {
+
+        @Override
+        public void run() {
+            Main.atomicInteger.incrementAndGet();
+        }
+    }
+}
+=======
     public static void main( String[] args ) throws Exception {
         Resource.i = 5;
         Resource resource = new Resource();
@@ -796,3 +822,4 @@ public static void main( String[] myArgs ) {
             3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
  */
+
