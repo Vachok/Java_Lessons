@@ -1,9 +1,9 @@
-import javax.annotation.Resource;
+
 
 
 public class Main {
 
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
         Resource.i = 5;
         Resource resource = new Resource();
         MyThread mythread = new MyThread();
@@ -37,26 +37,7 @@ class Resource {
     static int i;
 
 
-    public int getI() {
-        return Resource.i;
-    }
-
-
-    public synchronized void setI( int i ) {
-        Resource.i = i;
-    }
-
-
-    public synchronized void changeStaticI() {
-        int i = Resource.i;
-        if (Thread.currentThread().getName().equals("one")) {
-            Thread.yield();
-        }
-        i++;
-        Resource.i = i;
-    }
-
-    public synchronized void changeI() {
+    public synchronized static void changeStaticI() {
         int i = Resource.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
