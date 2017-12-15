@@ -28,15 +28,15 @@ public class Main {
 
     static class NameList {
 
-        private List list = Collections.synchronizedList(new ArrayList<>());
+        private List list = new ArrayList<>();
 
 
-        public void add( String name ) { // более "безопастная"
+        public synchronized void add( String name ) {
             list.add(name);
         }
 
 
-        public synchronized String removeFirst() { // опасная!
+        public synchronized String removeFirst() {
             if (list.size() > 0) {
                 if (Thread.currentThread().getName().equals("one")) {
                     Thread.yield();
