@@ -1,4 +1,4 @@
-/*public class VolatileMain {
+public class VolatileMain {
 
     private volatile static int i;
 
@@ -14,7 +14,6 @@
         @Override
         public void run() {
             while (VolatileMain.i < 5) {
-                //noinspection NonAtomicOperationOnVolatileField
                 System.out.println("incr i to " + (++VolatileMain.i));
                 try {
                     Thread.sleep(1500);
