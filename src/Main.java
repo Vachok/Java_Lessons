@@ -45,4 +45,14 @@ class Resource {
         i++;
         Resource.i = i;
     }
+
+
+    public synchronized void changeI() {
+        int i = Resource.i;
+        if (Thread.currentThread().getName().equals("one")) {
+            Thread.yield();
+        }
+        i++;
+        Resource.i = i;
+    }
 }
