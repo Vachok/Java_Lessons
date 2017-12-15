@@ -1,8 +1,16 @@
-// Java concurency package
-// https://docs.oracle.com/javase/7/docs/api/java/util/concurrent/package-summary.html
+import jdk.dynalink.linker.LinkerServices;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+
 
 public class Main {
 
+    List list = Collections.synchronizedList(new ArrayList<>());
+
     public static void main( String[] args ) {
+
     }
 }
