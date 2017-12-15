@@ -21,8 +21,7 @@ public class Main {
 
 class MyThread extends Thread {
 
-    Resource resource;
-
+    static int i;
 
     @Override
     public void run() {
@@ -39,7 +38,7 @@ class Resource {
     static int i;
 
 
-    public synchronized static void changeStaticI() {
+    public synchronized static void changeStaticI() { // необходимо только статич.
         int i = Resource.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
@@ -49,7 +48,7 @@ class Resource {
     }
 
 
-    public synchronized void changeI() {
+    public synchronized void changeI() { // или только НЕ статич.
         int i = Resource.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
