@@ -19,6 +19,9 @@ public class Main {
         @Override
         public void run() {
             Main.i++;
+            /*int k=i+1
+             * int k=i+1
+             * и тп*/
         }
     }
 }
