@@ -1,11 +1,62 @@
+//117.72-SyncStreams
+/*import jdk.dynalink.linker.LinkerServices;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+=======
 //Java_Lessons-114
 import java.util.concurrent.atomic.AtomicInteger;
 =======
 //105.67-MTH-Lifecycle
 
 
+
 public class Main {
 
+//117.72-SyncStreams
+
+    public static void main( String[] args ) {
+        NameList nameList = new NameList();
+        nameList.add("first");
+        class MyThread extends Thread {
+
+            @Override
+            public void run() {
+                System.out.println(nameList.removeFirst());
+            }
+        }
+        MyThread myThread = new MyThread();
+        myThread.setName("one");
+        myThread.start();
+        new MyThread().start();
+    }
+
+
+    static class NameList {
+
+        private List list = Collections.synchronizedList(new ArrayList<>());
+
+
+        public synchronized void add( String name ) {
+            list.add(name);
+        }
+
+
+        public List getList() {
+            return list;
+        }
+        public synchronized String removeFirst() {
+            if (list.size() > 0) {
+                if (Thread.currentThread().getName().equals("one")) {
+                    Thread.yield();
+                }
+                return (String) list.remove(0);
+            }
+            return null;
+        }
+=======
    public static void main(String[] args) {
       MyThread myThread = new MyThread();
       myThread.start();
@@ -542,6 +593,7 @@ class MyObject implements Cloneable {
         MyObject myObject = (MyObject) super.clone();
         myObject.newObject = newObject.clone();
         return myObject;
+
     }
 }
 
