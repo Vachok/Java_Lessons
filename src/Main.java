@@ -31,12 +31,12 @@ public class Main {
         private List list = Collections.synchronizedList(new ArrayList<>());
 
 
-        public void add( String name ) {
+        public void add( String name ) { // более "безопастная"
             list.add(name);
         }
 
 
-        public synchronized String removeFirst() {
+        public synchronized String removeFirst() { // опасная!
             if (list.size() > 0) {
                 if (Thread.currentThread().getName().equals("one")) {
                     Thread.yield();
