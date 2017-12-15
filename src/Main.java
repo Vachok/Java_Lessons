@@ -10,7 +10,7 @@ public class Main {
         for (int j = 0; j < 10000; j++) {
             new MyThread().start();
         }
-        Thread.sleep(2000);
+        Thread.sleep(1000);
         System.out.println(atomicInteger.get());
     }
 
