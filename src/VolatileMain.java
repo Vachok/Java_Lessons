@@ -1,6 +1,6 @@
 public class VolatileMain {
 
-    static int i;
+    volatile static int i;
 
 
     public static void main( String[] args ) {
