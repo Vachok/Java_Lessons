@@ -38,7 +38,7 @@ class Resource {
     static int i;
 
 
-    public synchronized static void changeStaticI() { // необходимо только статич.
+    public synchronized static void changeStaticI() {
         int i = Resource.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
@@ -48,7 +48,7 @@ class Resource {
     }
 
 
-    public synchronized void changeI() { // или только НЕ статич.
+    public synchronized void changeI() {
         int i = Resource.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
