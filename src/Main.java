@@ -5,6 +5,8 @@ public class Main {
     public static void main( String[] args ) {
         ResourceA resourceA = new ResourceA();
         ResourceB resourceB = new ResourceB();
+        resourceA.resourceB = resourceB;
+        resourceB.resourceA = resourceA;
         MyThread1 myThread1 = new MyThread1();
         MyThread2 myThread2 = new MyThread2();
         myThread1.resourceA = resourceA;
@@ -69,6 +71,6 @@ class ResourceB {
 
 
     public synchronized int returnI() {
-        return 1;
+        return 2;
     }
 }
