@@ -1,6 +1,34 @@
 //117.72-SyncStreams
 /*import jdk.dynalink.linker.LinkerServices;
 
+//118.73-deadlock
+public class Main {
+
+    public static void main( String[] args ) {
+        ResourceA resourceA = new ResourceA();
+        ResourceB resourceB = new ResourceB();
+        resourceA.resourceB = resourceB;
+        resourceB.resourceA = resourceA;
+        MyThread1 myThread1 = new MyThread1();
+        MyThread2 myThread2 = new MyThread2();
+        myThread1.resourceA = resourceA;
+        myThread2.resourceB = resourceA;
+        myThread1.start();
+        myThread2.start();
+    }
+}
+
+
+
+class MyThread1 extends Thread {
+
+    ResourceA resourceA;
+
+
+    @Override
+    public void run() {
+        System.out.println(resourceA.getI());
+=======
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -271,12 +299,56 @@ class MyThread extends Thread {
     public void run() {
         Resource.changeStaticI();
         new Resource().changeI();
-
     }
 }
 
 
 
+//118.73-deadlock
+class MyThread2 extends Thread {
+
+    ResourceA resourceB;
+
+
+    @Override
+    public void run() {
+        System.out.println(resourceB.getI());
+    }
+}
+
+class ResourceA {
+
+    ResourceB resourceB;
+
+
+    public synchronized int getI() {
+
+        return resourceB.returnI();
+    }
+
+
+    public synchronized int returnI() {
+        return 1;
+    }
+}
+
+
+
+class ResourceB {
+
+    ResourceA resourceA;
+
+
+    public synchronized int getI() {
+        return resourceA.returnI();
+    }
+
+
+    public synchronized int returnI() {
+        return 2;
+    }
+}
+=======
 class Resource {
 
     static int i;
@@ -874,4 +946,5 @@ public static void main( String[] myArgs ) {
             3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
  */
+
 
