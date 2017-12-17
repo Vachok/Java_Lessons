@@ -16,8 +16,12 @@ public class ThreadExample {
 
         @Override
         public void run() {
-            Scanner scanner = new Scanner(System.in) while (true) {
-                synchronized (ThreadExample.strings) ThreadExample.strings.add(scanner.nextLine())
+            Scanner scanner = new Scanner(System.in);
+            while (true) {
+                synchronized (ThreadExample.strings) {
+                    ThreadExample.strings.add(scanner.nextLine());
+                    ThreadExample.strings.notify();
+                }
             }
         }
     }
@@ -28,6 +32,15 @@ public class ThreadExample {
 
         @Override
         public void run() {
+            while (ThreadExample.strings.isEmpty()) {
+                synchronized (ThreadExample.strings) {
+                    try {
+                        ThreadExample.strings.wait();
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
         }
     }
 }
