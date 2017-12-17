@@ -1,7 +1,14 @@
+import java.util.*;
+
+
 public class ThreadExample {
 
-    public static void main( String[] args ) {
+    static List<String> strings = Collections.synchronizedList(new ArrayList<>());
 
+
+    public static void main( String[] args ) {
+        new Operator().start();
+        new Machine().start();
     }
 
 
@@ -9,6 +16,9 @@ public class ThreadExample {
 
         @Override
         public void run() {
+            Scanner scanner = new Scanner(System.in) while (true) {
+                synchronized (ThreadExample.strings) ThreadExample.strings.add(scanner.nextLine())
+            }
         }
     }
 
