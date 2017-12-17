@@ -20,10 +20,10 @@ public class ThreadExample {
         @Override
         public void run() {
             synchronized (this) {
-                for (int i = 0; i < 5; i++) {
+                for (int i = 0; i < 500000; i++) {
                     total += i;
                     try {
-                        Thread.sleep(500);
+                        Thread.sleep(5);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
