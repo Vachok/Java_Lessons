@@ -39,6 +39,7 @@ public class ThreadExample {
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
+                    System.out.println(ThreadExample.strings.remove(0));
                 }
             }
         }
