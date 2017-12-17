@@ -1,3 +1,13 @@
+//121.74-waitnotify
+//public class Main {
+
+}
+
+
+
+
+17.12.2017(16:10)by{Vachok}
+=======
 //117.72-SyncStreams
 /*import jdk.dynalink.linker.LinkerServices;
 
@@ -946,5 +956,6 @@ public static void main( String[] myArgs ) {
             3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
  */
+
 
 
