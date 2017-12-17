@@ -3,6 +3,23 @@ public class ThreadExample {
     public static void main( String[] args ) {
 
     }
+
+
+    static class Operator extends Thread {
+
+        @Override
+        public void run() {
+        }
+    }
+
+
+
+    static class Machine extends Thread {
+
+        @Override
+        public void run() {
+        }
+    }
 }
 
 
