@@ -1,7 +1,10 @@
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
-
+/*
+Callable - позволяет запустить код в отдельном потоке
+и получить результат, недожидаясь выполнения
+*/
 
 public class Main {
     public static void main(String[] args) throws Exception {
