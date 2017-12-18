@@ -11,7 +11,6 @@ class MyThread extends Thread {
     @Override
     public void run() {
         resource.changeI();
-        resource.changeJ();
     }
 }
 
@@ -54,6 +53,7 @@ class Resource {
         }
         i++;
         this.i = i;
+        changeJ();
     }
     void changeJ() {
         int j = this.j;
