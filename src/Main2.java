@@ -1,7 +1,10 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-
+/*Trylock
+можем пытаться получить состояние потока
+и если он залочен - ждать, или же делать что-то другое
+*/
 
 public class Main2 {
    static Lock lock = new ReentrantLock();
