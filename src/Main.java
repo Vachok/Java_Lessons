@@ -1,3 +1,7 @@
+//126.79-callable-futures
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
+=======
 //123.76-ReentrantLock
 /*ReentrantLock
  С его помощью можно лочить объекты в Java
@@ -7,6 +11,10 @@
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
+/*
+Callable - позволяет запустить код в отдельном потоке
+и получить результат, недожидаясь выполнения
+*/
 
 
 class MyThread extends Thread {
@@ -285,6 +293,23 @@ class SomeClass {
 //108.69.SyncStat
 
 public class Main {
+//126.79-callable-futures
+    public static void main(String[] args) throws Exception {
+        Callable<Integer> callable = new MyCallable();
+        FutureTask futureTask = new FutureTask(callable);
+        new Thread(futureTask).start();
+        System.out.println(futureTask.get());
+    }
+    static class MyCallable implements Callable<Integer> {
+        @Override
+        public Integer call() throws Exception {
+            int j = 0;
+            for(int i = 0; i < 10; i++, j++) {
+                Thread.sleep(500);
+            }
+            return j;
+        }
+=======
 
 //Java_Lessons-114
     static AtomicInteger atomicInteger = new AtomicInteger(0);
