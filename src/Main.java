@@ -601,6 +601,8 @@ class Son extends Child {
     }
 }
 public class Main {
+//125.76-cond
+=======
 //83.56-Generic
 =======
     public static void main( String[] args ) throws Exception {
@@ -673,6 +675,7 @@ public class Main {
         myThread2.join();
         System.out.println(resource.getI());
     }
+
 }
 
 class MyThread extends Thread {
