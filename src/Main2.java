@@ -38,6 +38,7 @@ public class Main2 {
             }
          }
          Main2.account -= 10;
+         System.out.println("account end = "+Main2.account);
       }
    }
 }
