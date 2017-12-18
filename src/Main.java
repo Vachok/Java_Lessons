@@ -11,6 +11,7 @@ class MyThread extends Thread {
     @Override
     public void run() {
         resource.changeI();
+        resource.changeJ();
     }
 }
 
@@ -21,6 +22,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Resource resource = new Resource();
         resource.i = 5;
+        resource.j = 5;
         MyThread myThread = new MyThread();
         myThread.setName("one");
         MyThread myThread1 = new MyThread();
@@ -31,6 +33,7 @@ public class Main {
         myThread.join();
         myThread1.join();
         System.out.println(resource.i);
+        System.out.println(resource.j);
     }
 }
 
@@ -39,6 +42,7 @@ public class Main {
 class Resource {
 
     int i;
+    int j;
     Lock lock = new ReentrantLock();
 
 
@@ -50,6 +54,14 @@ class Resource {
         }
         i++;
         this.i = i;
+    }
+    void changeJ() {
+        int j = this.j;
+        if(Thread.currentThread().getName().equals("one")) {
+            Thread.yield();
+        }
+        j++;
+        this.j = j;
         lock.unlock();
     }
 }
