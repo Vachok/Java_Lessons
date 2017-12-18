@@ -3,7 +3,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-
+// приложения выполняются в пуле потоков. для того, чтобы не создавать новых.
 
 public class Main2 {
    public static void main(String[] args) throws ExecutionException, InterruptedException {
