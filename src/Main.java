@@ -1,6 +1,9 @@
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
-static class MyThread extends Thread {
+
+class MyThread extends Thread {
 
     Resource resource;
 
@@ -15,7 +18,7 @@ static class MyThread extends Thread {
 
 public class Main {
 
-    public static void main( String[] args ) throws Exception {
+    public static void main(String[] args) throws Exception {
         Resource resource = new Resource();
         resource.i = 5;
         MyThread myThread = new MyThread();
@@ -35,15 +38,18 @@ public class Main {
 
 class Resource {
 
-    int i = this.i;
+    int i;
+    Lock lock = new ReentrantLock();
 
 
     void changeI() {
+        lock.lock();
         int i = this.i;
         if (Thread.currentThread().getName().equals("one")) {
             Thread.yield();
         }
         i++;
         this.i = i;
+        lock.unlock();
     }
 }
