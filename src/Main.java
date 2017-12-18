@@ -14,8 +14,8 @@ public class Main {
         @Override
         public Integer call() throws Exception {
             int j = 0;
-            for(int i = 0; i < 10; i++) {
-                Thread.sleep(300);
+            for(int i = 0; i < 10; i++, j++) {
+                Thread.sleep(500);
             }
             return j;
         }
