@@ -1,3 +1,9 @@
+// 134.81-schedexecservice
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+=======
 //126.79-callable-futures
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
@@ -10,6 +16,7 @@ import java.util.concurrent.FutureTask;
 * */
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+
 
 /*
 Callable - позволяет запустить код в отдельном потоке
@@ -44,6 +51,18 @@ class MyThread extends Thread {
 
 //118.73-deadlock
 public class Main {
+//134.81-schedexecservice
+    public static void main(String[] args) {
+        ScheduledExecutorService scheduledExecutorService = Executors.newSingleThreadScheduledExecutor();
+        scheduledExecutorService.schedule(new MyThread(), 3, TimeUnit.SECONDS);
+        scheduledExecutorService.shutdown();
+    }
+    static class MyThread extends Thread {
+        @Override
+        public void run() {
+            System.out.println(1);
+        }
+=======
 
     public static void main( String[] args ) {
         ResourceA resourceA = new ResourceA();
@@ -404,6 +423,7 @@ class ResourceB {
 
     public synchronized int returnI() {
         return 2;
+
     }
 }
 =======
