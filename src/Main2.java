@@ -24,5 +24,18 @@ public class Main2 {
          System.out.println(getName()+" lock is released");
       }
    }
+
+   static class Thread2 extends Thread {
+      @Override
+      public void run() {
+         System.out.println(getName()+" begin working");
+         while(true) {
+            if(Main2.lock.tryLock()) {
+               System.out.println(getName()+" working");
+               break;
+            }
+            else { System.out.println(getName()+" waiting"); }
+         }
+      }
 }
 // at 18.12.2017 (10:40)
