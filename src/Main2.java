@@ -7,19 +7,20 @@ public class Main2 {
    static Lock lock = new ReentrantLock();
    public static void main(String[] args) {
       new Thread1().start();
+      new Thread2().start();
    }
    static class Thread1 extends Thread {
       @Override
       public void run() {
          Main2.lock.lock();
-         System.out.println(getName()+" start working...");
+         System.out.println(getName()+" start working");
          try {
             Thread.sleep(50);
          }
          catch(InterruptedException e) {
             e.printStackTrace();
          }
-         System.out.println(getName()+" ...stop working");
+         System.out.println(getName()+" stop working");
          Main2.lock.unlock();
          System.out.println(getName()+" lock is released");
       }
@@ -34,8 +35,11 @@ public class Main2 {
                System.out.println(getName()+" working");
                break;
             }
-            else { System.out.println(getName()+" waiting"); }
+            else {
+               System.out.println(getName()+" waiting...");
+            }
          }
       }
+   }
 }
 // at 18.12.2017 (10:40)
