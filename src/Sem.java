@@ -39,7 +39,7 @@ class Person extends Thread {
       try{
          table.acquire();
          System.out.println(this.getName() + " eat at the table");
-         sleep(1000);
+         Thread.sleep(999);
          System.out.println(this.getName() + " release table");
          table.release();
       }
