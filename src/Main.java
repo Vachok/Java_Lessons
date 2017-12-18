@@ -1,3 +1,8 @@
+/*ReentrantLock
+ С его помощью можно лочить объекты в Java
+ Он даёт больую гибкость при использовании.
+ лочит, начиная со строки .lock() и пока не дойдёт до .unlock()
+* */
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
