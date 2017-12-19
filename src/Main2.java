@@ -8,7 +8,7 @@ public class Main2 {
       CyclicBarrier cyclicBarrier = new CyclicBarrier(3, new Run());
       new Run.Sportsman(cyclicBarrier);
       new Run.Sportsman(cyclicBarrier);
-      // new Run.Sportsman(cyclicBarrier);
+      new Run.Sportsman(cyclicBarrier);
    }
    static class Run extends Thread {
       CyclicBarrier barrier;
