@@ -1,6 +1,8 @@
 import java.util.concurrent.CountDownLatch;
 
-
+/*
+Счетчик, с помощью которого удобно можно ждать завершения потоков, n-раз.
+ */
 
 public class Sem {
    public static void main(String[] args) throws InterruptedException {
