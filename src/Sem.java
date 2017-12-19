@@ -9,7 +9,7 @@ import java.util.concurrent.Exchanger;
          Exchanger<String> exchanger = new Exchanger<>();
 
          new Mike(exchanger);
-         new Anket();
+         new Anket(exchanger);
       }
       static class Mike extends Thread {
          Exchanger<String> exchanger;
@@ -35,7 +35,7 @@ import java.util.concurrent.Exchanger;
       static class Anket extends Thread {
          Exchanger<String> exchanger;
 
-         public Anket() {
+         public Anket(Exchanger<String> exchanger) {
             this.exchanger = exchanger;
             start();
          }
