@@ -17,7 +17,9 @@ public class Main2 {
 
       @Override
       public void run() {
-         System.out.println("WASHING");
+         for(int i = 0; i < 3; i++) {
+            System.out.println(getName()+"  WASHING");
+         }
       }
    }
 }
