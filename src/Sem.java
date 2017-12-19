@@ -41,8 +41,8 @@ import java.util.concurrent.Exchanger;
          }
          public void run() {
             try {
-               String info = exchanger.exchange(null);
-               System.out.println(info);
+               System.out.println(exchanger.exchange(null));
+               System.out.println(exchanger.exchange(null));
             }
             catch(InterruptedException e) {
                e.printStackTrace();
