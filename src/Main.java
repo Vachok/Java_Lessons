@@ -1,3 +1,8 @@
+//136.83-CountdnLatch
+public class Main {
+}
+// at 19.12.2017 (13:03)
+=======
 // 134.81-schedexecservice
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -1079,6 +1084,3 @@ public static void main( String[] myArgs ) {
             3.2 Если пишем сами, для других прогеров. https://youtu.be/mLpMtc62530?t=39m25s
         3 ....можно добавить свои подклассы
  */
-
-
-

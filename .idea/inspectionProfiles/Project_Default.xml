@@ -12,6 +12,7 @@
       <option name="checkForEmptyMethods" value="true" />
     </inspection_tool>
     <inspection_tool class="LongLine" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
+    <inspection_tool class="LossyEncoding" enabled="false" level="WARNING" enabled_by_default="false" />
     <inspection_tool class="MultipleTopLevelClassesInFile" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="MultipleTypedDeclaration" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="ProblematicWhitespace" enabled="true" level="WEAK WARNING" enabled_by_default="true" />
