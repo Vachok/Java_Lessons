@@ -1,3 +1,7 @@
+//138.85-cyclicbarier
+import java.util.concurrent.BrokenBarrierException;
+import java.util.concurrent.CyclicBarrier;
+=======
 //127.80-Exrcutors
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -37,7 +41,33 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 
+
 public class Main2 {
+//138.85-cyclicbarier
+   public static void main(String[] args) {
+      CyclicBarrier cyclicBarrier = new CyclicBarrier(3, new Run());
+      new Run.Sportsman(cyclicBarrier);
+      new Run.Sportsman(cyclicBarrier);
+      new Run.Sportsman(cyclicBarrier);
+   }
+   static class Run extends Thread {
+      CyclicBarrier barrier;
+      @Override
+      public void run() {
+         System.out.println("Run is begun");
+      }
+
+      static class Sportsman extends Thread {
+         CyclicBarrier barrier;
+         public Sportsman(CyclicBarrier barrier) {
+            this.barrier = barrier;
+            start();
+         }
+         @Override
+         public void run() {
+            try {
+               barrier.await();
+=======
    static Lock lock = new ReentrantLock();
    static Condition condition = lock.newCondition();
    static int account = 0;
@@ -65,10 +95,22 @@ public class Main2 {
                Main2.condition.await();
                System.out.println("account = "+Main2.account);
                Main2.lock.unlock();
+
             }
             catch(InterruptedException e) {
                e.printStackTrace();
             }
+//138.85-cyclicbarier
+            catch(BrokenBarrierException e) {
+               e.printStackTrace();
+            }
+         }
+      }
+   }
+
+}
+// at 19.12.2017 (15:06)
+=======
          }
          Main2.account -= 10;
          System.out.println("account end = "+Main2.account);
@@ -125,4 +167,5 @@ public class Main2 {
    }
 }
 // at 18.12.2017 (10:40)
+
 
