@@ -4,7 +4,7 @@ import java.util.concurrent.Phaser;
 
 public class Main2 {
    public static void main(String[] args) {
-      Phaser phaser = new Phaser();
+      Phaser phaser = new Phaser(2);
       new Washer(phaser);
       new Washer(phaser);
    }
@@ -19,6 +19,7 @@ public class Main2 {
       public void run() {
          for(int i = 0; i < 3; i++) {
             System.out.println(getName()+"  WASHING");
+            phaser.arriveAndAwaitAdvance();
          }
       }
    }
