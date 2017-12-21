@@ -10,7 +10,6 @@
   <component name="IssueNavigationConfiguration">
     <option name="links">
       <list>
-        <IssueNavigationLink />
         <IssueNavigationLink>
           <option name="issueRegexp" value="\d+" />
           <option name="linkRegexp" value="https://github.com/Vachok/Java_Lessons/issues/$0" />
