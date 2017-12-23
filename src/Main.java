@@ -27,8 +27,8 @@ public class Main {
             
             if(to - from <= numOfOperation / numOfThreads) { //если опер. разбита достаточное кол-во частей, выполняем, если нет - разобьем на части поменьше
                 long j = 0;
-                for(long i = 0;i < to;i++){
-                    j = i;
+                for(long i = from;i < to;i++){
+                    j += i;
                 }
                 return j;
             }
