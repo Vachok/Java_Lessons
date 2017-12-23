@@ -13,6 +13,7 @@ public class Main {
                 return thread;
             }
         };
+        threadFactory.newThread(new MyRun()).start();
     }
     static class MyRun implements Runnable {
         @Override
