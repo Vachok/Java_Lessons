@@ -1,3 +1,5 @@
+
+=======
 /*import java.util.Date;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
@@ -76,7 +78,6 @@ public class Main {
 
 
 //23.12.2017(0:06)by{Vachok}*/
-<<<<<<< HEAD
 //136.83-CountdnLatch
 public class Main {
 }
@@ -1186,7 +1187,7 @@ public class Main {
         public void run() {
             
             System.out.println(1);
-=======
+
 import java.util.Date;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
@@ -1228,17 +1229,5 @@ public class Main {
                 MyFork secondHalf = new MyFork(middle + 1, to);
                 long secondValue = secondHalf.compute();
                 return firstHalf.join() + secondValue;
-            }
->>>>>>> 143-89.ForkJoinFramework
-        }
-    }
-}
 
 
-
-<<<<<<< HEAD
-//23.12.2017(0:06)by{Vachok}
->>>>>>> 142.88-ThreadFactory
-=======
-//23.12.2017(10:39)by{Vachok}
->>>>>>> 143-89.ForkJoinFramework
