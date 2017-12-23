@@ -1,0 +1,15 @@
+import java.util.concurrent.ThreadLocalRandom;
+
+
+public class Main3 {
+    public static void main(String[] args) {
+        
+        System.out.println(Math.random());
+        System.out.println(ThreadLocalRandom.current().nextInt()); //RANDOM для многопоточных
+        
+    }
+}
+
+
+
+//23.12.2017(17:54)by{Vachok}
