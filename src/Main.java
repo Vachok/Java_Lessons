@@ -1,17 +1,37 @@
 import java.util.Date;
+import java.util.concurrent.ForkJoinPool;
+import java.util.concurrent.RecursiveTask;
 
 
 public class Main {
     static long numOfOperation = 10_000_000_000L;
+    
+    static int numOfThreads = Runtime.getRuntime().availableProcessors();
+    
     public static void main(String[] args) {
+        System.out.println(new Date());
+        ForkJoinPool pool = new ForkJoinPool(numOfThreads);
+        System.out.println(pool.invoke(new MyFork(0, numOfOperation)));
+        System.out.println(new Date());
+    }
+    static class MyFork extends RecursiveTask<Long> {
+        long from, to;
         
-        System.out.println(new Date());
-        long j = 0;
-        for(long i = 0;i < numOfOperation;i++){
-            j += i;
+        MyFork(long from, long to) {
+            
+            this.from = from;
+            this.to = to;
         }
-        System.out.println(j);
-        System.out.println(new Date());
+        @Override
+        protected Long compute() {
+            
+            if(to - from <= numOfOperation / numOfThreads) { //если опер. разбита достаточное кол-во частей, выполняем, если нет - разобьем на части поменьше
+            
+            }
+            else{
+            
+            }
+        }
     }
 }
 
