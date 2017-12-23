@@ -1,4 +1,5 @@
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.concurrent.TimeUnit;
 
 
 public class Main3 {
@@ -6,6 +7,7 @@ public class Main3 {
         
         System.out.println(Math.random());
         System.out.println(ThreadLocalRandom.current().nextInt()); //RANDOM для многопоточных
+        System.out.println(TimeUnit.DAYS.toMillis(14));
         
     }
 }
