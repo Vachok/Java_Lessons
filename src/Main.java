@@ -26,13 +26,19 @@ public class Main {
         protected Long compute() {
             
             if(to - from <= numOfOperation / numOfThreads) { //если опер. разбита достаточное кол-во частей, выполняем, если нет - разобьем на части поменьше
-            
+                long j = 0;
+                for(long i = 0;i < to;i++){
+                    j = i;
+                }
+                return j;
             }
             else{
                 long middle = (to + from) / 2;
                 MyFork firstHalf = new MyFork(from, middle);
                 firstHalf.fork();
-                MyFork secondHalf = new MyFork(middle + 1, to)
+                MyFork secondHalf = new MyFork(middle + 1, to);
+                long secondValue = secondHalf.compute();
+                return firstHalf.join() + secondValue;
             }
         }
     }
