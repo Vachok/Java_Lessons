@@ -29,7 +29,10 @@ public class Main {
             
             }
             else{
-            
+                long middle = (to + from) / 2;
+                MyFork firstHalf = new MyFork(from, middle);
+                firstHalf.fork();
+                MyFork secondHalf = new MyFork(middle + 1, to)
             }
         }
     }
