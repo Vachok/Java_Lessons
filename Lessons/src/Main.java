@@ -6,8 +6,8 @@ import java.util.concurrent.Callable;
 
 public class Main {
    public static void main(String[] args) {
-      
-      InvocationHandler handler = new MyProxy();
+   
+      InvocationHandler handler = new MyProxy(5);
       Comparable comparable;
       Class[] classes = new Class[]{Comparable.class, Callable.class};
       Object proxy = Proxy.newProxyInstance(null, classes, handler);
@@ -16,11 +16,16 @@ public class Main {
       (( Comparable ) proxy).compareTo(5);
    }
    static class MyProxy implements InvocationHandler {
+      Object target;
+      MyProxy(Object target) {
+      
+         this.target = target;
+      }
       @Override
       public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
    
          System.out.println(args);
-         return null;
+         return method.invoke(target, args);
       }
    }
 }
