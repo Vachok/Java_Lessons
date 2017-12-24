@@ -1,0 +1,92 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <option name="RIGHT_MARGIN" value="80" />
+    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
+    <option name="SOFT_MARGINS" value="79" />
+    <JavaCodeStyleSettings>
+      <option name="VISIBILITY" value="packageLocal" />
+      <option name="REPEAT_SYNCHRONIZED" value="false" />
+      <option name="SPACE_AFTER_CLOSING_ANGLE_BRACKET_IN_TYPE_ARGUMENT" value="true" />
+      <option name="ENABLE_JAVADOC_FORMATTING" value="false" />
+    </JavaCodeStyleSettings>
+    <codeStyleSettings language="JAVA">
+      <option name="RIGHT_MARGIN" value="80" />
+      <option name="KEEP_LINE_BREAKS" value="false" />
+      <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="3" />
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="3" />
+      <option name="BLANK_LINES_AFTER_PACKAGE" value="3" />
+      <option name="BLANK_LINES_AFTER_IMPORTS" value="2" />
+      <option name="BLANK_LINES_AROUND_CLASS" value="2" />
+      <option name="BLANK_LINES_AROUND_METHOD" value="0" />
+      <option name="BLANK_LINES_BEFORE_METHOD_BODY" value="1" />
+      <option name="ELSE_ON_NEW_LINE" value="true" />
+      <option name="CATCH_ON_NEW_LINE" value="true" />
+      <option name="FINALLY_ON_NEW_LINE" value="true" />
+      <option name="SPECIAL_ELSE_IF_TREATMENT" value="false" />
+      <option name="ALIGN_MULTILINE_PARENTHESIZED_EXPRESSION" value="true" />
+      <option name="SPACE_AROUND_EQUALITY_OPERATORS" value="false" />
+      <option name="SPACE_AFTER_COMMA_IN_TYPE_ARGUMENTS" value="false" />
+      <option name="SPACE_AFTER_SEMICOLON" value="false" />
+      <option name="SPACE_WITHIN_CAST_PARENTHESES" value="true" />
+      <option name="SPACE_BEFORE_IF_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_WHILE_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_FOR_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_TRY_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_CATCH_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_SWITCH_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_SYNCHRONIZED_PARENTHESES" value="false" />
+      <option name="SPACE_BEFORE_ELSE_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_WHILE_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_FOR_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_DO_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_SWITCH_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_TRY_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_CATCH_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_FINALLY_LBRACE" value="false" />
+      <option name="SPACE_BEFORE_QUEST" value="false" />
+      <option name="SPACE_BEFORE_COLON" value="false" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="IF_BRACE_FORCE" value="1" />
+      <option name="DOWHILE_BRACE_FORCE" value="1" />
+      <option name="WHILE_BRACE_FORCE" value="1" />
+      <option name="FOR_BRACE_FORCE" value="1" />
+      <option name="SPACE_BEFORE_ANOTATION_PARAMETER_LIST" value="true" />
+      <option name="WRAP_ON_TYPING" value="0" />
+      <indentOptions>
+        <option name="INDENT_SIZE" value="3" />
+        <option name="CONTINUATION_INDENT_SIZE" value="6" />
+        <option name="TAB_SIZE" value="3" />
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+      <arrangement>
+        <tokens>
+          <token id="visibility" name="visibility">
+            <rules>
+              <rule>
+                <match>
+                  <PACKAGE_PRIVATE>true</PACKAGE_PRIVATE>
+                </match>
+              </rule>
+              <rule>
+                <match>
+                  <PUBLIC>true</PUBLIC>
+                </match>
+              </rule>
+              <rule>
+                <match>
+                  <PROTECTED>true</PROTECTED>
+                </match>
+              </rule>
+              <rule>
+                <match>
+                  <PRIVATE>true</PRIVATE>
+                </match>
+              </rule>
+            </rules>
+          </token>
+        </tokens>
+        <groups />
+      </arrangement>
+    </codeStyleSettings>
+  </code_scheme>
+</component>
