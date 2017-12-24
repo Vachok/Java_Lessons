@@ -11,9 +11,9 @@ public class Main {
       Comparable comparable;
       Class[] classes = new Class[]{Comparable.class, Callable.class};
       Object proxy = Proxy.newProxyInstance(null, classes, handler);
-      proxy.getClass();
-      proxy.toString();
-      (( Comparable ) proxy).compareTo(5);
+//      proxy.getClass();
+//      proxy.toString();
+      (( Comparable ) proxy).compareTo(3);
    }
    static class MyProxy implements InvocationHandler {
       Object target;
