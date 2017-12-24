@@ -18,8 +18,9 @@ public class Main {
    static class MyProxy implements InvocationHandler {
       @Override
       public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-         
-         return null
+   
+         System.out.println(args);
+         return null;
       }
    }
 }
