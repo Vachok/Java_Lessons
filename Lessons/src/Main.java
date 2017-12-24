@@ -13,7 +13,7 @@ public class Main {
       Object proxy = Proxy.newProxyInstance(null, classes, handler);
 //      proxy.getClass();
 //      proxy.toString();
-      (( Comparable ) proxy).compareTo(3);
+      System.out.println((( Comparable ) proxy).compareTo(3));
    }
    static class MyProxy implements InvocationHandler {
       Object target;
