@@ -13,7 +13,7 @@ public class Main {
       Object proxy = Proxy.newProxyInstance(null, classes, handler);
 //      proxy.getClass();
 //      proxy.toString();
-      System.out.println((( Comparable ) proxy).compareTo(3));
+      System.out.println(proxy.toString());
    }
    static class MyProxy implements InvocationHandler {
       Object target;
@@ -25,11 +25,11 @@ public class Main {
       public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
    
          System.out.println(args);
-         return method.invoke(target, args);
+         return "bla";
       }
    }
 }
 
 
 
-//24.12.2017 (11:07) by {Vachok} 1
+//24.12.2017 (11:07) by {Vachok}
