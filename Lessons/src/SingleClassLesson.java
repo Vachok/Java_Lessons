@@ -14,7 +14,7 @@ public class SingleClassLesson {
       jFrame.add(jPanel);
       JButton jButton = new JButton("Submit");
       jPanel.add(jButton);
-      jButton.addActionListener(EventHandler.create(ActionListener.class, jFrame, "title", "source.text")); //
+      jButton.addActionListener(EventHandler.create(ActionListener.class, jFrame, "title", "source.text")); // то же самое!
    }
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
