@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.EventHandler;
 
 
 
@@ -13,14 +14,7 @@ public class SingleClassLesson {
       jFrame.add(jPanel);
       JButton jButton = new JButton("Submit");
       jPanel.add(jButton);
-      jButton.addActionListener(new ActionListener() {
-   
-   
-         @Override
-         public void actionPerformed(ActionEvent e) {
-            jFrame.setTitle(((JButton)e.getSource()).getText()); // берем source ивента из button, отдаём в заголовок
-         }
-      });
+      jButton.addActionListener(EventHandler.create(ActionListener.class, jFrame, "title", "source.text")); //
    }
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
