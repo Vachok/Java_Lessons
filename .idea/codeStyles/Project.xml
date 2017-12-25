@@ -1,8 +1,7 @@
 <component name="ProjectCodeStyleConfiguration">
   <code_scheme name="Project" version="173">
     <option name="RIGHT_MARGIN" value="80" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="true" />
-    <option name="SOFT_MARGINS" value="79" />
+    <option name="SOFT_MARGINS" value="80" />
     <JavaCodeStyleSettings>
       <option name="VISIBILITY" value="packageLocal" />
       <option name="REPEAT_SYNCHRONIZED" value="false" />
@@ -15,10 +14,13 @@
       <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="3" />
       <option name="KEEP_BLANK_LINES_IN_CODE" value="3" />
       <option name="BLANK_LINES_AFTER_PACKAGE" value="3" />
-      <option name="BLANK_LINES_AFTER_IMPORTS" value="2" />
+      <option name="BLANK_LINES_AFTER_IMPORTS" value="3" />
       <option name="BLANK_LINES_AROUND_CLASS" value="2" />
       <option name="BLANK_LINES_AROUND_METHOD" value="0" />
       <option name="BLANK_LINES_BEFORE_METHOD_BODY" value="1" />
+      <option name="BLANK_LINES_AROUND_METHOD_IN_INTERFACE" value="0" />
+      <option name="BLANK_LINES_AFTER_CLASS_HEADER" value="1" />
+      <option name="BLANK_LINES_AFTER_ANONYMOUS_CLASS_HEADER" value="2" />
       <option name="ELSE_ON_NEW_LINE" value="true" />
       <option name="CATCH_ON_NEW_LINE" value="true" />
       <option name="FINALLY_ON_NEW_LINE" value="true" />
