@@ -30,11 +30,13 @@ public class Lesson {
          java.awt.geom.Point2D p2 = new java.awt.geom.Point2D.Double(170, 170); // создаём точку
          Line2D l2 = new Line2D.Double(p1, p2); // чем рисуем точку
          g2.draw(l2); // рисуем точку
-         Ellipse2D el = new Ellipse2D.Double(70, 70, 170, 170); // создаём эллипс
+         Ellipse2D el = new Ellipse2D.Double(); // создаём эллипс
+         el.setFrameFromDiagonal(p1, p2);
          g2.setPaint(Color.BLUE); // красим в синий
          g2.draw(el); // рисуем эллипс
-         Rectangle2D r2 = new Rectangle2D.Double(70, 70, 170, 170); // создаём квадрат
-         g2.draw(r2); // рисуем квадрат
+         Rectangle2D r2 = new Rectangle2D.Double(); // создаём квадрат
+         r2.setFrameFromDiagonal(p1, p2);
+         g2.draw(r2);
          try{URL url = new URL("http://i65.tinypic.com/16bcabo.jpg"); // показываем путь до картинки
             Image image = new ImageIcon(url).getImage(); // качаем картинку
             g2.drawImage(image, 192, 50, null ); // покажем картинку
