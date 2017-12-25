@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 import java.awt.geom.Rectangle2D;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 
 
@@ -19,19 +21,27 @@ public class Lesson {
    
       @Override
       protected void paintComponent(Graphics g) {
+   
          Font font = new Font("Courier", Font.BOLD, 20);
-         Graphics2D g2 = (Graphics2D)g;
+         Graphics2D g2 = ( Graphics2D ) g;
          g2.setFont(font);
-         g2.drawString("hello world! i'm KUDR and i'm SWINGer! ))", 20, 90);
+         g2.drawString("hello world! i'm KUDR and i'm SWINGer! ))", 20, 20);
          java.awt.geom.Point2D p1 = new java.awt.geom.Point2D.Double(70, 70);
          java.awt.geom.Point2D p2 = new java.awt.geom.Point2D.Double(170, 170);
          Line2D l2 = new Line2D.Double(p1, p2);
          g2.draw(l2);
-         Ellipse2D el = new Ellipse2D.Double(70, 70,170,170);
+         Ellipse2D el = new Ellipse2D.Double(70, 70, 170, 170);
          g2.setPaint(Color.BLUE);
          g2.draw(el);
          Rectangle2D r2 = new Rectangle2D.Double(70, 70, 170, 170);
          g2.draw(r2);
+         try{URL url = new URL("http://i65.tinypic.com/16bcabo.jpg");
+            Image image = new ImageIcon(url).getImage();
+            g2.drawImage(image, 192, 50, null );
+         }
+         catch(MalformedURLException e){
+            e.printStackTrace();
+         }
       }
    }
    static JFrame getFrame(){
