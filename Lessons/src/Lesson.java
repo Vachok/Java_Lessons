@@ -2,6 +2,7 @@ import javafx.geometry.Point2D;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
 
 
@@ -25,6 +26,8 @@ public class Lesson {
          java.awt.geom.Point2D p2 = new java.awt.geom.Point2D.Double(190, 190);
          Line2D l2 = new Line2D.Double(p1, p2);
          g2.draw(l2);
+         Ellipse2D el = new Ellipse2D.Double(70, 70,170,170);
+         g2.draw(el);
       }
    }
    static JFrame getFrame(){
