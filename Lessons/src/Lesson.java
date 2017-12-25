@@ -29,7 +29,7 @@ public class Lesson {
          g2.draw(l2);
          Ellipse2D el = new Ellipse2D.Double(70, 70,170,170);
          g2.setPaint(Color.BLUE);
-         g2.fill(el);
+         g2.draw(el);
          Rectangle2D r2 = new Rectangle2D.Double(70, 70, 170, 170);
          g2.draw(r2);
       }
