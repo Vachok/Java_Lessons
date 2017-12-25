@@ -8,6 +8,11 @@ public class Lesson {
    public static void main(String[] args) {
    
       JFrame jFrame = getFrame();
+      String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+      for(String s:fonts) {
+         System.out.println(s);
+      }
+//      Font font = new Font("Courier", Font.BOLD, 20);
    }
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
