@@ -23,11 +23,12 @@ public class Lesson {
          g2.setFont(font);
          g2.drawString("hello world! i'm KUDR and i'm SWINGer! ))", 20, 90);
          java.awt.geom.Point2D p1 = new java.awt.geom.Point2D.Double(70, 70);
-         java.awt.geom.Point2D p2 = new java.awt.geom.Point2D.Double(190, 190);
+         java.awt.geom.Point2D p2 = new java.awt.geom.Point2D.Double(170, 170);
          Line2D l2 = new Line2D.Double(p1, p2);
          g2.draw(l2);
          Ellipse2D el = new Ellipse2D.Double(70, 70,170,170);
-         g2.draw(el);
+         g2.setPaint(Color.BLUE);
+         g2.fill(el);
       }
    }
    static JFrame getFrame(){
