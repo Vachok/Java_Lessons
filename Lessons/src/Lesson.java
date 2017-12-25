@@ -8,11 +8,18 @@ public class Lesson {
    public static void main(String[] args) {
    
       JFrame jFrame = getFrame();
-      String[] fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
-      for(String s:fonts) {
-         System.out.println(s);
+      jFrame.add(new MyComponet());
+   }
+   static class MyComponet extends JComponent{
+   
+      @Override
+      protected void paintComponent(Graphics g) {
+         Font font = new Font("Arial", Font.BOLD, 20);
+         Graphics2D g2 = (Graphics2D)g;
+         g2.setFont(font);
+         g2.drawString("hello world! i'm KUDR and i'm SWINGer! ))", 20, 20);
+         
       }
-//      Font font = new Font("Courier", Font.BOLD, 20);
    }
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
