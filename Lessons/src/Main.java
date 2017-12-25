@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
 
 
@@ -9,8 +10,14 @@ public class Main {
       JFrame jFrame = getFrame();
       JPanel jPanel = new JPanel();
       jFrame.add(jPanel);
-      jPanel.add(new JButton("Submit"));
+      JButton jButton = new JButton("Submit");
+      jPanel.add(jButton);
+      jButton.addActionListener();
    }
+   class MyListener implements ActionListener{ // <-
+   }
+   
+   
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
       jFrame.setVisible(true);
