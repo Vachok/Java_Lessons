@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 
@@ -12,11 +13,13 @@ public class Main {
       jFrame.add(jPanel);
       JButton jButton = new JButton("Submit");
       jPanel.add(jButton);
-      jButton.addActionListener();
+      jButton.addActionListener(new ActionListener() {
+         @Override
+         public void actionPerformed(ActionEvent e) {
+            jPanel.setBackground(Color.BLUE);
+         }
+      });
    }
-   class MyListener implements ActionListener{ // <-
-   }
-   
    
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
