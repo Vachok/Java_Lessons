@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
 
 
 
@@ -29,6 +30,8 @@ public class Lesson {
          Ellipse2D el = new Ellipse2D.Double(70, 70,170,170);
          g2.setPaint(Color.BLUE);
          g2.fill(el);
+         Rectangle2D r2 = new Rectangle2D.Double(70, 70, 170, 170);
+         g2.draw(r2);
       }
    }
    static JFrame getFrame(){
