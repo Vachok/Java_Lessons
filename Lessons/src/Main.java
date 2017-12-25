@@ -1,5 +1,6 @@
+
+
 import javax.swing.*;
-import java.awt.*;
 
 
 
@@ -10,7 +11,7 @@ public class Main {
       JFrame jFrame = new JFrame(){};
       jFrame.setVisible(true);
       jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      jFrame.setSize(500,300);
-      jFrame.setLocation(500, 400);
-}
+      jFrame.setBounds(500, 0, 500, 300);
+      jFrame.setTitle("this is my app");
+   }
 }
