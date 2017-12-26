@@ -14,13 +14,13 @@ public class Main {
       
       jFrame.add(jPanel);
       JButton jButton = new JButton(new MyAction());
-      jButton.setText("Submit");
+      jButton.set
       jPanel.add(jButton);
    }
    static class MyAction extends AbstractAction{
    
       MyAction() {
-         putValue(AbstractAction.SHORT_DESCRIPTION, "Make me blue");
+         putValue(AbstractAction.SHORT_DESCRIPTION, "My small action");
       }
       @Override
       public void actionPerformed(ActionEvent e) {
