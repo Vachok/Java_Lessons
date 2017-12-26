@@ -15,4 +15,13 @@ public class MyJFrame {
       return jFrame;
    } // тот самый фрейм
    
+   public static void main(String[] args) {
+      JFrame jFrame = getFrame();
+      JPanel jPanel = new JPanel();
+      jFrame.add(jPanel);
+      JButton jButton = new JButton();
+      jButton.setText("Vax!");
+      jPanel.add(jButton);
+   }
+   
 }
