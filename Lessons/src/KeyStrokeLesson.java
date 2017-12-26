@@ -15,9 +15,9 @@ public class KeyStrokeLesson {
       jButton.setText("Vax!");
       jPanel.add(jButton);
       
-      KeyStroke keyStroke = KeyStroke.getKeyStroke("ctrl B"); // создание сочетания клавиш для экшена
-      InputMap inputMap = jPanel.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW); // создание деёствия "слежения" за клавишами
-      inputMap.put(keyStroke, "changeColor"); // добавление в компонент слежки сочетания клавиш. вызовет keyStroke с ИД "changeColor"
+      KeyStroke keyStroke = KeyStroke.getKeyStroke("ctrl B");
+      InputMap inputMap = jPanel.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+      inputMap.put(keyStroke, "changeColor");
       ActionMap actionMap = jPanel.getActionMap();
       actionMap.put("changeColor", myAction);
    }
