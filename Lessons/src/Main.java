@@ -1,8 +1,12 @@
+//186.102-SW7
+=======
 //180.98-SW3.ActionListener
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+//186.102-SW7
+=======
 //179.97-SW2.JComponent
 public class Main {
    
@@ -11,13 +15,36 @@ public class Main {
 
 
 import javax.swing.*;
-import java.awt.*;
-
+import java.awt.*
 
 
 
 public class Main {
    
+//186.102-SW7
+   static JFrame jFrame = MyJFrame.getFrame();
+   static JPanel jPanel = new JPanel();
+   
+   public static void main(String[] args) {
+      
+      jFrame.add(jPanel);
+      JButton jButton = new JButton(new MyAction());
+      jButton.set
+      jPanel.add(jButton);
+   }
+   static class MyAction extends AbstractAction{
+   
+      MyAction() {
+         putValue(AbstractAction.SHORT_DESCRIPTION, "My small action");
+      }
+      @Override
+      public void actionPerformed(ActionEvent e) {
+   
+         Main.jPanel.setBackground(Color.BLUE);
+      }
+   }
+}
+=======
    public static void main(String[] args) {
 //180.98-SW3.ActionListener
       JFrame jFrame = getFrame(); // возьмём фрейм
