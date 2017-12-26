@@ -20,7 +20,7 @@ public class Main {
    static class MyAction extends AbstractAction{
    
       MyAction() {
-         putValue(AbstractAction.SHORT_DESCRIPTION, "My small action");
+         putValue(AbstractAction.SHORT_DESCRIPTION, "Make me blue");
       }
       @Override
       public void actionPerformed(ActionEvent e) {
