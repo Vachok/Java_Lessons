@@ -12,7 +12,6 @@ public class MouseLesson {
    static JFrame jFrame = MyJFrame.getFrame();
    
    public static void main(String[] args) {
-      
       JComponent jComponent = new MyComponent();
       jFrame.add(jComponent);
       jFrame.addMouseMotionListener(new MouseAdapter() { // следим за действиями мыши в jFrame
@@ -26,12 +25,10 @@ public class MouseLesson {
       });
    }
    static class MyComponent extends JComponent {
-      
       public static int xCoord;
       public static int yCoord;
       @Override
       protected void paintComponent(Graphics g) {
-         
          super.paintComponent(g);
          g.drawString("Coordinates x: " + MyComponent.xCoord + " y: " + MyComponent.yCoord, 35, 35); // выведем на экран координаты
          
