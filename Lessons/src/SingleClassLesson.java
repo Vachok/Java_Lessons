@@ -1,8 +1,5 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.beans.EventHandler;
 
 
 
@@ -12,9 +9,6 @@ public class SingleClassLesson {
       JFrame jFrame = getFrame();
       JPanel jPanel = new JPanel();
       jFrame.add(jPanel);
-      JButton jButton = new JButton("Submit");
-      jPanel.add(jButton);
-      jButton.addActionListener(EventHandler.create(ActionListener.class, jFrame, "title", "source.text")); // то же самое!
    }
    static JFrame getFrame(){
       JFrame jFrame = new JFrame(){};
