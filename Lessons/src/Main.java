@@ -14,6 +14,7 @@ public class Main {
       
       jFrame.add(jPanel);
       JButton jButton = new JButton(new MyAction());
+      jButton.setText("Submit");
       jPanel.add(jButton);
    }
    static class MyAction extends AbstractAction{
