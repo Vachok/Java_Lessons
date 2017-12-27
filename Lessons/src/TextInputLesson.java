@@ -15,7 +15,10 @@ public class TextInputLesson {
       jTextField.getText();
       jPanel.add(new JPasswordField(20));
       JTextArea jTextArea = new JTextArea(5, 20);
-      jPanel.add(jTextArea);
+      jTextArea.setLineWrap(true);
+      JScrollPane jScrollPane = new JScrollPane();
+      jScrollPane.add(jTextArea);
+      jPanel.add(jScrollPane);
       jPanel.revalidate();
    }
 }
