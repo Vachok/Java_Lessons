@@ -9,7 +9,10 @@ public class TextInputLesson {
    public static void main(String[] args) {
       
       jFrame.add(jPanel);
-      jPanel.add(new JTextField(20));
+      jPanel.add(new JLabel("this is label"));
+      jPanel.add(new JTextField("default значение", 20));
+      JTextField jTextField = new JTextField();
+      jTextField.getText();
       jPanel.revalidate();
       
    }
