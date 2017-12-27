@@ -20,7 +20,7 @@ public class MyJComp {
     */
    static JFrame getFrame(boolean size, int x, int y, int width, int height) {
    
-      JFrame jFrame = new JFrame()
+      JFrame jFrame = new JFrame();
       jFrame.setVisible(true);
       jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       Toolkit toolkit = Toolkit.getDefaultToolkit();

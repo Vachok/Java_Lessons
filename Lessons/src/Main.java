@@ -8,6 +8,8 @@ public class Main extends MyJComp {
    static JPanel jPanel = new JPanel();
    public static void main(String[] args) {
    
+      jFrame.add(jPanel);
+      jPanel.add(new JCheckBox("check"));
    }
    
 }
