@@ -2,9 +2,9 @@ import javax.swing.*;
 
 
 
-public class TextInputLesson {
+public class TextInputLesson extends MyJFrame {
    
-   static JFrame jFrame = MyJFrame.getFrame();
+   static JFrame jFrame = getFrame(false, 750, 250, 500, 500);
    static JPanel jPanel = new JPanel();
    public static void main(String[] args) {
       
@@ -17,7 +17,6 @@ public class TextInputLesson {
       JTextArea jTextArea = new JTextArea(5, 20);
       jTextArea.setLineWrap(true);
       JScrollPane jScrollPane = new JScrollPane();
-      jScrollPane.add(jTextArea);
       jPanel.add(jScrollPane);
       jPanel.revalidate();
    }
