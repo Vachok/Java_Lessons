@@ -9,7 +9,8 @@ public class TextInputLesson {
    public static void main(String[] args) {
       
       jFrame.add(jPanel);
-      jPanel.add(new JTextField());
-      jPanel.revalidate(); // перерисовка панельки
+      jPanel.add(new JTextField(20));
+      jPanel.revalidate();
+      
    }
 }
