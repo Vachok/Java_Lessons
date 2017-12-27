@@ -14,6 +14,8 @@ public class TextInputLesson {
       JTextField jTextField = new JTextField();
       jTextField.getText();
       jPanel.add(new JPasswordField(20));
+      JTextArea jTextArea = new JTextArea(5, 20);
+      jPanel.add(jTextArea);
       jPanel.revalidate();
    }
 }
