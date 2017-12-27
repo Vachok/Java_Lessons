@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 
 
@@ -10,6 +11,15 @@ public class Main extends MyJComp {
    
       jFrame.add(jPanel);
       jPanel.add(new JCheckBox("check"));
+      JRadioButton jRadioButton1 = new JRadioButton("one");
+      JRadioButton jRadioButton2 = new JRadioButton("two");
+      jRadioButton2.setSelected(true);
+      ButtonGroup buttonGroup = new ButtonGroup();
+      buttonGroup.add(jRadioButton1);
+      buttonGroup.add(jRadioButton2);
+      jPanel.add(jRadioButton1);
+      jPanel.add(jRadioButton2);
+      
    }
    
 }
