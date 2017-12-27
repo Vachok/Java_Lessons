@@ -13,7 +13,7 @@ public class TextInputLesson {
       jPanel.add(new JTextField("default значение", 20));
       JTextField jTextField = new JTextField();
       jTextField.getText();
+      jPanel.add(new JPasswordField(20));
       jPanel.revalidate();
-      
    }
 }
