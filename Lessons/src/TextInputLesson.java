@@ -4,7 +4,7 @@ import javax.swing.*;
 
 public class TextInputLesson extends MyJFrame {
    
-   static JFrame jFrame = getFrame(true, 750, 250, 500, 500);
+   static JFrame jFrame = getFrame(false, 750, 250, 500, 500);
    static JPanel jPanel = new JPanel();
    public static void main(String[] args) {
       
