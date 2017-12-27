@@ -8,7 +8,7 @@ public class MyJComp {
    /** Нарисованный заранее JFrame
     *
     * @param size true/false. Если false - размер по-умолчанию
-    *                      x = dimension.width / 2 - 250;
+   x = dimension.width / 2 - 250;
    y = dimension.height / 2 - 250;
    width = 500;
    height = 300;
