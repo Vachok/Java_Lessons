@@ -16,10 +16,10 @@ public class MouseLesson {
       jFrame.add(jComponent);
       jFrame.addMouseMotionListener(new MouseAdapter() { // следим за действиями мыши в jFrame
          @Override
-         public void mouseMoved(MouseEvent e) { // будем следить за движениями мыши
+         public void mouseMoved(MouseEvent e) {
             super.mouseMoved(e);
-            MyComponent.xCoord = e.getX(); // берет Х
-            MyComponent.yCoord = e.getY(); // берёт Y
+            MyComponent.xCoord = e.getX();
+            MyComponent.yCoord = e.getY();
             jComponent.repaint();
          }
       });
@@ -30,7 +30,7 @@ public class MouseLesson {
       @Override
       protected void paintComponent(Graphics g) {
          super.paintComponent(g);
-         g.drawString("Coordinates x: " + MyComponent.xCoord + " y: " + MyComponent.yCoord, 35, 35); // выведем на экран координаты
+         g.drawString("Coordinates x: " + MyComponent.xCoord + " y: " + MyComponent.yCoord, 35, 35);
          
       }
    }
