@@ -3,7 +3,7 @@ import java.awt.*;
 
 
 
-public class MyJComp {
+public class MyJFrame {
    
    /** Нарисованный заранее JFrame
     *
@@ -34,3 +34,13 @@ public class MyJComp {
       jFrame.setBounds(x, y, width, height);
       return jFrame;
    } // тот самый фрейм
+   public static void getFrameWintButton() {
+   
+      JFrame jFrame = getFrame(false, 0, 0, 0, 0);
+      JPanel jPanel = new JPanel();
+      jFrame.add(jPanel);
+      JButton jButton = new JButton();
+      jButton.setText("Vax!");
+      jPanel.add(jButton);
+   }
+}
