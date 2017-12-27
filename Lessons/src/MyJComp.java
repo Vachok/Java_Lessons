@@ -19,8 +19,8 @@ public class MyJComp {
     * @return JFrame, по заданным (true) или по-дефолтным (false) параметрам
     */
    static JFrame getFrame(boolean size, int x, int y, int width, int height) {
-      
-      JFrame jFrame = new JFrame(){};
+   
+      JFrame jFrame = new JFrame()
       jFrame.setVisible(true);
       jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       Toolkit toolkit = Toolkit.getDefaultToolkit();
@@ -32,5 +32,7 @@ public class MyJComp {
          height = 300;
       }
       jFrame.setBounds(x, y, width, height);
-      return jFrame;
-   } // тот самый фрейм
+   
+      return jFrame; // тот самый фрейм
+   }
+}
