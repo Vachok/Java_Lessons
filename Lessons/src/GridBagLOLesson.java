@@ -25,11 +25,29 @@ public class GridBagLOLesson extends MyJComp {
       GridBagConstraints constraints2 = new GridBagConstraints();
       constraints2.weightx = 0;
       constraints2.weighty = 0;
-      constraints2.gridx = 2; // сдвиг элемента на 2 ячейки по Х
+      constraints2.gridx = 2;
       constraints2.gridy = 0;
-      constraints2.gridheight = 1; // высота элемента
+      constraints2.gridheight = 1;
       constraints2.gridwidth = 2;
       jPanel.add(new JButton("Submit. Very long name!"), constraints2);
+   
+      GridBagConstraints constraints3 = new GridBagConstraints();
+      constraints3.weightx = 0;
+      constraints3.weighty = 0;
+      constraints3.gridx = 2;
+      constraints3.gridy = 1; // опустим местоположение элемента
+      constraints3.gridheight = 1;
+      constraints3.gridwidth = 1;
+      jPanel.add(new JButton("Submit"), constraints3);
+   
+      GridBagConstraints constraints4 = new GridBagConstraints();
+      constraints4.weightx = 0;
+      constraints4.weighty = 0;
+      constraints4.gridx = 3;
+      constraints4.gridy = 1; // опустим местоположение элемента
+      constraints4.gridheight = 1;
+      constraints4.gridwidth = 1;
+      jPanel.add(new JButton("Submit"), constraints4);
       jPanel.revalidate();
       
       
