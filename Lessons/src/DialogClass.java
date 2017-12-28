@@ -21,9 +21,10 @@ public class DialogClass extends MyJComp {
          @Override
          public void actionPerformed(ActionEvent e) {
    
-            JOptionPane.showConfirmDialog(DialogClass.jPanel, "A you IDIOT?");
+            System.out.println(JOptionPane.showConfirmDialog(DialogClass.jPanel, "A you IDIOT?", "Hmmm...", JOptionPane.OK_OPTION));
+            
          }
       });
-      
+      jPanel.revalidate();
    }
 }
