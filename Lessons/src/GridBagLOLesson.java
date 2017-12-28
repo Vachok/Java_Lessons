@@ -20,6 +20,18 @@ public class GridBagLOLesson extends MyJComp {
       constraints1.gridy = 0;
       constraints1.gridheight = 2;
       constraints1.gridwidth = 2;
-      jPanel.add(new TextArea(4, 20), constraints1);
+      jPanel.add(new JTextArea(4, 20), constraints1);
+   
+      GridBagConstraints constraints2 = new GridBagConstraints();
+      constraints2.weightx = 0;
+      constraints2.weighty = 0;
+      constraints2.gridx = 2; // сдвиг элемента на 2 ячейки по Х
+      constraints2.gridy = 0;
+      constraints2.gridheight = 1; // высота элемента
+      constraints2.gridwidth = 2;
+      jPanel.add(new JButton("Submit. Very long name!"), constraints2);
+      jPanel.revalidate();
+      
+      
    }
 }
