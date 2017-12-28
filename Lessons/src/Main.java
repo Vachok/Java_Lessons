@@ -15,13 +15,6 @@ public class Main {
       jPanel.add(new JButton("2"));
       jPanel.add(new JButton("3"));
       jPanel.add(new JButton("4"));
-      
-/*      jFrame.add(new JButton("1"), BorderLayout.CENTER);
-      jFrame.add(new JButton("2"), BorderLayout.NORTH);
-      jFrame.add(new JButton("3"), BorderLayout.SOUTH);
-      jFrame.add(new JButton("4"), BorderLayout.WEST);
-      jFrame.add(new JButton("5"), BorderLayout.EAST);
-   */
    }
    
 }
