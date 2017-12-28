@@ -35,4 +35,33 @@ public class MyJComp {
         }
         return jFrame; // тот самый фрейм
     }
+    static class MyGetLayout implements LayoutManager {
+        
+        @Override
+        public void addLayoutComponent(String name, Component comp) {
+        
+        }
+        @Override
+        public void removeLayoutComponent(Component comp) {
+        
+        }
+        @Override
+        public Dimension preferredLayoutSize(Container parent) {
+            
+            return null;
+        }
+        @Override
+        public Dimension minimumLayoutSize(Container parent) {
+            
+            return null;
+        }
+        @Override
+        public void layoutContainer(Container parent) {
+            
+            for(int i = 0;i < parent.getComponentCount();i++){
+                Component component = parent.getComponent(i);
+                component.setBounds(i * 100, i * 40, 100, 40); //каждый компонент, будет одинаковым, но смещённым на 100 вправо и 40 вниз
+            }
+        }
+    }
 }
