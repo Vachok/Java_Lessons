@@ -11,7 +11,7 @@ public class FocusLes extends MyJComp {
       
       jFrame.add(jPanel);
       jPanel.add(new JButton("1"));
-      jPanel.add(new JButton("2"));
+      jPanel.add(new JButton("2")).setFocusable(false);
       jPanel.add(new JButton("3")).requestFocusInWindow();
    }
 }
