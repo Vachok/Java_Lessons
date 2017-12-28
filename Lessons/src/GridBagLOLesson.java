@@ -41,8 +41,8 @@ public class GridBagLOLesson extends MyJComp {
       jPanel.add(new JButton("Submit"), constraints3);
    
       GridBagConstraints constraints4 = new GridBagConstraints();
-      constraints4.weightx = 0;
-      constraints4.weighty = 0;
+      constraints4.weightx = 20;
+      constraints4.weighty = 20;
       constraints4.gridx = 3;
       constraints4.gridy = 1; // опустим местоположение элемента
       constraints4.gridheight = 1;
