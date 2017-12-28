@@ -21,7 +21,7 @@ public class DialogClass extends MyJComp {
          @Override
          public void actionPerformed(ActionEvent e) {
    
-            JOptionPane.showMessageDialog(DialogClass.jPanel, "My Dia", "Hi!", JOptionPane.QUESTION_MESSAGE);
+            JOptionPane.showConfirmDialog(DialogClass.jPanel, "A you IDIOT?");
          }
       });
       
