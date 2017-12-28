@@ -13,7 +13,7 @@ public class CustomLayoutManager extends MyJComp {
       jPanel.setLayout(null);
       
       JButton jButton = new JButton("Submit");
-      jButton.setBounds(50, 50, 150, 40);
+      jButton.setBounds(150, 50, 150, 40);
       jPanel.add(jButton);
    }
 }
