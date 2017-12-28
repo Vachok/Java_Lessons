@@ -21,7 +21,7 @@ public class DialogClass extends MyJComp {
          @Override
          public void actionPerformed(ActionEvent e) {
    
-            JOptionPane.showInputDialog(DialogClass.jPanel, "Введите");
+            System.out.println(JOptionPane.showInputDialog(DialogClass.jPanel, "Введите"));
          }
       });
       jPanel.revalidate();
