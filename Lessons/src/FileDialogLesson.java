@@ -3,6 +3,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
+import static javax.swing.JFileChooser.*;
+
 
 
 public class FileDialogLesson {
@@ -24,10 +26,7 @@ public class FileDialogLesson {
          public void actionPerformed(ActionEvent e) {
             
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setMultiSelectionEnabled(true);
-            fileChooser.showDialog(FileDialogLesson.jPanel, "save as..");
-            fileChooser.setCurrentDirectory(new File(".")); // начальная директория диалога
-            //fileChooser.setSelectedFiles(new File()); // selected по-умолчанию
+            fileChooser.setFileSelectionMode(FILES_ONLY);
             
          }
       });
