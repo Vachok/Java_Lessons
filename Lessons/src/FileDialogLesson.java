@@ -1,4 +1,5 @@
 import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -24,10 +25,23 @@ public class FileDialogLesson {
          
          @Override
          public void actionPerformed(ActionEvent e) {
-            
+   
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setFileSelectionMode(FILES_ONLY);
-            
+            fileChooser.setFileFilter(new FileFilter() {
+      
+      
+               @Override
+               public boolean accept(File f) {
+         
+                  return f.getName().endsWith("gif");
+               }
+               @Override
+               public String getDescription() {
+         
+                  return "only GIIIIIIIIIFFFFFFFUCK";
+               }
+            });
+            fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
          }
       });
    }
