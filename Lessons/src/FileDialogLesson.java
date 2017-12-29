@@ -3,6 +3,8 @@ import javax.swing.filechooser.FileFilter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.io.File;
 
 
@@ -26,22 +28,17 @@ public class FileDialogLesson {
          public void actionPerformed(ActionEvent e) {
    
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.setFileFilter(new FileFilter() {
-      
-      
-               @Override
-               public boolean accept(File f) {
-         
-                  return f.getName().endsWith("gif");
-               }
-               @Override
-               public String getDescription() {
-         
-                  return "only GIIIIIIIIIFFFFFFFUCK";
-               }
-            });
             JTextField textField = new JTextField("Опа! Нихуя", 50);
             fileChooser.add(textField, BorderLayout.SOUTH);
+            fileChooser.addPropertyChangeListener(new PropertyChangeListener() {
+      
+      
+               @Override
+               public void propertyChange(PropertyChangeEvent evt) {
+         
+                  textField.setText(evt.getNewValue().toString());
+               }
+            });
             fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
          }
       });
