@@ -30,9 +30,8 @@ public class MyJComp {
             y = dimension.height / 2 - 250;
             width = 500;
             height = 300;
-            jFrame.setBounds(x, y, width, height);
-            
         }
+        jFrame.setBounds(x, y, width, height);
         return jFrame; // тот самый фрейм
     }
 }
