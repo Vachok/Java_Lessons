@@ -23,7 +23,7 @@ public class FileDialogLesson {
          public void actionPerformed(ActionEvent e) {
             
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.showOpenDialog(FileDialogLesson.jPanel);
+            fileChooser.showDialog(FileDialogLesson.jPanel, "save as..");
          }
       });
    }
