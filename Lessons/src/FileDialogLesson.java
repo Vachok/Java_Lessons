@@ -1,5 +1,6 @@
 import javax.swing.*;
 import javax.swing.filechooser.FileFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -40,7 +41,7 @@ public class FileDialogLesson {
                }
             });
             JTextField textField = new JTextField("Опа! Нихуя", 50);
-            fileChooser.add(textField);
+            fileChooser.add(textField, BorderLayout.SOUTH);
             fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
          }
       });
