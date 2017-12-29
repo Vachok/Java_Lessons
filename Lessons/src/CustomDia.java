@@ -15,10 +15,10 @@ public class CustomDia {
       jFrame.add(jPanel);
       
    }
-   static class MyDia extends JDialog {
+   static class MyDia extends JDialog { // Создаём класс-расширение
       
-      public MyDia() {
-         
+      public MyDia() { // создаём метод
+         // параметры
          super(CustomDia.jFrame, "Title", true);
          add(new JTextField(), BorderLayout.NORTH);
          add(new JButton("click"), BorderLayout.SOUTH);
