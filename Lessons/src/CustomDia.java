@@ -16,25 +16,26 @@ public class CustomDia {
       
       jFrame.add(jPanel);
       JButton jButton = new JButton("Show Dialog");
-      JPanel.add(jButton);
+      jPanel.add(jButton);
       jButton.addActionListener(new ActionListener() {
-      
-      
          @Override
          public void actionPerformed(ActionEvent e) {
-         
+   
+            MyDia myDia = new MyDia();
+            myDia.setVisible(true);
          }
       });
       
    }
-   static class MyDia extends JDialog { // Создаём класс-расширение
+   static class MyDia extends JDialog {
       
-      public MyDia() { // создаём метод
-         // параметры
+      public MyDia() {
+         
          super(CustomDia.jFrame, "Title", true);
          add(new JTextField(), BorderLayout.NORTH);
          add(new JButton("click"), BorderLayout.SOUTH);
-         setBounds(50, 50, 150, 50);
+         setBounds(890, 400, 130, 104);
+         getFocusOwner();
       }
-   } // создание конструктора диалогов. Тот самый конструктор
+   } // Тот самый конструктор
 }
