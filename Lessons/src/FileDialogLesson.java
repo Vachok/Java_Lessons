@@ -28,18 +28,8 @@ public class FileDialogLesson {
          public void actionPerformed(ActionEvent e) {
    
             JFileChooser fileChooser = new JFileChooser();
-            JTextField textField = new JTextField("Опа! Нихуя", 50);
-            fileChooser.add(textField, BorderLayout.SOUTH);
-            fileChooser.addPropertyChangeListener(new PropertyChangeListener() {
-      
-      
-               @Override
-               public void propertyChange(PropertyChangeEvent evt) {
-         
-                  textField.setText(evt.getNewValue().toString());
-               }
-            });
-            fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
+            int i = fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
+            System.out.println(i);
          }
       });
       jPanel.revalidate();
