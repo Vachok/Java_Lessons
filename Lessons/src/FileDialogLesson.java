@@ -4,8 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 
-import static javax.swing.JFileChooser.*;
-
 
 
 public class FileDialogLesson {
@@ -41,8 +39,11 @@ public class FileDialogLesson {
                   return "only GIIIIIIIIIFFFFFFFUCK";
                }
             });
+            JTextField textField = new JTextField("Опа! Нихуя", 50);
+            fileChooser.add(textField);
             fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
          }
       });
+      jPanel.revalidate();
    }
 }
