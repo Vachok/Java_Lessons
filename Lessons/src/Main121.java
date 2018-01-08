@@ -44,6 +44,7 @@ public class Main121 extends MyJComp {
          generalPath.moveTo(100, 100);
          generalPath.lineTo(200, 100);
          generalPath.quadTo(200, 300, 300, 100);
+         generalPath.curveTo(325, 200, 375, 0, 400, 100);
          g2.draw(generalPath);
       }
    }
