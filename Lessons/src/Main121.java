@@ -39,6 +39,10 @@ public class Main121 extends MyJComp {
    
          Arc2D arc2D = new Arc2D.Double(0, 100, 100, 100, 45, 45, Arc2D.PIE);
          g2.draw(arc2D);
+   
+         GeneralPath generalPath = new GeneralPath();
+         generalPath.moveTo(100, 100);
+         g2.draw(generalPath);
       }
    }
 }
