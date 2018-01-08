@@ -1,9 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Line2D;
-import java.awt.geom.Point2D;
-import java.awt.geom.Rectangle2D;
-import java.awt.geom.RoundRectangle2D;
+import java.awt.geom.*;
 
 
 
@@ -30,6 +27,9 @@ public class Main121 extends MyJComp {
    
          RoundRectangle2D rectangle2D1 = new RoundRectangle2D.Double(200, 0, 100, 50, 120, 120);
          g2.draw(rectangle2D1);
+   
+         Ellipse2D ellipse2D = new Ellipse2D.Double(300, 0, 100, 50);
+         g2.draw(ellipse2D);
       }
    }
 }
