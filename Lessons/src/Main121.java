@@ -34,7 +34,7 @@ public class Main121 extends MyJComp {
          QuadCurve2D quadCurve2D = new QuadCurve2D.Double(400, 0, 400, 100, 450, 0);
          g2.draw(quadCurve2D);
    
-         CubicCurve2D cubicCurve2D = new CubicCurve2D.Double(450, 50, 475, 150, 525, -50, 550, 50);
+         CubicCurve2D cubicCurve2D = new CubicCurve2D.Double(450, 50, 475, 250, 525, -50, 550, 50);
          g2.draw(cubicCurve2D);
       }
    }
