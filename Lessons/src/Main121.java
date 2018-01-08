@@ -37,7 +37,7 @@ public class Main121 extends MyJComp {
          CubicCurve2D cubicCurve2D = new CubicCurve2D.Double(450, 50, 475, 250, 525, -50, 550, 50);
          g2.draw(cubicCurve2D);
    
-         Arc2D arc2D = new Arc2D.Double(0, 100, 100, 100, 0, 90, Arc2D.PIE);
+         Arc2D arc2D = new Arc2D.Double(0, 100, 100, 100, 0, 90, Arc2D.CHORD);
          g2.draw(arc2D);
       }
    }
