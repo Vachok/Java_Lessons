@@ -20,7 +20,7 @@ public class Main121 extends MyJComp {
          Graphics2D g2 = ( Graphics2D ) g;
          Point2D point = new Point2D.Double(50, 0);
          Point2D point2 = new Point2D.Double(100, 50);
-         Line2D line = new Line2D.Double(0, 0, 100, 100);
+         Line2D line = new Line2D.Double(point, point2);
          g2.draw(line);
       }
    }
