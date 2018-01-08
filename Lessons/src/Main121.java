@@ -31,7 +31,7 @@ public class Main121 extends MyJComp {
          Ellipse2D ellipse2D = new Ellipse2D.Double(300, 0, 100, 50);
          g2.draw(ellipse2D);
    
-         QuadCurve2D quadCurve2D = new QuadCurve2D.Double(400, 0, 450, 200, 450, 0);
+         QuadCurve2D quadCurve2D = new QuadCurve2D.Double(400, 0, 400, 100, 450, 0);
          g2.draw(quadCurve2D);
       }
    }
