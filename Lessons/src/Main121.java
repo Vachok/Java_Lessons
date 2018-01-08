@@ -3,6 +3,7 @@ import java.awt.*;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
 import java.awt.geom.Rectangle2D;
+import java.awt.geom.RoundRectangle2D;
 
 
 
@@ -26,6 +27,9 @@ public class Main121 extends MyJComp {
    
          Rectangle2D rectangle2D = new Rectangle2D.Double(100, 0, 100, 50);
          g2.draw(rectangle2D);
+   
+         RoundRectangle2D rectangle2D1 = new RoundRectangle2D.Double(200, 0, 100, 50, 20, 20);
+         g2.draw(rectangle2D1);
       }
    }
 }
