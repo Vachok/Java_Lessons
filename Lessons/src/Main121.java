@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Line2D;
 import java.awt.geom.Point2D;
+import java.awt.geom.Rectangle2D;
 
 
 
@@ -22,6 +23,9 @@ public class Main121 extends MyJComp {
          Point2D point2 = new Point2D.Double(100, 50);
          Line2D line = new Line2D.Double(point, point2);
          g2.draw(line);
+   
+         Rectangle2D rectangle2D = new Rectangle2D.Double(100, 0, 100, 50);
+         g2.draw(rectangle2D);
       }
    }
 }
