@@ -25,11 +25,14 @@ public class Main121 extends MyJComp {
          Rectangle2D rectangle2D = new Rectangle2D.Double(100, 0, 100, 50);
          g2.draw(rectangle2D);
    
-         RoundRectangle2D rectangle2D1 = new RoundRectangle2D.Double(200, 0, 100, 50, 120, 120);
+         RoundRectangle2D rectangle2D1 = new RoundRectangle2D.Double(200, 0, 100, 50, 20, 20);
          g2.draw(rectangle2D1);
    
          Ellipse2D ellipse2D = new Ellipse2D.Double(300, 0, 100, 50);
          g2.draw(ellipse2D);
+   
+         QuadCurve2D quadCurve2D = new QuadCurve2D.Double(400, 0, 425, 100, 450, 0);
+         g2.draw(quadCurve2D);
       }
    }
 }
