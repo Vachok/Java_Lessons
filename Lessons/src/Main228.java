@@ -17,6 +17,7 @@ public class Main228 extends MyJComp {
       public void paint(Graphics g) {
          
          Graphics2D g2 = ( Graphics2D ) g;
+         g2.setStroke(new BasicStroke(5f));
          Line2D line2D = new Line2D.Double(0, 0, 100, 200);
          g2.draw(line2D);
       }
