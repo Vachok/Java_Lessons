@@ -2,6 +2,7 @@ import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageInputStream;
+import javax.imageio.stream.ImageOutputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -42,6 +43,9 @@ public class ImageRWLesson {
       ImageWriter writer = null;
       Iterator<ImageWriter> iterator1 = ImageIO.getImageWritersByFormatName("JPEG");
       if(iterator1.hasNext()) writer = iterator1.next();
+   
+      ImageOutputStream imageOutputStream = ImageIO.createImageOutputStream(new File("smile.jpg"));
+      writer.setOutput(imageOutputStream);
    }
 }
 // at 09.01.2018 (13:50)
