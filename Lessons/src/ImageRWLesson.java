@@ -27,11 +27,16 @@ public class ImageRWLesson {
       Iterator<ImageReader> iterator = ImageIO.getImageReadersByFormatName("JPEG");
       if(iterator.hasNext()) reader = iterator.next();
    
-      InputStream inputStream = new FileInputStream(new File("C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\Lessons\\smile.jpg")); // создаём Stream данных
-      ImageInputStream imageInputStream = ImageIO.createImageInputStream(inputStream); // делаем его image'м, а не обезличенными байтами
-      ImageInputStream imageInputStream1 = ImageIO.createImageInputStream(new File"C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\Lessons\\smile.jpg"); // способ получения стрима 2
-      reader.setInput(imageInputStream, true); // передаём его ридеру (ImageRWLesson.java:27 - задаём формат, который он должен читать)
-      BufferedImage image1 = reader.read(reader.getNumImages(true)); // читаем. тут кол-во картинок
+      InputStream inputStream = new FileInputStream(new File("C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\Lessons\\smile.jpg"));
+      ImageInputStream imageInputStream = ImageIO.createImageInputStream(inputStream);
+      ImageInputStream imageInputStream1 = ImageIO.createImageInputStream(new File"C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\Lessons\\smile.jpg");
+      reader.setInput(imageInputStream, true);
+      BufferedImage image1 = reader.read(reader.getNumImages(true));
+   
+      int count = reader.getNumThumbnails(0); // получить мелкую копию
+      BufferedImage image2 = reader.readThumbnail(0, count); // прочитать её
+      System.out.println(reader.getHeight(0)); // вывести высоту картинки
+      reader.getWidth(0);
    }
 }
 // at 09.01.2018 (13:50)
