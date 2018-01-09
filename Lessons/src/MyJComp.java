@@ -34,4 +34,13 @@ public class MyJComp {
        jFrame.setBounds(x, y, width, height);
         return jFrame; // тот самый фрейм
     }
+    static class MyG2Comp extends JComponent {
+        
+        @Override
+        public void paint(Graphics g) {
+            
+            Graphics2D g2 = ( Graphics2D ) g;
+        }
+    }
+    
 }
