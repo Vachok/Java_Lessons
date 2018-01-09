@@ -17,7 +17,7 @@ public class Main234 {
       public void paint(Graphics g) {
          
          Graphics2D g2 = ( Graphics2D ) g;
-         g2.setPaint(Color.RED);
+         g2.setPaint(new GradientPaint(new Point(0, 0), Color.RED, new Point(200, 100), Color.YELLOW));
          Ellipse2D ellipse2D = new Ellipse2D.Double(0, 0, 200, 100);
          g2.fill(ellipse2D);
       }
