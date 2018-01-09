@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Area;
+import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
 
@@ -20,7 +21,8 @@ public class Main227 {
          Graphics2D g2 = ( Graphics2D ) g;
          
          Area area = new Area(new Rectangle2D.Double(0, 0, 100, 100));
-         g2.draw(area);
+         area.add(new Area(new Ellipse2D.Double(50, 50, 150, 150)));
+         g2.fill(area);
       }
    }
 }
