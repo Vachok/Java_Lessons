@@ -19,6 +19,9 @@ public class ImgRaiserLesson {
          pixel[0] = 0;
          raster.setPixel(i, 100, pixel);
       }
+      raster.getPixels(0, 0, image.getHeight(), image.getWidth(), new int[4 * image.getHeight() * image.getWidth()]); // читаем сразу все пиксели
+      raster.setPixels(0, 0, image.getHeight(), image.getWidth(), new int[4 * image.getHeight() * image.getWidth()]); // записываем сразу все пиксели
+      
       image.setData(raster);
       ImageIO.write(image, "png", new File("smiler.png"));
    }
