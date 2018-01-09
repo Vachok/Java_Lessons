@@ -1,12 +1,13 @@
 import javax.print.*;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.InputStream;
 
 
 
 public class Main243 {
    
-   public static void main(String[] args) throws PrintException {
+   public static void main(String[] args) throws PrintException, FileNotFoundException {
       
       DocFlavor flavor = DocFlavor.INPUT_STREAM.JPEG;
       PrintService[] services = PrintServiceLookup.lookupPrintServices(flavor, null);
