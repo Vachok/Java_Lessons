@@ -1,5 +1,6 @@
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
+import javax.imageio.ImageWriter;
 import javax.imageio.stream.ImageInputStream;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -33,10 +34,14 @@ public class ImageRWLesson {
       reader.setInput(imageInputStream, true);
       BufferedImage image1 = reader.read(reader.getNumImages(true));
    
-      int count = reader.getNumThumbnails(0); // получить мелкую копию
-      BufferedImage image2 = reader.readThumbnail(0, count); // прочитать её
-      System.out.println(reader.getHeight(0)); // вывести высоту картинки
+      int count = reader.getNumThumbnails(0);
+      BufferedImage image2 = reader.readThumbnail(0, count);
+      System.out.println(reader.getHeight(0));
       reader.getWidth(0);
+   
+      ImageWriter writer = null;
+      Iterator<ImageWriter> iterator1 = ImageIO.getImageWritersByFormatName("JPEG");
+      if(iterator1.hasNext()) writer = iterator1.next();
    }
 }
 // at 09.01.2018 (13:50)
