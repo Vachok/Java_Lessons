@@ -19,7 +19,7 @@ public class Main235 {
          Graphics2D g2 = ( Graphics2D ) g;
          Rectangle2D rectangle2D = new Rectangle2D.Double(0, 0, 100, 100);
    
-         g2.scale(2, 2);
+         g2.translate(50, 50);
          
          g2.draw(rectangle2D);
       }
