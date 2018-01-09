@@ -25,10 +25,11 @@ public class Main237 {
          Rectangle2D rectangle2D2 = new Rectangle2D.Double(150, 50, 100, 100);
          Color color2 = new Color(0f, 0f, 0f, 0.5f);
          g2.setColor(color2);
+         g2.setComposite(AlphaComposite.SrcOver);
          g2.fill(rectangle2D2);
    
          Rectangle2D rectangle2D3 = new Rectangle2D.Double(250, 50, 100, 100);
-         Color color3 = new Color(0f, 0f, 0f, 0.1f);
+         Color color3 = new Color(0f, 0f, 0f, 0.05f);
          g2.setColor(color3);
          g2.fill(rectangle2D3);
       }
