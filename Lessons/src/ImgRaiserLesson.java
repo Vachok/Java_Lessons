@@ -15,9 +15,9 @@ public class ImgRaiserLesson {
    
       WritableRaster raster = image.getRaster();
       for(int i = 0;i < raster.getHeight();i++){
-         int[] pixel = raster.getPixel(i, 0, new int[4]);
-         pixel[0] = 255;
-         raster.setPixel(i, 0, pixel);
+         int[] pixel = raster.getPixel(i, 100, new int[4]);
+         pixel[0] = 0;
+         raster.setPixel(i, 100, pixel);
       }
       image.setData(raster);
       ImageIO.write(image, "png", new File("smiler.png"));
