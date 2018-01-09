@@ -20,6 +20,7 @@ public class Main235 {
          Rectangle2D rectangle2D = new Rectangle2D.Double(0, 0, 100, 100);
    
          g2.translate(50, 50);
+         g2.shear(0.1, 0.1);
          
          g2.draw(rectangle2D);
       }
