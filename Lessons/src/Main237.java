@@ -21,6 +21,16 @@ public class Main237 {
          Color color = new Color(0f, 0f, 0f);
          g2.setColor(color);
          g2.fill(rectangle2D);
+   
+         Rectangle2D rectangle2D2 = new Rectangle2D.Double(150, 50, 100, 100);
+         Color color2 = new Color(0f, 0f, 0f, 0.5f);
+         g2.setColor(color2);
+         g2.fill(rectangle2D2);
+   
+         Rectangle2D rectangle2D3 = new Rectangle2D.Double(250, 50, 100, 100);
+         Color color3 = new Color(0f, 0f, 0f, 0.1f);
+         g2.setColor(color3);
+         g2.fill(rectangle2D3);
       }
    }
    
