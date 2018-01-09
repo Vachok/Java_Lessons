@@ -24,10 +24,10 @@ public class ImgRaiserLesson {
       raster.getPixels(0, 0, image.getHeight(), image.getWidth(), new int[4 * image.getHeight() * image.getWidth()]);
       raster.setPixels(0, 0, image.getHeight(), image.getWidth(), new int[4 * image.getHeight() * image.getWidth()]);
    
-      Object data = raster.getDataElements(0, 0, null); // пиксель, который мы читаем
-      ColorModel colorModel = image.getColorModel(); // получить цветовую модель
+      Object data = raster.getDataElements(0, 0, null);
+      ColorModel colorModel = image.getColorModel();
       Color color = new Color(colorModel.getRGB(data), true);
-      raster.setDataElements(0, 0, data); // записать
+      raster.setDataElements(0, 0, data);
       
       image.setData(raster);
       ImageIO.write(image, "png", new File("smiler.png"));
