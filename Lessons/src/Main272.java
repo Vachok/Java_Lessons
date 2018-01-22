@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.Random;
 import java.util.logging.Logger;
 
@@ -6,18 +9,55 @@ import java.util.logging.Logger;
 public class Main272 {
    
    //badly
-   private static final Logger log = Logger.getGlobal();
    public static void main(String[] args) {
       
-      try{
-         throw new Exception("message");
-      }
-      catch(Exception e){
-         e.printStackTrace();
-      }
+      method();
+   }
+   private static void method() {
+   
    }
 }
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+jmap -dump:format=b,file=dump.txt <PID>
+jhat dump.txt
 
+https://youtu.be/pHvN5nykk_c?t=32m22s !!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
+
+// https://goo.gl/w7argo java -verbose  (вызов из консоли)
+
+   /*{    Отлов "неотловимых" Exceptions
+      Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler(){
+         @Override
+         public void uncaughtException(Thread t, Throwable e) {
+            //
+         }
+      });
+   }*/
+   
+   
+   
+   /*{ Запись стэка в файл
+   
+      PrintWriter writer = new PrintWriter(new File("ingest.log"));
+      new Throwable().printStackTrace(writer);
+      writer.flush();
+      writer.close();
+   }*/
+
+
+ 
+   /*{ https://goo.gl/Fd3uRa
+      Thread.dumpStack();
+   }*/
+//          =
+   /*{ Принудительно печатать Stacktrace
+         try{
+            throw new Exception("message");
+         }
+         catch(Exception e){
+            e.printStackTrace();
+         }
+      
 /* "Прокси"
 {
       
