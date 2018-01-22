@@ -1,5 +1,5 @@
 /**
- * РљР»Р°СЃСЃ 275. Р”РѕРєСѓРјРµРЅС‚С‹
+ * Класс 275. Документы
  */
 public class Main275 {
    
@@ -7,14 +7,14 @@ public class Main275 {
     * @author Vachok
     * @version 1.1
     * @since 1.0
-    * РҐСЂР°РЅРёС‚ РјРѕР№ РРќРў
+    * Хранит мой ИНТ
     */
    int myInt;
    
    /**
-    * РўРѕС‡РєР° РЅР°С‡Р°Р»Р°.
-    * @param args Р·РЅР°С‡РµРЅРёСЏ РєРѕРјР°РЅРґРЅРѕР№ <strong>СЃС‚СЂРѕРєРё</strong>
-    * <img src="doc-files" alt="NoRa"/>
+    * Точка начала.
+    * @param args значения командной <strong>строки</strong>
+    * <img src="doc-files/20180121_192612.jpg" alt="NoRa"/>
     */
    public static void main(String[] args) {
    
@@ -22,26 +22,26 @@ public class Main275 {
    
    
    /**
-    * Р­С‚Рѕ РїРѕР»Рµ С‚СѓРїРѕ РѕС‚РґР°С‘С‚ i
-    * @param i РєР°РєРѕР№-С‚Рѕ РёРЅС‚
-    * @param s РєР°РєР°СЏ-С‚Рѕ СЃС‚СЂРѕРєР°
-    * @throws RuntimeException РµСЃР»Рё С‡С‚Рѕ-С‚Рѕ РЅРµ С‚Р°Рє - СЃСЂС‘Рј
-    * @return Рё
+    * Это поле тупо отдаёт i
+    * @param i какой-то инт
+    * @param s какая-то строка
+    * @throws RuntimeException если что-то не так - срём
+    * @return и
     */
    int getMyInt(int i, String s) throws RuntimeException {
       
       return i;
    }
    /**
-    * @deprecated РёСЃРїРѕР»СЊР·СѓР№ getMyInt()
+    * @deprecated используй getMyInt()
     */
    void depr() {
    
    }
    /**
-    * Р­С‚Рѕ РѕРїРёСЃР°РЅРёРµ СЃ Р»РёРЅРєРѕРј {@link Other#otherMethod()}
+    * Это описание с линком {@link Other#otherMethod()}
     * @see Other#otherMethod()
-    * @see "РєР°РєРѕР№-С‚Рѕ РѕРїРёСЃР°РЅРёР№"
+    * @see "какой-то описаний"
     */
    void newM() {
    

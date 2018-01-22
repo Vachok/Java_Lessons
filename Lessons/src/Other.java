@@ -1,7 +1,7 @@
 public class Other {
    
    /**
-    * Р”СЂСѓРіРѕР№ РјРµС‚РѕРґ
+    * Другой метод
     */
    void otherMethod() {
    
