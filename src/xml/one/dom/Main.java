@@ -1,3 +1,4 @@
+/*
 package xml.one.dom;
 
 import org.w3c.dom.*;
@@ -31,6 +32,7 @@ public class Main {
     }
 }
 
+*/
 /*
 Есть классы Document, Element
 они позволяют читать xml
@@ -38,8 +40,10 @@ public class Main {
 значения и пр.
 
 DOM - когда весь xml грузится в память.
-* */
+* *//*
+
 
 // https://goo.gl/vRk4YK Так можно пробежать по элементам с тэгом name
 // https://goo.gl/sgYRFZ Вывод ВСЕХ тэгов xml
 // https://goo.gl/6nnUuH Можно брать отдельные элементы, тэги
+*/
