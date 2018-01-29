@@ -10,12 +10,12 @@
       <create-header value="true" />
       <quote-values-containing-separator value="false" />
       <quote-all-values value="false" />
-      <value-separator value="," />
-      <file-name value="LESSON.csv" />
+      <value-separator value="" />
+      <file-name value="USERS.xlsx" />
       <file-location value="C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons" />
-      <scope value="SELECTION" />
+      <scope value="GLOBAL" />
       <destination value="FILE" />
-      <format value="CSV" />
+      <format value="EXCELX" />
       <charset value="windows-1251" />
     </export-instructions>
   </component>
@@ -25,14 +25,24 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-        <schema name="lesson" object-types="table, view" />
+        <schema name="lesson" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+        <schema name="mysql" object-types="function, procedure, table, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-      <console name="lesson" type="STANDARD" />
+      <console name="lesson" type="STANDARD"><![CDATA[SELECT * FROM lesson.users;]]></console>
     </connection>
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="mysql.db" active-filter-id="" />
+    <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.lesson" active-filter-id="" />
+    <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.users" active-filter-id="EMPTY_FILTER">
+      <filter id="13c468b7-459a-4bf6-95dd-5902c05eb044" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="id" operator="is null" value="" active="true" />
+      </filter>
+    </filter-list>
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -107,7 +117,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="false">
+        <object-filters hide-empty-schemas="true">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -143,7 +153,7 @@
       <general>
         <display-mode value="TABBED" />
         <navigation-history-size value="100" />
-        <show-object-details value="false" />
+        <show-object-details value="true" />
       </general>
       <filters>
         <object-type-filter>
@@ -230,7 +240,7 @@
         <max-sorting-columns value="4" />
       </sorting>
       <tracking-columns>
-        <columnNames value="" />
+        <columnNames value="ID" />
         <visible value="true" />
         <editable value="true" />
       </tracking-columns>
@@ -281,7 +291,7 @@
     </dataset-editor-settings>
     <code-editor-settings>
       <general>
-        <show-object-navigation-gutter value="false" />
+        <show-object-navigation-gutter value="true" />
         <show-spec-declaration-navigation-gutter value="true" />
       </general>
       <confirmations>
@@ -319,21 +329,21 @@
             <filter-element type="OBJECT" id="dblink" selected="true" />
           </user-schema>
           <public-schema>
-            <filter-element type="OBJECT" id="table" selected="false" />
-            <filter-element type="OBJECT" id="view" selected="false" />
-            <filter-element type="OBJECT" id="materialized view" selected="false" />
-            <filter-element type="OBJECT" id="index" selected="false" />
-            <filter-element type="OBJECT" id="constraint" selected="false" />
-            <filter-element type="OBJECT" id="trigger" selected="false" />
-            <filter-element type="OBJECT" id="synonym" selected="false" />
-            <filter-element type="OBJECT" id="sequence" selected="false" />
-            <filter-element type="OBJECT" id="procedure" selected="false" />
-            <filter-element type="OBJECT" id="function" selected="false" />
-            <filter-element type="OBJECT" id="package" selected="false" />
-            <filter-element type="OBJECT" id="type" selected="false" />
-            <filter-element type="OBJECT" id="dimension" selected="false" />
-            <filter-element type="OBJECT" id="cluster" selected="false" />
-            <filter-element type="OBJECT" id="dblink" selected="false" />
+            <filter-element type="OBJECT" id="table" selected="true" />
+            <filter-element type="OBJECT" id="view" selected="true" />
+            <filter-element type="OBJECT" id="materialized view" selected="true" />
+            <filter-element type="OBJECT" id="index" selected="true" />
+            <filter-element type="OBJECT" id="constraint" selected="true" />
+            <filter-element type="OBJECT" id="trigger" selected="true" />
+            <filter-element type="OBJECT" id="synonym" selected="true" />
+            <filter-element type="OBJECT" id="sequence" selected="true" />
+            <filter-element type="OBJECT" id="procedure" selected="true" />
+            <filter-element type="OBJECT" id="function" selected="true" />
+            <filter-element type="OBJECT" id="package" selected="true" />
+            <filter-element type="OBJECT" id="type" selected="true" />
+            <filter-element type="OBJECT" id="dimension" selected="true" />
+            <filter-element type="OBJECT" id="cluster" selected="true" />
+            <filter-element type="OBJECT" id="dblink" selected="true" />
           </public-schema>
           <any-schema>
             <filter-element type="OBJECT" id="table" selected="true" />
@@ -451,11 +461,13 @@
         <execution-timeout value="20" />
         <debug-execution-timeout value="600" />
         <focus-result value="true" />
-        <prompt-execution value="false" />
+        <prompt-execution value="true" />
         <target-connection value="POOL" />
       </statement-execution>
       <script-execution>
-        <command-line-interfaces />
+        <command-line-interfaces>
+          <value id="c91a014b-2b7b-4399-a069-a72711880160" name="MySQL client" executable-path="C:/Program Files/MySQL/MySQL Server 5.7/bin/mysql.exe" database-type="MYSQL" />
+        </command-line-interfaces>
         <execution-timeout value="300" />
       </script-execution>
       <method-execution>
@@ -469,7 +481,7 @@
         <uncommitted-changes>
           <on-project-close value="ASK" />
           <on-disconnect value="ASK" />
-          <on-autocommit-toggle value="ASK" />
+          <on-autocommit-toggle value="COMMIT" />
         </uncommitted-changes>
         <multiple-uncommitted-changes>
           <on-commit value="ASK" />
@@ -479,15 +491,15 @@
       <session-browser>
         <disconnect-session value="ASK" />
         <kill-session value="ASK" />
-        <reload-on-filter-change value="false" />
+        <reload-on-filter-change value="true" />
       </session-browser>
       <compiler>
         <compile-type value="KEEP" />
-        <compile-dependencies value="ASK" />
+        <compile-dependencies value="YES" />
         <always-show-controls value="false" />
       </compiler>
       <debugger>
-        <debugger-type value="ASK" />
+        <debugger-type value="JDWP" />
         <use-generic-runners value="true" />
       </debugger>
     </operation-settings>
