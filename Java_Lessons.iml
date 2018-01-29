@@ -8,9 +8,9 @@
     <orderEntry type="jdk" jdkName="9.0" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
-      <library>
+      <library name="com.mysql.connection.driver">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/javax.mail-api-1.6.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/lib/mysql-connector-java-5.1.45-bin.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
