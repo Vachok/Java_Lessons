@@ -22,3 +22,4 @@
 hs_err_pid*
 /temp2.xml
 !/mysql-connector-java-5.1.45-bin.jar
+!/javax.mail-api-1.6.0.jar
