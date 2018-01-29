@@ -107,7 +107,7 @@
           <max-connection-pool-size value="7" />
           <alternative-statement-delimiter value="" />
         </details>
-        <object-filters hide-empty-schemas="true">
+        <object-filters hide-empty-schemas="false">
           <object-type-filter use-master-settings="true">
             <object-type name="SCHEMA" enabled="true" />
             <object-type name="USER" enabled="true" />
@@ -232,7 +232,7 @@
       <tracking-columns>
         <columnNames value="" />
         <visible value="true" />
-        <editable value="false" />
+        <editable value="true" />
       </tracking-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
@@ -450,7 +450,7 @@
         <fetch-block-size value="100" />
         <execution-timeout value="20" />
         <debug-execution-timeout value="600" />
-        <focus-result value="false" />
+        <focus-result value="true" />
         <prompt-execution value="false" />
         <target-connection value="POOL" />
       </statement-execution>

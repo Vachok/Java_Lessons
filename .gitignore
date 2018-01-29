@@ -21,3 +21,4 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 /temp2.xml
+!/mysql-connector-java-5.1.45-bin.jar
