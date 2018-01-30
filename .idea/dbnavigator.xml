@@ -36,11 +36,7 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="mysql.db" active-filter-id="" />
-    <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.books" active-filter-id="d247f4cd-ffa9-4d74-b191-55f56fe1bff2">
-      <filter id="d247f4cd-ffa9-4d74-b191-55f56fe1bff2" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
-        <condition column="img" operator="is not null" value="" active="true" />
-      </filter>
-    </filter-list>
+    <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.books" active-filter-id="EMPTY_FILTER" />
     <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.lesson" active-filter-id="" />
     <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.users" active-filter-id="EMPTY_FILTER">
       <filter id="13c468b7-459a-4bf6-95dd-5902c05eb044" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
