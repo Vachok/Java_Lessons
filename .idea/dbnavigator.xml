@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-        <schema name="lesson" object-types="argument, function, procedure, table, view" />
+        <schema name="lesson" object-types="function, procedure, table, view" />
       </connection>
     </loaded-nodes>
   </component>
@@ -52,6 +52,7 @@ END]]></console>
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/three/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
@@ -63,9 +64,7 @@ END]]></console>
         </execution-input>
         <execution-input execution-timeout="30" debug-execution-timeout="600" enable-logging="false" use-pool-connection="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
           <argument-list>
-            <argument name="bookId">
-              <value />
-            </argument>
+            <argument name="bookId" />
           </argument-list>
         </execution-input>
       </execution-inputs>
