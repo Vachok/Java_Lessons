@@ -19,9 +19,9 @@ public class Blob {
       String connectionUrl = "jdbc:mysql://localhost:3306/lesson";
       Class.forName("com.mysql.jdbc.Driver");
       try(Connection conn = DriverManager.getConnection(connectionUrl, userName, password);Statement stat = conn.createStatement()){
-//         stat.execute("drop table Books");
+         stat.execute("drop table if exists Books");
          stat.executeUpdate("create table if not exists Books (id MEDIUMINT not null auto_increment, name VARCHAR(30) not null, img BLOB, primary key(id))");
-         
+   
          BufferedImage image = ImageIO.read(new File("C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\20180129_210757.jpg"));
          java.sql.Blob blob = conn.createBlob();
          try(OutputStream outputStream = blob.setBinaryStream(1)){
@@ -31,7 +31,7 @@ public class Blob {
          statement.setString(1, "Battery");
          statement.setBlob(2, blob);
          statement.execute(); // https://goo.gl/pnzDYR загрузка картинки в базу данных
-         
+   
          ResultSet resultSet = stat.executeQuery("select * from Books");
          while(resultSet.next()){
             java.sql.Blob blob2 = resultSet.getBlob("img");

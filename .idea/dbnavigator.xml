@@ -25,13 +25,16 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-        <schema name="lesson" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+        <schema name="lesson" object-types="argument, function, procedure, table, view" />
       </connection>
     </loaded-nodes>
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-      <console name="lesson" type="STANDARD"><![CDATA[SELECT * FROM lesson.users;]]></console>
+      <console name="lesson" type="STANDARD"><![CDATA[create PROCEDURE BooksCount (OUT cnt INT)
+BEGIN
+select count(*) into cnt from Books;
+END]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
@@ -54,7 +57,19 @@
     <method-browser />
     <execution-history>
       <group-entries value="true" />
-      <execution-inputs />
+      <execution-inputs>
+        <execution-input execution-timeout="30" debug-execution-timeout="600" enable-logging="false" use-pool-connection="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" execution-schema="lesson">
+          <argument-list />
+        </execution-input>
+        <execution-input execution-timeout="30" debug-execution-timeout="600" enable-logging="false" use-pool-connection="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
+          <argument-list>
+            <argument name="bookId">
+              <value />
+            </argument>
+          </argument-list>
+        </execution-input>
+      </execution-inputs>
+      <selection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" />
     </execution-history>
     <argument-values-cache />
   </component>
@@ -67,7 +82,7 @@
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
     <recently-used-interfaces>
-      <mapping database-type="MYSQL" interface-id="DEFAULT" />
+      <mapping database-type="MYSQL" interface-id="c91a014b-2b7b-4399-a069-a72711880160" />
     </recently-used-interfaces>
   </component>
   <component name="DBNavigator.Project.Settings">
