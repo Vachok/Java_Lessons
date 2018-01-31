@@ -1,4 +1,4 @@
-package jdbc.one;
+package jdbc.whatis;
 
 
 
