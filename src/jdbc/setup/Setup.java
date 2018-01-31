@@ -1,4 +1,4 @@
-package jdbc.two;
+package jdbc.setup;
 
 
 
