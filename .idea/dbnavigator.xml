@@ -7,15 +7,15 @@
   </component>
   <component name="DBNavigator.Project.DataExportManager">
     <export-instructions>
-      <create-header value="true" />
+      <create-header value="false" />
       <quote-values-containing-separator value="false" />
       <quote-all-values value="false" />
-      <value-separator value="" />
-      <file-name value="USERS.xlsx" />
-      <file-location value="C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons" />
+      <value-separator value="," />
+      <file-name value="books_finish.csv" />
+      <file-location value="C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons\src\jdbc\updateresult" />
       <scope value="GLOBAL" />
       <destination value="FILE" />
-      <format value="EXCELX" />
+      <format value="CSV" />
       <charset value="windows-1251" />
     </export-instructions>
   </component>
@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-        <schema name="lesson" object-types="function, procedure, table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
@@ -51,7 +47,7 @@ END]]></console>
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/three/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
@@ -94,7 +90,7 @@ END]]></console>
           <config-type value="BASIC" />
           <database-version value="5.7" />
           <driver-source value="BUILTIN" />
-          <driver-library value="" />
+          <driver-library value="C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons\lib\mysql-connector-java-5.1.45-bin1.jar" />
           <driver value="" />
           <url-type value="DATABASE" />
           <host value="localhost" />
@@ -165,7 +161,7 @@ END]]></console>
     </connections>
     <browser-settings>
       <general>
-        <display-mode value="TABBED" />
+        <display-mode value="SIMPLE" />
         <navigation-history-size value="100" />
         <show-object-details value="true" />
       </general>
@@ -254,7 +250,7 @@ END]]></console>
         <max-sorting-columns value="4" />
       </sorting>
       <tracking-columns>
-        <columnNames value="ID" />
+        <columnNames value="" />
         <visible value="true" />
         <editable value="true" />
       </tracking-columns>
@@ -476,7 +472,7 @@ END]]></console>
         <debug-execution-timeout value="600" />
         <focus-result value="true" />
         <prompt-execution value="true" />
-        <target-connection value="POOL" />
+        <target-connection value="MAIN" />
       </statement-execution>
       <script-execution>
         <command-line-interfaces>
@@ -532,7 +528,7 @@ END]]></console>
       </extensions>
       <general>
         <lookup-ddl-files value="true" />
-        <create-ddl-files value="false" />
+        <create-ddl-files value="true" />
         <synchronize-ddl-files value="true" />
         <use-qualified-names value="false" />
         <make-scripts-rerunnable value="true" />
