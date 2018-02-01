@@ -7,6 +7,5 @@
     </content>
     <orderEntry type="jdk" jdkName="9.0" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="mod2" />
   </component>
 </module>
