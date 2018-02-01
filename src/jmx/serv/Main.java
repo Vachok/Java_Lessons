@@ -31,5 +31,5 @@ jmx.serv.Hello - это класс, который переопределяет 
 и позволяет с ними работать.
 
 in Java Mission Control:
-jmx/serv/jmc_2018-02-01_16-28-41.png
+https://github.com/Vachok/Java_Lessons/commit/6ff6028bf6e7de394f5464370b941d86f4555a72#diff-812fce2549aed8b702bfa7a3d7402241
 */
