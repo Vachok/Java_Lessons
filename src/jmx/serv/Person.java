@@ -2,10 +2,14 @@ package jmx.serv;
 
 
 
-public class Person {
+import java.io.Serializable;
+
+
+
+public class Person implements Serializable {
    
    private String name = "Vachok";
-   String getName() {
+   public String getName() {
       
       return name;
    }

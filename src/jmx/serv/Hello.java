@@ -37,9 +37,9 @@ public class Hello extends NotificationBroadcasterSupport implements HelloMBean 
       return name;
    }
    @Override
-   public void setName() {
-      
-      this.name = name;
+   public void setName(String s) {
+   
+      this.name = s;
    }
    @Override
    public MBeanNotificationInfo[] getNotificationInfo() {
