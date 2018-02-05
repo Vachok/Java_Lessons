@@ -33,6 +33,9 @@ select count(*) into cnt from Books;
 END]]></console>
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" />
+  </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="mysql.db" active-filter-id="" />
     <filter-list connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" dataset="lesson.books" active-filter-id="EMPTY_FILTER" />
@@ -47,18 +50,18 @@ END]]></console>
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
       <group-entries value="true" />
       <execution-inputs>
-        <execution-input execution-timeout="30" debug-execution-timeout="600" enable-logging="false" use-pool-connection="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" execution-schema="lesson">
+        <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" execution-schema="lesson">
           <argument-list />
         </execution-input>
-        <execution-input execution-timeout="30" debug-execution-timeout="600" enable-logging="false" use-pool-connection="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
+        <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
           <argument-list>
             <argument name="bookId" />
           </argument-list>
@@ -76,9 +79,7 @@ END]]></console>
     <filters />
   </component>
   <component name="DBNavigator.Project.ScriptExecutionManager" clear-outputs="true">
-    <recently-used-interfaces>
-      <mapping database-type="MYSQL" interface-id="c91a014b-2b7b-4399-a069-a72711880160" />
-    </recently-used-interfaces>
+    <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
@@ -116,9 +117,10 @@ END]]></console>
         </ssh-settings>
         <details>
           <charset value="windows-1251" />
+          <session-management value="true" />
           <ddl-file-binding value="true" />
           <database-logging value="true" />
-          <connect-automatically value="true" />
+          <connect-automatically value="false" />
           <restore-workspace value="true" />
           <restore-workspace-deep value="true" />
           <environment-type value="development" />
@@ -472,7 +474,6 @@ END]]></console>
         <debug-execution-timeout value="600" />
         <focus-result value="true" />
         <prompt-execution value="true" />
-        <target-connection value="MAIN" />
       </statement-execution>
       <script-execution>
         <command-line-interfaces>
