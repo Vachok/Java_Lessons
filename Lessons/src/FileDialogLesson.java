@@ -1,6 +1,11 @@
 import javax.swing.*;
+import javax.swing.filechooser.FileFilter;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
+import java.io.File;
 
 
 
@@ -21,10 +26,12 @@ public class FileDialogLesson {
          
          @Override
          public void actionPerformed(ActionEvent e) {
-            
+   
             JFileChooser fileChooser = new JFileChooser();
-            fileChooser.showOpenDialog(FileDialogLesson.jPanel);
+            int i = fileChooser.showDialog(FileDialogLesson.jPanel, "saveme");
+            System.out.println(i);
          }
       });
+      jPanel.revalidate();
    }
 }
