@@ -61,7 +61,6 @@ class MyClass {
 
 
 class Anno2 extends Anno {
-
 }
 
 /*
