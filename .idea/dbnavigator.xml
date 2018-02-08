@@ -2,7 +2,6 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-review-text-wrapping value="true" />
     <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
@@ -51,8 +50,8 @@ END]]></console>
     <last-used-providers />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
