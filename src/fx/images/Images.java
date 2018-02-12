@@ -27,7 +27,7 @@ public class Images extends Application {
     public void start(Stage primaryStage) throws Exception {
         Image sunImage = new Image(new FileInputStream("C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\src\\fx\\images\\20180212_081924.jpg"));
         Image redImage = new Image(new FileInputStream("C:\\Users\\ikudryashov.EATMEAT\\IdeaProjects\\Java_Lessons\\src\\fx\\images\\20180212_083523.jpg"));
-        WritableImage writableImage;
+
         if (Calendar.getInstance().get(Calendar.AM_PM) == 0) image = sunImage;
         if (Calendar.getInstance().get(Calendar.AM_PM) == 1) image = redImage;
 
@@ -39,7 +39,7 @@ public class Images extends Application {
                 argb.add(a);
             }
         }
-
+/*
         writableImage = new WritableImage((int) image.getWidth(), (int) image.getHeight());
         PixelWriter pixelWriter = writableImage.getPixelWriter();
         for (int readY = 0; readY < image.getHeight(); readY++) {
@@ -49,8 +49,8 @@ public class Images extends Application {
                 }
             }
         }
-        if (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == 7) image = writableImage;
-        ImageIO.write(SwingFXUtils.fromFXImage(writableImage, null), "png", new FileOutputStream("fx.images.Images.png"));
+        */
+//        ImageIO.write(SwingFXUtils.fromFXImage(writableImage, null), "png", new FileOutputStream("fx.images.Images.png"));
         Group group = new Group();
         primaryStage.setScene(new Scene(group, 600, 600));
         primaryStage.setTitle("Йа фрейм");
