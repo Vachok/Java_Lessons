@@ -27,10 +27,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="0bf0ac30-ec9f-4431-8826-169a08f5b68a">
-      <console name="lesson" type="STANDARD"><![CDATA[create PROCEDURE BooksCount (OUT cnt INT)
-BEGIN
-select count(*) into cnt from Books;
-END]]></console>
+      <console name="lesson" type="STANDARD" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
@@ -60,6 +57,14 @@ END]]></console>
       <execution-inputs>
         <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" execution-schema="lesson">
           <argument-list />
+        </execution-input>
+        <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" execution-schema="lesson">
+          <argument-list />
+        </execution-input>
+        <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
+          <argument-list>
+            <argument name="bookId" />
+          </argument-list>
         </execution-input>
         <execution-input execution-timeout="30" debug-execution-timeout="600" session-id="MAIN" enable-logging="false" commit-after-execution="false" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/getBooks]" execution-schema="lesson">
           <argument-list>
