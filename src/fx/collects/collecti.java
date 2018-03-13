@@ -1,4 +1,4 @@
-package collects;
+package fx.collects;
 
 import javafx.application.Application;
 import javafx.collections.FXCollections;
