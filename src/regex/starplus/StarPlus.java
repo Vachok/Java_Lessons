@@ -8,16 +8,15 @@ public class StarPlus {
     {
         Pattern p4 = Pattern.compile("\\Q*\\d+*\\E+"); // Буквальное восприятие QE 0 *\d+**
         p4 = Pattern.compile("\\Q*\\d+*\\E*+"); // 0 *\d+**
-        p4 = Pattern.compile("?:\\Q*\\d+*\\E+"); // .PatternSyntaxException: Dangling meta character '?' near index 0?:\Q*\d+*\E+
+        // p4 = Pattern.compile("?:\\Q*\\d+*\\E+");  .PatternSyntaxException: Dangling meta character '?' near index 0?:\Q*\d+*\E+
         Matcher m4 = p4.matcher("*\\d+**\\d+*");
 
         while (m4.find()) {
             System.out.print(m4.start() + " " + m4.group() + " ");
         }
         System.out.println(" ");
-
-    /
-
+    }
+}
     /*{
         Pattern p3 = Pattern.compile("<.+>");//10 <EM>first</EM> (greedy)
         p3 = Pattern.compile("<.+?>"); // 10 <EM> 19 </EM>  (lazy reluctant)
@@ -50,11 +49,7 @@ public class StarPlus {
         }
         System.out.println(" ");
     }*/
-    }
     // * и + . Знаки повторения. от 1 до бесконечности
     // идентичные выражения {0,} и {1,}
     // по-умолчанию они greedy. если поставить ? будет lazy
     // \Q \E - всё между ними воспринимается буквально
-
-    public static void main(String[] args) {
-    }
