@@ -1,1 +1,5 @@
-0 a? 
+true
+true
+true
+false
+true
