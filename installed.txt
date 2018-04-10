@@ -1,0 +1,10 @@
+Activity Tracker
+SequenceDiagram
+Statistic
+com.alayouni.ansiHighlight
+com.facebook.rucinskic.chromaterial
+com.thoughtworks.gauge
+commit-template-idea-plugin
+mobi.hsz.idea.gitignore
+moe.studio.formatter
+org.intellij.plugins.markdown
