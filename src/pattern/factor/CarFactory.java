@@ -1,6 +1,6 @@
 package pattern.factor;
 
-import pattern.absfact.Car;
+
 import pattern.absfact.Factory;
 import pattern.absfact.Tank;
 
@@ -13,7 +13,7 @@ import pattern.absfact.Tank;
  @see Audi
  @see Toyota
  <p>
- Ауди и Тойота имплементят интерфейс {@link pattern.absfact.Car}, и переопределяют метод {@link Car#drive()} */
+ Ауди и Тойота имплементят интерфейс {@link Car}, и переопределяют метод {@link Car#drive()} */
 public class CarFactory implements Factory {
 
     /**
@@ -21,10 +21,10 @@ public class CarFactory implements Factory {
 
      @return new {@link Toyota} или new {@link Audi}
 
-     @see pattern.absfact.Car
+     @see Car
      @see pattern.absfact.AbstractFactory
      */
-    public pattern.absfact.Car createCar(String typeOfCar) {
+    public Car createCar(String typeOfCar) {
         switch (typeOfCar) {
             case "Toyota":
                 return new Toyota();
@@ -51,12 +51,12 @@ public class CarFactory implements Factory {
     }
 
     /**
-     Ауди - это {@link pattern.absfact.Car}. Всё, что умеет Car, умеет и Audi!
+     Ауди - это {@link Car}. Всё, что умеет Car, умеет и Audi!
      <tt>Но по-особенному!</tt>
      <p>
      Описание характеристик
      */
-    public static class Audi implements pattern.absfact.Car {
+    public static class Audi implements Car {
         /**
          И поехали :)
          */
@@ -86,12 +86,12 @@ public class CarFactory implements Factory {
     }
 
     /**
-     Toyota - это {@link pattern.absfact.Car}. Всё, что умеет Car, умеет и Toyota!
+     Toyota - это {@link Car}. Всё, что умеет Car, умеет и Toyota!
      <tt>Но по-особенному!</tt>
      <p>
      Описание характеристик
      */
-    static class Toyota implements pattern.absfact.Car {
+    static class Toyota implements Car {
         /**
          Едем 180
          */
