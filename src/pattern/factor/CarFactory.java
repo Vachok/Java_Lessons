@@ -1,6 +1,4 @@
 package pattern.factor;
-
-
 import pattern.absfact.Factory;
 import pattern.absfact.Tank;
 

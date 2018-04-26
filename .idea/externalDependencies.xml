@@ -3,7 +3,10 @@
   <component name="ExternalDependencies">
     <plugin id="Activity Tracker" />
     <plugin id="Git4Idea" />
+    <plugin id="SequenceDiagram" />
     <plugin id="com.intellij.tasks" />
+    <plugin id="com.intellij.uiDesigner" />
+    <plugin id="commit-template-idea-plugin" />
     <plugin id="org.jetbrains.plugins.github" />
   </component>
 </project>

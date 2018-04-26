@@ -1,7 +1,5 @@
 package pattern.factor;
-
 import pattern.absfact.Factory;
-
 /**
  Использование {@link Factory} классом {@link MyNewCar}
  <p>
@@ -12,7 +10,5 @@ import pattern.absfact.Factory;
  */
 public class MyNewCar {
     public static void main(String[] args) {
-
     }
 }
-
