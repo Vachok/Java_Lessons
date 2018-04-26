@@ -1,3 +1,4 @@
+
 package pattern.whatis;
 
 public class Wtf {
