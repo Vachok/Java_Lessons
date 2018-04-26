@@ -1,7 +1,6 @@
 /**
- <b>Patterns 2: Factory</b>. Фабрики по-производству.
+ <a href="https://github.com/Vachok/Java_Lessons/issues/523" target="_blank">Фабрики по производству фабрик!</a>
  <p>
- Урок 523-269. Классы типа Factory.
- <a href='https://youtu.be/A4uNotdECBg'>Видео</a>, <a href='https://github.com/Vachok/Java_Lessons/issues/523'>GitHub</a>
+ <a href="https://youtu.be/A4uNotdECBg" target="_blank">Patterns 2: Factory</a>
  */
 package pattern.factor;

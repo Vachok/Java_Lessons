@@ -1,9 +1,6 @@
 /**
- Summary: <b>Patterns 3: Abstract Factory</b>
+ <a href="https://github.com/Vachok/Java_Lessons/issues/524" target="_blank">Фабрики по производству фабрик!</a>
  <p>
- <p>
- Id: Java_Lessons-524 Created at: Wed Apr 25 10:08:07 MSK 2018 Updated at: Wed Apr 25 17:27:44 MSK 2018 Description:
- https://youtu.be/-PX_4nEE7p8
- `Java_Lessons-524: Patterns 3: Abstract Factory` on github.com
+ <a href="https://youtu.be/-PX_4nEE7p8" target="_blank">Patterns 3: Abstract Factory</a>
  */
 package pattern.absfact;
