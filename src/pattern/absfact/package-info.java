@@ -1,5 +1,5 @@
 /**
- Summary: <b>Patterns 3: Abstract Factory</b>
+ <b>Patterns 3: Abstract Factory</b> Фабрики по производству фиабрик!
  <p>
  <p>
  Id: Java_Lessons-524 Created at: Wed Apr 25 10:08:07 MSK 2018 Updated at: Wed Apr 25 17:27:44 MSK 2018 Description:
