@@ -52,7 +52,7 @@ public class CarFactory implements Factory {
 
     /**
      Ауди - это {@link Car}. Всё, что умеет Car, умеет и Audi!
-     <tt>Но по-особенному!</tt>
+     Но по-особенному!
      <p>
      Описание характеристик
      */
@@ -87,7 +87,7 @@ public class CarFactory implements Factory {
 
     /**
      Toyota - это {@link Car}. Всё, что умеет Car, умеет и Toyota!
-     <tt>Но по-особенному!</tt>
+     Но по-особенному!
      <p>
      Описание характеристик
      */

@@ -5,7 +5,7 @@ import pattern.absfact.MasterOfPuppets;
 /**
  Использование {@link CarFactory} классом {@link CarBoss}
  <p>
- Запрос в {@link CarFactory}, где мы просим {@link Car} <tt>toyota</tt> и <tt>audi</tt>,
+ Запрос в {@link CarFactory}, где мы просим {@link Car} toyota и audi,
  Классы {@link CarFactory.Toyota} {@link CarFactory.Audi}, переопределяют метод {@link Car#drive()}.
  На выходе в этом классе, имеем "максимальную скорость" по-марке.
  <a href='https://youtu.be/A4uNotdECBg'>YouTube</a>
