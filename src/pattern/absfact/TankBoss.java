@@ -3,7 +3,7 @@ package pattern.absfact;
 /**
  Использование {@link TankFactory} классом {@link TankBoss}
  <p>
- Запрос в {@link TankFactory}, где мы просим {@link Tank} <tt>toyota</tt> и <tt>audi</tt>,
+ Запрос в {@link TankFactory}, где мы просим {@link Tank} toyota и audi,
  Классы {@link TankFactory.T52} {@link TankFactory.T60}, переопределяют метод {@link Tank#drive()}.
  На выходе в этом классе, имеем "максимальную скорость" по-марке.
  <a href='https://youtu.be/A4uNotdECBg'>YouTube</a>
