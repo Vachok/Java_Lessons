@@ -12,6 +12,7 @@ package pattern.builder;
 
  @see SportCar
  @deprecated не самое лучшее решение */
+@SuppressWarnings("ALL")
 class SportCarDep {
     private String name;
     private String color;
