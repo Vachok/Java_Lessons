@@ -9,8 +9,8 @@ package pattern.builder;
  @since 27 apr 2018 */
 public class BuildMain {
     /**
-     <b>Построим Ауди!</b>
-
+     Построим Ауди!
+     <p>
      <code> SportCar sportCar = new SportCar.Builder("Audi").setMaxSpeed(300).setColor("White").build();</code>
 
      @param args null
@@ -19,7 +19,7 @@ public class BuildMain {
      */
     @SuppressWarnings(value = "all")
     public static void main(String[] args) {
-        SportCar sportCar = new SportCar.Builder("Audi").setMaxSpeed(300).setColor("White").build();
+        SportCar sportCar = new SportCar.Builder("Audi").setColor("White").build();
         System.out.printf("sportCar = %s%n", sportCar.getColor());
         System.out.println("sportCar.getName() = " + sportCar.getName());
         System.out.println("sportCar.getMaxSpeed() = " + sportCar.getMaxSpeed());

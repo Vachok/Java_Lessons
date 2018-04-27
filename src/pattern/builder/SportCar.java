@@ -7,16 +7,8 @@ package pattern.builder;
  @see BuildMain */
 class SportCar {
     private String name;
-    /**
-     <b>Красный</b>
-     по-умолчанию.
-     */
-    private String color = "red";
-    /**
-     <b>250</b>
-     по-умолчанию.
-     */
-    private int maxSpeed = 250;
+    private String color;
+    private int maxSpeed;
 
     /**
      Приватный конструктор, чтобы запретить создавать экземпляры
@@ -43,13 +35,17 @@ class SportCar {
      Строитель
      <p>
      Статичный класс, который будет строить {@link SportCar}. Должен содержать такие же поля, как у основного.
+     Тут можно задать параметры по-умолчанию.
      <p>
      Передадим его в {@link SportCar#SportCar(Builder)}
      */
     static class Builder {
         private String name;
         private String color;
-        private int maxSpeed;
+        /**
+         200 - по-умолчанию
+         */
+        private int maxSpeed = 200;
 
         /**
          Конструктор, для тех полей, которые обязательны.
