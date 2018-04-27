@@ -1,5 +1,5 @@
 /**
- <a href="https://github.com/Vachok/Java_Lessons/issues/527">Patterns 6: Builder</a>
+ <a href="https://github.com/Vachok/Java_Lessons/issues/527">Builder</a>
  <p>
  Id: Java_Lessons-527
  <p>
