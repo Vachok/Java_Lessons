@@ -7,7 +7,7 @@
  <p>
  Updated at: Fri Apr 27 16:29:10 MSK 2018
  <p>
- Description:
- https://youtu.be/PWi6hSBn06g
+
+ <a href="https://youtu.be/PWi6hSBn06g" target=_blank> Description</a>
  */
 package pattern.builder;

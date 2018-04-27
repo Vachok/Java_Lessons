@@ -1,7 +1,7 @@
 package pattern.builder;
 
 /**
- <b>Создадим builder для спорткара</b>
+ Создадим builder для спорткара
 
  @see Builder
  @see BuildMain */

@@ -1,6 +1,5 @@
 package pattern.factor;
 
-import pattern.factor.Car;
 import pattern.absfact.Factory;
 import pattern.absfact.Tank;
 
