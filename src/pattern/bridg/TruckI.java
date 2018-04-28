@@ -5,6 +5,7 @@ package pattern.bridg;
  * Должен содержать копию моста, как и {@link CarI}
  *
  * @since 28.04.2018
+ * @see CarI
  */
 abstract class TruckI {
     /**

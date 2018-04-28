@@ -2,6 +2,10 @@ package pattern.bridg;
 
 /**
  * Абстрактный класс. Автомобиль.
+ Должен содержать копию моста, как и {@link TruckI}.
+ * @since 28.04.2018
+ * @see BridgeI
+ * @see TruckI
  */
 abstract class CarI {
     /**

@@ -5,8 +5,8 @@ package pattern.bridg;
  * <p>
  * Его должен содержать {@link CarI} и {@link TruckI}
  * <p>
- * А он должен содержать имплементации. {@link CarIBridge} и {@link TruckIBridge}
+ * А он должен быть имплементирован в {@link CarIBridge} и {@link TruckIBridge}
  */
 interface BridgeI {
-
+    void drive();
 }
