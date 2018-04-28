@@ -1,7 +1,4 @@
 package pattern.builder;
-
-
-
 /**
  <b>Основной action-class</b>
 
@@ -10,10 +7,9 @@ package pattern.builder;
 public class BuildMain {
     /**
      Построим Ауди!
-     <p>
      <code> SportCar sportCar = new SportCar.Builder("Audi").setMaxSpeed(300).setColor("White").build();</code>
-
      @param args null
+     <p>
      @see SportCar
      @see SportCar.Builder
      */
