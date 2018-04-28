@@ -25,8 +25,8 @@ class SportCarDep {
     }
 
     /**
-     @param name
-     @param color
+     @param name имя
+     @param color цвет
      */
     public SportCarDep(String name, String color) {
         this.name = name;
@@ -34,8 +34,8 @@ class SportCarDep {
     }
 
     /**
-     @param name
-     @param maxSpeed
+     @param name имя
+     @param maxSpeed скорость
      */
     public SportCarDep(String name, int maxSpeed) {
         this.name = name;
@@ -43,9 +43,9 @@ class SportCarDep {
     }
 
     /**
-     @param name
-     @param color
-     @param maxSpeed
+     @param name имя
+     @param color цвет
+     @param maxSpeed скорость
      */
     public SportCarDep(String name, String color, int maxSpeed) {
         this.name = name;

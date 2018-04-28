@@ -20,6 +20,7 @@ class ObjectPoll {
     /**
      <p>Освобождение объекта.</p>
      Удаляет объект из используемых used и помещает в free@param pooledObject@param pooledObject
+     @param pooledObject объект, который нужно освободить.
      */
     public void releasePooledObject(PooledObject pooledObject) {
         used.remove(getPooledObject());
