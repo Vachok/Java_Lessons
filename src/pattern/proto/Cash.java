@@ -1,5 +1,4 @@
 package pattern.proto;
-
 /**
  Класс, который будет хранить клона.
 
@@ -17,18 +16,15 @@ class Cash {
      Getter возвращает клон {@link Student}.
 
      @return {@link Student#clone()}
-
      @throws CloneNotSupportedException если клонирование не поддерживается
      */
     public Student getStudent() throws CloneNotSupportedException {
         return student.clone();
     }
-
     /**
      Помещает {@link Student} в {@link Cash}.
 
      @param student new {@link Student}.
-
      @return {@link Student}.
      */
     public Cash setStudent(Student student) {

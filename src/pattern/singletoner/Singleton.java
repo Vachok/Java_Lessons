@@ -2,6 +2,7 @@ package pattern.singletoner;
 
 /**
  Пример класса синглтона
+ <p>
 
  @since 27.04.2018 (11:30) */
 class Singleton {

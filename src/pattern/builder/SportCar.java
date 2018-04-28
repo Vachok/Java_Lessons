@@ -12,7 +12,6 @@ class SportCar {
 
     /**
      Приватный конструктор, чтобы запретить создавать экземпляры
-
      @param builder {@link Builder}
      */
     private SportCar(Builder builder) {
@@ -64,7 +63,6 @@ class SportCar {
 
         /**
          @param color цвет
-
          @return цвет
          */
         public Builder setColor(String color) {
@@ -74,7 +72,6 @@ class SportCar {
 
         /**
          @param maxSpeed макс. скорость
-
          @return макс. скорость
          */
         public Builder setMaxSpeed(int maxSpeed) {
@@ -84,7 +81,6 @@ class SportCar {
 
         /**
          Метод, который будет строить.
-
          @return построенный новый {@link SportCar}
          */
         public SportCar build() {
