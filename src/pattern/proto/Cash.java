@@ -1,5 +1,4 @@
 package pattern.proto;
-
 /**
  Класс, который будет хранить клона.
 
@@ -28,7 +27,6 @@ class Cash {
      Помещает {@link Student} в {@link Cash}.
 
      @param student new {@link Student}.
-
      @return {@link Student}.
      */
     public Cash setStudent(Student student) {
