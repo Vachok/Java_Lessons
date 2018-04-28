@@ -16,11 +16,13 @@ class Cash {
      Getter возвращает клон {@link Student}.
 
      @return {@link Student#clone()}
+
      @throws CloneNotSupportedException если клонирование не поддерживается
      */
     public Student getStudent() throws CloneNotSupportedException {
         return student.clone();
     }
+
     /**
      Помещает {@link Student} в {@link Cash}.
 
