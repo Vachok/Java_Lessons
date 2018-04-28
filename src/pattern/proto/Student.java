@@ -1,4 +1,5 @@
 package pattern.proto;
+
 /**
  Объект для клонирования. Пример.
  <p>
@@ -10,6 +11,7 @@ class Student implements Cloneable {
      Метод из интерфейса {@link Cloneable}.
 
      @return клон этого класса
+
      @throws CloneNotSupportedException не поддерживает клонирование
      @see Student
      @see Cash
