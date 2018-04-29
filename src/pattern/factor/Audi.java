@@ -1,5 +1,4 @@
 package pattern.factor;
-
 /**
  Ауди
  <p>
