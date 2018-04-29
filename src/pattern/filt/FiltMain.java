@@ -5,9 +5,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * <b>Фильтр</b> <a href="https://github.com/Vachok/Java_Lessons/issues/532" target=_blank>Filter #532</a>
+ * <b>Фильтр</b>
  * <p>
- *
+ * @see SpeedFilter
  * @since //28.04.2018 (20:00)
  */
 public class FiltMain {
