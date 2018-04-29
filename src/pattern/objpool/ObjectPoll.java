@@ -10,10 +10,12 @@ import java.util.List;
 class ObjectPoll {
     /**
      Свободный LinkedList хранимых объектов
+     {@link PooledObject}
      */
     List<PooledObject> free = new LinkedList<>();
     /**
      Занятый LinkedList хранимых объектов
+     {@link PooledObject}
      */
     List<PooledObject> used = new LinkedList<>();
 
