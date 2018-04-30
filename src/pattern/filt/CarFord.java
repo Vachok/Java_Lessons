@@ -4,20 +4,50 @@ package pattern.filt;
  * Автомобиль типа "Форд."
  *
  * @since 29.04.2018 (14:13)
+ * @see FiltMain
+ * @see SpeedFilter
  */
 class CarFord {
     /**
      * Скорость
      */
-    int maxSpeed;
+    private int maxSpeed;
     /**
      * Цвет
      */
-    String color;
+    private String color;
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public CarFord setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+        return this;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public CarFord setColor(String color) {
+        this.color = color;
+        return this;
+    }
+
+    public int getDoors() {
+        return doors;
+    }
+
+    public CarFord setDoors(int doors) {
+        this.doors = doors;
+        return this;
+    }
+
     /**
      * Кол-во дверей
      */
-    int doors;
+    private int doors;
 
     /**
      * Конструктор "Фордов".

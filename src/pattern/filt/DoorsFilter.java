@@ -4,13 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Фильтр по скорости
+ * Фильтр по кол-ву дверей
  * <p>
- *     Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
- * @since 29.04.2018
- * @version <a href="https://youtu.be/u_QTGD3Z9EU?t=268" target=_blank>stop</a>
+ * Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
+ * Почти полная копия {@link SpeedFilter}.
+ *
+ * @see SpeedFilter
+ * @since 30.04.2018
  */
-class SpeedFilter implements CarFilter {
+class DoorsFilter implements CarFilter {
 
     /**
      * Если макс. скорость {@link CarFord#getMaxSpeed()}, более <b>180</b>,
@@ -25,9 +27,10 @@ class SpeedFilter implements CarFilter {
     public List<CarFord> filter(List<CarFord> cars) {
         List<CarFord> list = new ArrayList<>();
         for (CarFord car : cars) {
-            if (car.getMaxSpeed() > 180) {
+            if (car.getDoors() > 2) {
                 list.add(car);
             }
-        }return list;
+        }
+        return list;
     }
 }
