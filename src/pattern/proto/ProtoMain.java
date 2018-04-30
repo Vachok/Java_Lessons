@@ -1,5 +1,4 @@
 package pattern.proto;
-
 import java.util.Objects;
 
 /**
