@@ -5,7 +5,7 @@ package pattern.chainofresp;
  <p>
  Это несколько объектов, которые содежат ссылки друг на друга.
  И при запуске {@link #print(String)}, они будут вызывать
- {@link #printMessage(String)}, который будет печатать <code>{@link String} message</come>.
+ {@link #printMessage(String)}, который будет печатать <code>{@link String} message</code>.
  Проверка - если <code>message</code>, не пустой, будет вызываться следующий.
 
  @see ChainMain

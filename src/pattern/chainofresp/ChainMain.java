@@ -12,13 +12,10 @@ package pattern.chainofresp;
 public class ChainMain {
     /**
      Запускаем цепь событий.
-
+     {@link ConsoleMessagePrinter} - {@link FileMessagePrinter} - {@link DatabaseMessagePrinter}.
      @param args null
 
      @see MessagePrinter#print(String)
-     @see ConsoleMessagePrinter ->
-     @see FileMessagePrinter ->
-     @see DatabaseMessagePrinter .
      */
     public static void main(String[] args) {
         MessagePrinter messagePrinter = new ConsoleMessagePrinter();
