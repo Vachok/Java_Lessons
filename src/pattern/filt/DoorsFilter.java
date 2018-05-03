@@ -10,17 +10,18 @@ import java.util.List;
  * Почти полная копия {@link SpeedFilter}.
  *
  * @see SpeedFilter
+ * @author IKudryashov
  * @since 30.04.2018
  */
 class DoorsFilter implements CarFilter {
 
     /**
      * Если макс. скорость {@link CarFord#getMaxSpeed()}, более <b>180</b>,
-     * тогда добавить в <code>List list = new ArrayList();</code>
+     * тогда добавить в {@code List list = new ArrayList();}
      * и вернуть его в {@link FiltMain}.
      *
      * @param cars {@link CarFord}
-     * @return
+     * @return отфильтрованный список
      * @see FiltMain
      */
     @Override
