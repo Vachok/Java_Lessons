@@ -9,16 +9,17 @@ import java.util.List;
  *     Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
  * @since 29.04.2018
  * @version <a href="https://youtu.be/u_QTGD3Z9EU?t=268" target=_blank>stop</a>
+ * @author IKudryashov
  */
 class SpeedFilter implements CarFilter {
 
     /**
      * Если макс. скорость {@link CarFord#getMaxSpeed()}, более <b>180</b>,
-     * тогда добавить в <code>List list = new ArrayList();</code>
+     * тогда добавить в {@code List list = new ArrayList();}
      * и вернуть его в {@link FiltMain}.
      *
      * @param cars {@link CarFord}
-     * @return
+     * @return отфильтрованный список
      * @see FiltMain
      */
     @Override
