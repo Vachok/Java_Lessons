@@ -27,6 +27,7 @@ class Receiver {
 
     /**
      Добавим команд
+     @param command {@link Command}
      */
     void addCommands(Command command) {
         commands.add(command);
