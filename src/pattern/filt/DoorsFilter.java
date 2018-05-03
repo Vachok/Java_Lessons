@@ -9,8 +9,8 @@ import java.util.List;
  * Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
  * Почти полная копия {@link SpeedFilter}.
  *
- * @see SpeedFilter
  * @author IKudryashov
+ * @see SpeedFilter
  * @since 30.04.2018
  */
 class DoorsFilter implements CarFilter {

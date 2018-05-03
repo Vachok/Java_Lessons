@@ -13,15 +13,17 @@ package pattern.bridg;
  */
 public class BrigeMain {
 
-    /** Концепция в следующем.
-     <p>
-     Есть, например <b>Tesla</b>. Они выпускают несколько моделей авто ({@link TeslaCar}, {@link TeslaTruck}).
-     Для того, чтобы можно было "прокатиться" на обеих версиях, и каждый раз не задавать параметры,
-     можно воспользоваться мостом, ({@link TruckIBridge}, {@link CarIBridge}), который эти параметры
-     уже должен знать.
-     <img src="G:\My_Proj\Velkom\Internetor\Java_Lessons\src\pattern\bridg\3levelVS2levelIerarchy.png" alt="null">
-     <p>
-     <a href="https://youtu.be/xe_N2bn3KCE?t=750">Видео</a>
+    /**
+     * Концепция в следующем.
+     * <p>
+     * Есть, например <b>Tesla</b>. Они выпускают несколько моделей авто ({@link TeslaCar}, {@link TeslaTruck}).
+     * Для того, чтобы можно было "прокатиться" на обеих версиях, и каждый раз не задавать параметры,
+     * можно воспользоваться мостом, ({@link TruckIBridge}, {@link CarIBridge}), который эти параметры
+     * уже должен знать.
+     * <img src="G:\My_Proj\Velkom\Internetor\Java_Lessons\src\pattern\bridg\3levelVS2levelIerarchy.png" alt="null">
+     *
+     * <a href="https://youtu.be/xe_N2bn3KCE?t=750">Видео</a>
+     *
      * @param args null
      */
     public static void main(String[] args) {

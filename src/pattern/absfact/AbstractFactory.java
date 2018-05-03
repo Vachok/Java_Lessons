@@ -3,9 +3,9 @@ package pattern.absfact;
 import pattern.factor.CarFactory;
 
 /**
- Фабрика фабрик. Или Абстрактная фабрика
- <p>
- Производит <b>фабрики</b>!
+ * Фабрика фабрик. Или Абстрактная фабрика
+ * <p>
+ * Производит <b>фабрики</b>!
  */
 class AbstractFactory {
 

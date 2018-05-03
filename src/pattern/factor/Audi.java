@@ -1,8 +1,9 @@
 package pattern.factor;
+
 /**
- Ауди
- <p>
- Описание характеристик
+ * Ауди
+ * <p>
+ * Описание характеристик
  */
 class Audi implements Car {
     @Override

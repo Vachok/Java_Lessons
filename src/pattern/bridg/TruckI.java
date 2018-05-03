@@ -4,8 +4,8 @@ package pattern.bridg;
  * Абстрактный класс. Грузовик.
  * Должен содержать копию моста, как и {@link CarI}
  *
- * @since 28.04.2018
  * @see CarI
+ * @since 28.04.2018
  */
 abstract class TruckI {
     /**

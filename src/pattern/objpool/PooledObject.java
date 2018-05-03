@@ -3,12 +3,13 @@ package pattern.objpool;
 import java.util.Random;
 
 /**
- <b>Объект, который будет в пуле</b>
-
- @since 28.04.2018 */
+ * <b>Объект, который будет в пуле</b>
+ *
+ * @since 28.04.2018
+ */
 class PooledObject {
     /**
-     @return ответ от объекта.
+     * @return ответ от объекта.
      */
     @Override
     public String toString() {

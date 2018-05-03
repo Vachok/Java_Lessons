@@ -1,9 +1,9 @@
 package pattern.factor;
 
 /**
- Тойота
- <p>
- Описание характеристик
+ * Тойота
+ * <p>
+ * Описание характеристик
  */
 class Toyota implements Car {
     @Override

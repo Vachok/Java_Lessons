@@ -7,6 +7,7 @@ import java.util.List;
 /**
  * <b>Фильтр</b>
  * <p>
+ *
  * @see SpeedFilter
  * @since //28.04.2018 (20:00)
  */
@@ -15,9 +16,10 @@ public class FiltMain {
      * Досустим есть {@link List} <code>cars</code> наших {@link CarFord}.
      * Добавим в него несколько экземпляров, но с разными параметрами {@link CarFord#CarFord(int, String, int)}
      * <p>
-     *     Фильтруем сразу 2мя филтрами.
-     *<code>        cars = new SpeedFilter().filter(cars);
-     *         cars = new DoorsFilter().filter(cars);</code>
+     * Фильтруем сразу 2мя филтрами.
+     * <code>        cars = new SpeedFilter().filter(cars);
+     * cars = new DoorsFilter().filter(cars);</code>
+     *
      * @param args null
      * @see SpeedFilter
      * @see DoorsFilter

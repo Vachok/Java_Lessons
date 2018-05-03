@@ -1,17 +1,18 @@
 package pattern.builder;
 
 /**
- Создаём спорткар.
- <p>
- У него куча параметров.
- Конструктор для этих целей не очень подходит. Их нужно будет слишком большое колличество,
- чтобы описать варианты. {@link #SportCarDep(String)}, {@link #SportCarDep(String, int)}, {@link #SportCarDep(String, String)}, {@link #SportCarDep(String, String, int)} ....
- <p>
- Вариант с кучей getter тоже не самый хороший ...
- {@link #getColor()}, {@link #getMaxSpeed()}, {@link #getName()}
-
- @see SportCar
- @deprecated не самое лучшее решение */
+ * Создаём спорткар.
+ * <p>
+ * У него куча параметров.
+ * Конструктор для этих целей не очень подходит. Их нужно будет слишком большое колличество,
+ * чтобы описать варианты. {@link #SportCarDep(String)}, {@link #SportCarDep(String, int)}, {@link #SportCarDep(String, String)}, {@link #SportCarDep(String, String, int)} ....
+ * <p>
+ * Вариант с кучей getter тоже не самый хороший ...
+ * {@link #getColor()}, {@link #getMaxSpeed()}, {@link #getName()}
+ *
+ * @see SportCar
+ * @deprecated не самое лучшее решение
+ */
 @SuppressWarnings("ALL")
 class SportCarDep {
     private String name;
@@ -19,14 +20,14 @@ class SportCarDep {
     private int maxSpeed;
 
     /**
-     @param name название
+     * @param name название
      */
     SportCarDep(String name) {
     }
 
     /**
-     @param name имя
-     @param color цвет
+     * @param name  имя
+     * @param color цвет
      */
     public SportCarDep(String name, String color) {
         this.name = name;
@@ -34,8 +35,8 @@ class SportCarDep {
     }
 
     /**
-     @param name имя
-     @param maxSpeed скорость
+     * @param name     имя
+     * @param maxSpeed скорость
      */
     public SportCarDep(String name, int maxSpeed) {
         this.name = name;
@@ -43,9 +44,9 @@ class SportCarDep {
     }
 
     /**
-     @param name имя
-     @param color цвет
-     @param maxSpeed скорость
+     * @param name     имя
+     * @param color    цвет
+     * @param maxSpeed скорость
      */
     public SportCarDep(String name, String color, int maxSpeed) {
         this.name = name;

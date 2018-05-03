@@ -1,9 +1,9 @@
 package pattern.bridg.samplebadierarhy;
 
 
-
 /**
- @deprecated  */
+ * @deprecated
+ */
 interface IBridge {
 
 }

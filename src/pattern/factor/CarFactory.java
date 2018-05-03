@@ -4,24 +4,23 @@ import pattern.absfact.Factory;
 import pattern.absfact.Tank;
 
 /**
- Паттерн типа Фабрика.
- <p>
- По аналогии с настоящими фабриками, выпускает какие-либо объекты.
- В данном примере мы выпускаем
-
- @see Audi
- @see Toyota
- <p>
- Ауди и Тойота имплементят интерфейс {@link Car}, и переопределяют метод {@link Car#drive()} */
+ * Паттерн типа Фабрика.
+ * <p>
+ * По аналогии с настоящими фабриками, выпускает какие-либо объекты.
+ * В данном примере мы выпускаем
+ *
+ * @see Audi
+ * @see Toyota
+ * <p>
+ * Ауди и Тойота имплементят интерфейс {@link Car}, и переопределяют метод {@link Car#drive()}
+ */
 public class CarFactory implements Factory {
 
     /**
-     @param typeOfCar Toyota, Audi
-
-     @return new {@link Toyota} или new {@link Audi}
-
-     @see Car
-     @see pattern.absfact.AbstractFactory
+     * @param typeOfCar Toyota, Audi
+     * @return new {@link Toyota} или new {@link Audi}
+     * @see Car
+     * @see pattern.absfact.AbstractFactory
      */
     public Car createCar(String typeOfCar) {
         switch (typeOfCar) {
@@ -36,13 +35,12 @@ public class CarFactory implements Factory {
     }
 
     /**
-     Фабрика автомобилей не производит танки.
-     <p>
-     но знает про них.
-
-     @param typeTank любой
-
-     @return null
+     * Фабрика автомобилей не производит танки.
+     * <p>
+     * но знает про них.
+     *
+     * @param typeTank любой
+     * @return null
      */
     @Override
     public Tank createTank(String typeTank) {
@@ -50,14 +48,14 @@ public class CarFactory implements Factory {
     }
 
     /**
-     Ауди - это {@link Car}. Всё, что умеет Car, умеет и Audi!
-     Но по-особенному!
-     <p>
-     Описание характеристик
+     * Ауди - это {@link Car}. Всё, что умеет Car, умеет и Audi!
+     * Но по-особенному!
+     * <p>
+     * Описание характеристик
      */
     public static class Audi implements Car {
         /**
-         И поехали :)
+         * И поехали :)
          */
         @Override
         public void drive() {
@@ -66,7 +64,7 @@ public class CarFactory implements Factory {
         }
 
         /**
-         Покрасим Аудюху
+         * Покрасим Аудюху
          */
         @Override
         public void colour() {
@@ -74,7 +72,7 @@ public class CarFactory implements Factory {
         }
 
         /**
-         @return цена
+         * @return цена
          */
         @Override
         public int price() {
@@ -85,14 +83,14 @@ public class CarFactory implements Factory {
     }
 
     /**
-     Toyota - это {@link Car}. Всё, что умеет Car, умеет и Toyota!
-     Но по-особенному!
-     <p>
-     Описание характеристик
+     * Toyota - это {@link Car}. Всё, что умеет Car, умеет и Toyota!
+     * Но по-особенному!
+     * <p>
+     * Описание характеристик
      */
     static class Toyota implements Car {
         /**
-         Едем 180
+         * Едем 180
          */
         @Override
         public void drive() {
@@ -101,7 +99,7 @@ public class CarFactory implements Factory {
         }
 
         /**
-         Красим в белый
+         * Красим в белый
          */
         @Override
         public void colour() {
@@ -109,7 +107,7 @@ public class CarFactory implements Factory {
         }
 
         /**
-         @return цена
+         * @return цена
          */
         @Override
         public int price() {

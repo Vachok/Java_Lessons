@@ -1,17 +1,19 @@
 package pattern.builder;
-/**
- <b>Основной action-class</b>
 
- @see pattern.builder
- @since 27 apr 2018 */
+/**
+ * <b>Основной action-class</b>
+ *
+ * @see pattern.builder
+ * @since 27 apr 2018
+ */
 public class BuildMain {
     /**
-     Построим Ауди!
-     <code> SportCar sportCar = new SportCar.Builder("Audi").setMaxSpeed(300).setColor("White").build();</code>
-     @param args null
-     <p>
-     @see SportCar
-     @see SportCar.Builder
+     * Построим Ауди!
+     * <code> SportCar sportCar = new SportCar.Builder("Audi").setMaxSpeed(300).setColor("White").build();</code>
+     *
+     * @param args null
+     * @see SportCar
+     * @see SportCar.Builder
      */
     @SuppressWarnings(value = "all")
     public static void main(String[] args) {

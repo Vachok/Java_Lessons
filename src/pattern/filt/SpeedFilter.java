@@ -6,10 +6,11 @@ import java.util.List;
 /**
  * Фильтр по скорости
  * <p>
- *     Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
- * @since 29.04.2018
- * @version <a href="https://youtu.be/u_QTGD3Z9EU?t=268" target=_blank>stop</a>
+ * Будет выполнять фильтрацию. Должен имплементить {@link CarFilter}
+ *
  * @author IKudryashov
+ * @version <a href="https://youtu.be/u_QTGD3Z9EU?t=268" target=_blank>stop</a>
+ * @since 29.04.2018
  */
 class SpeedFilter implements CarFilter {
 
@@ -29,6 +30,7 @@ class SpeedFilter implements CarFilter {
             if (car.getMaxSpeed() > 180) {
                 list.add(car);
             }
-        }return list;
+        }
+        return list;
     }
 }
