@@ -42,10 +42,19 @@ class Receiver {
 
     /**
      Или лист команд.
+     <p>
+     Суть ресивера, что независимо от того откуда и сколько раз нам надо выполнить команду,
+     у нас есть единый обработчик. И у него есть настроенные методы.
      */
     void runCommands() {
-        for (Command com : commands) {
-            com.exeCute();
+        try {
+            for (Command com : commands) {
+                com.exeCute();
+            }
+        } catch (Exception e) {
+            for (Command command : commands) {
+                command.reveRt();
+            }
         }
     }
 }

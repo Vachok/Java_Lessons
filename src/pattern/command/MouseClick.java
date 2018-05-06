@@ -10,5 +10,10 @@ class MouseClick implements Command {
     public void exeCute() {
         System.out.println("click-click");
     }
+
+    @Override
+    public void reveRt() {
+        System.out.println("revert");
+    }
 }
 

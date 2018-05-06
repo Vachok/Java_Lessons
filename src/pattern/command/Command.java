@@ -6,4 +6,6 @@ package pattern.command;
  @see ComMain */
 interface Command {
     void exeCute();
+
+    void reveRt();
 }

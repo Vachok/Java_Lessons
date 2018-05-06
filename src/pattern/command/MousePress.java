@@ -11,4 +11,9 @@ class MousePress implements Command {
     public void exeCute() {
         System.out.println("click-press");
     }
+
+    @Override
+    public void reveRt() {
+        System.out.println("23");
+    }
 }
