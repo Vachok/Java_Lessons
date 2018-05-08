@@ -12,10 +12,8 @@ public class ProxMain {
      Между имплементацией {@link CarP} и реализацией {@link Reno},
      вклинивается {@link CarProxy}.
      <code>Console output is saving to: C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons\README.md
-     <p>
      proxy
      Reno drive
-     <p>
      Process finished with exit code 0</code>
 
      @param args null
