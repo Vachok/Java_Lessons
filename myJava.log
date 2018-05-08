@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-01-19T13:24:15.368742200Z</date>
+  <millis>1516368255368</millis>
+  <nanos>742200</nanos>
+  <sequence>0</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>Main271</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>info</message>
+</record>
+<record>
+  <date>2018-01-19T13:24:15.431750700Z</date>
+  <millis>1516368255431</millis>
+  <nanos>750700</nanos>
+  <sequence>1</sequence>
+  <logger>global</logger>
+  <level>INFO</level>
+  <class>Main271</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>info vachok</message>
+</record>
+</log>
