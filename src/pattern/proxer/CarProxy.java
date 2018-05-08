@@ -2,8 +2,6 @@ package pattern.proxer;
 
 /**
  Proxy-class для {@link Reno}.
- <p>
-
  @see ProxMain */
 class CarProxy implements CarP {
     /**

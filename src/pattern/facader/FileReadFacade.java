@@ -16,6 +16,7 @@ class FileReadFacade {
      *
      * @param fileName имя файла
      * @return example
+     * @throws IOException файловая система.
      */
     String readFile(String fileName) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(fileName));
