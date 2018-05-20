@@ -1,2 +1,2 @@
-# Java_Lessons
-by https://www.youtube.com/playlist?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX
+<<student>> = Vachok
+>>>>student.getAge()> = 34
