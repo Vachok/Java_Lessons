@@ -1,0 +1,6 @@
+keytool -genkeypair -keystore vachok.certs -alias vachok
+keytool -exportcert -keystore vachok.certs -alias vachok -file vachok.cer
+keytool -printcert -file vachok.cer
+keytool -importcert -keystore vachok.certs -alias vachok -file vachok.cer
+jarsigner -keystore vachok.certs your.jar vachok
+jarsigner -verify -keystore vachok.certs your.jar
