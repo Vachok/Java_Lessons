@@ -1,0 +1,46 @@
+<application>
+  <component name="AppInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Gauge</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="CvsApplicationLevelConfiguration">
+    <option name="PATH_TO_PASSWORD_FILE" value="C:\Users\ikudryashov.EATMEAT\.cvspass" />
+    <option name="ENCODING" value="windows-1251" />
+    <option name="DO_OUTPUT" value="true" />
+  </component>
+  <component name="RecentTaskRepositories">
+    <GitHub shared="false" url="https://github.com">
+      <option name="assignedIssuesOnly" value="false" />
+      <commitMessageFormat>{id} {summary} {number}</commitMessageFormat>
+      <password />
+      <token>df92df9fdf9edfc8df92df93df9edf98df9edfcedf9adf9adfcbdf9ddf9ddfcbdfccdf9fdf9cdfc8dfccdf9fdf9ddf9bdf9edf9fdf9edf9adfccdf9fdf93dfcfdf99df99dfccdfcedf92dfccdfcbdfcf</token>
+      <option name="loginAnonymously" value="false" />
+      <option name="preferredCloseTaskState" />
+      <option name="preferredOpenTaskState" />
+      <option name="repoAuthor" value="Vachok" />
+      <option name="repoName" value="Java_Lessons" />
+      <option name="shouldFormatCommitMessage" value="true" />
+      <option name="useHttpAuthentication" value="false" />
+      <option name="useProxy" value="false" />
+      <option name="user" value="" />
+      <username />
+    </GitHub>
+  </component>
+  <component name="RefactoringSettings">
+    <option name="MOVE_PREVIEW_USAGES" value="false" />
+    <option name="INTRODUCE_FIELD_VISIBILITY" value="private" />
+    <option name="INTRODUCE_LOCAL_CREATE_FINALS" value="false" />
+  </component>
+</application>
