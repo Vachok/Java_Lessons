@@ -8,8 +8,7 @@ package solid.singleresp;
  * @see EmplFace
  * @since 01.06.2018 (11:51)
  */
-public static class SingleRespMain {
+public class SingleRespMain {
     EmplFacad emplFacad = new EmplFacad();
-    emplFacad.cook();
 }
 
