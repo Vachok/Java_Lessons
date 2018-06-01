@@ -4,21 +4,17 @@ interface CarIn {
     void workInTaxi();
 }
 
-/**
- * <b>Основной класс</b>
- * <p>
- * Каждый объект, должен быть открыт для расширения и закрыт
- * для редактирования.
- *
+/**<b>Основной класс</b>
+ <p>
+ Каждый объект, должен быть открыт для расширения и закрыт
+ для редактирования.
+ * @since 01.06.2018 (16:00)
  * @author IKudryashov
  * @see ToyotaT
- * @since 01.06.2018 (16:00)
  */
 public class OpClose {
-    /**
-     * Проверим наших таксистов.
+    /**Проверим наших таксистов.
      * Делать так не верно
-     *
      * @param args null
      */
     public static void main(String[] args) {
@@ -29,22 +25,18 @@ public class OpClose {
 
     }
 
-    /**
-     * Так код не будет менятся.
-     *
+    /** Так код не будет менятся.
      * @param carIn передаём "машину"
      */
     static void workInTaxi(CarIn carIn) {
         carIn.workInTaxi();
     }
 
-    /**
-     * Работа в такси
+    /**Работа в такси
      * Делать так не верно
-     *
-     * @param toyotaT машина-такси
      * @see CarIn
      * @see ToyotaT
+     * @param toyotaT машина-такси
      * @deprecated не верно. Нужно через {@link CarIn}
      */
     @Deprecated
