@@ -8,6 +8,11 @@
             <set />
           </value>
         </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.gitignore">
           <value>
             <set />
@@ -64,6 +69,36 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/StartMe.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/CookD.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/IWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/IWorkerD.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/InterfaceSegregation.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/WaiterD.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/solid/src/main/java/solid/intsegregation/package-info.java">
           <value>
             <set />
           </value>
