@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="windows-1251"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
-<fx:root xmlns:fx="http://javafx.com/fxml" type="javafx.scene.layout.VBox">
-    <TextField fx:id="textField"/>
-    <Button text="Click ME" onAction="#doSomething"/>
-</fx:root>

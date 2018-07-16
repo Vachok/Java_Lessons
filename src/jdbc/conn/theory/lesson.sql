@@ -1,1 +1,0 @@
-SELECT * FROM lesson.lesson
