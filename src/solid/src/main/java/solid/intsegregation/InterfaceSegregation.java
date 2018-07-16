@@ -20,6 +20,5 @@ public class InterfaceSegregation {
         iWorker.eat();
         iWorker.work();
     }
-
 }
 
