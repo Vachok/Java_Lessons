@@ -8,41 +8,24 @@ package solid.liskov;
  * @since 01.06.2018 (16:42)
  */
 public class LiskovMain {
-    static Rectangle getRectangle() {
-        return new Rectangle();
+    static Squarer getRectangle() {
+        return new Squarer();
     }
 
+    /**
+     * В данном варианте изменяются параметры родителя.
+     * Тут {@link Square}, наследуется от {@link Rectangle}.
+     * И поменялось поведение родителя ({@link Rectangle}).
+     * Вместо умножения 10 на 5, {@link Rectangle#height}*{@link Rectangle#wight},
+     * умножает 5*5 {@link Square#wight}*{@link Square#height}. Так делать не верно.
+     *
+     * @param args null;
+     * @see Square
+     */
     public static void main(String[] args) {
-        Rectangle rectangle = getRectangle();
-        rectangle.setHeight(6);
-        rectangle.setWight(9);
-        System.out.println(rectangle.getSQ());
+        Squarer rectangle = getRectangle();
+        rectangle.setWight(5);
+        System.out.println(rectangle.getSquarer());
     }
 }
 
-class Rectangle {
-    int wight;
-    int height;
-
-    public int getWight() {
-        return wight;
-    }
-
-    public Rectangle setWight(int wight) {
-        this.wight = wight;
-        return this;
-    }
-
-    public int getHeight() {
-        return height;
-    }
-
-    public Rectangle setHeight(int height) {
-        this.height = height;
-        return this;
-    }
-
-    public int getSQ() {
-        return wight * height;
-    }
-}
