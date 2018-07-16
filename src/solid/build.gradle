@@ -1,0 +1,43 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'idea'
+}
+
+group 'java.lessons.solid'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.9
+mainClassName = group + '.StartMe'
+repositories {
+    mavenCentral()
+}
+sourceSets {
+    main {
+        resources {
+            srcDirs = ["src/main/java", "src/main/resources"]
+            includes = ["**/*.fxml", "**/*.css", "**/*.properties", "**/*.png","**/*.html","**/*.sql","**/*.jar"]
+        }
+    }
+    test{
+        resources{
+            srcDirs = ["src/test/java", "src/test/resources"]
+            includes = ["**/*.fxml", "**/*.css", "**/*.properties", "**/*.png","**/*.jar"]
+        }
+    }
+}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+jar {
+    baseName = project.name
+    version = project.version
+    manifest {
+        attributes(
+            'Main-Class': mainClassName,
+            'JavaFX-Version': 9,
+            'Class-Path': configurations.runtime.collect() { 'lib/' + it.name }.join('')
+        )
+    }
+    from configurations.compile.collect() { it.isDirectory() ? it : zipTree(it) }
+}
