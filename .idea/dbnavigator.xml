@@ -10,9 +10,9 @@
       <create-header value="true" />
       <quote-values-containing-separator value="true" />
       <quote-all-values value="false" />
-      <value-separator value="," />
-      <file-name value="books_finish.csv" />
-      <file-location value="C:\Users\ikudryashov.EATMEAT\IdeaProjects\Java_Lessons\src\jdbc\updateresult" />
+      <value-separator value="" />
+      <file-name value="" />
+      <file-location value="" />
       <scope value="GLOBAL" />
       <destination value="FILE" />
       <format value="EXCEL" />
@@ -25,41 +25,25 @@
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
+  <component name="DBNavigator.Project.DatabaseConsoleManager">
+    <connection id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c">
+      <console name="RegRu" type="STANDARD" />
+    </connection>
+  </component>
+  <component name="DBNavigator.Project.DatabaseSessionManager">
+    <connection id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-list connection-id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c" dataset="u0466446_liferpg.lessons" active-filter-id="EMPTY_FILTER" />
+  </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
-  </component>
-  <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
     <method-browser />
     <execution-history>
       <group-entries value="true" />
       <execution-inputs />
-      <selection connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" object-ref="[schema/procedure][lesson/BooksCount]" />
     </execution-history>
     <argument-values-cache />
   </component>
@@ -74,7 +58,86 @@
     <recently-used-interfaces />
   </component>
   <component name="DBNavigator.Project.Settings">
-    <connections />
+    <connections>
+      <connection id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c" active="true">
+        <database>
+          <name value="RegRu" />
+          <description value="" />
+          <database-type value="MYSQL" />
+          <config-type value="BASIC" />
+          <database-version value="5.6" />
+          <driver-source value="BUILTIN" />
+          <driver-library value="" />
+          <driver value="" />
+          <url-type value="DATABASE" />
+          <host value="server202.hosting.reg.ru" />
+          <port value="3306" />
+          <database value="u0466446_liferpg" />
+          <os-authentication value="false" />
+          <empty-password value="false" />
+          <user value="u0466446_kudr" />
+          <password value="MzZlNDJ5b2FrOA==" />
+        </database>
+        <properties>
+          <auto-commit value="false" />
+        </properties>
+        <ssh-settings>
+          <active value="false" />
+          <proxy-host value="" />
+          <proxy-port value="22" />
+          <proxy-user value="" />
+          <proxy-password value="" />
+          <auth-type value="PASSWORD" />
+          <key-file value="" />
+          <key-passphrase value="" />
+        </ssh-settings>
+        <details>
+          <charset value="UTF-8" />
+          <session-management value="true" />
+          <ddl-file-binding value="true" />
+          <database-logging value="false" />
+          <connect-automatically value="false" />
+          <restore-workspace value="false" />
+          <restore-workspace-deep value="false" />
+          <environment-type value="default" />
+          <idle-time-to-disconnect value="30" />
+          <idle-time-to-disconnect-pool value="5" />
+          <password-expiry-time value="10" />
+          <max-connection-pool-size value="7" />
+          <alternative-statement-delimiter value="" />
+        </details>
+        <object-filters hide-empty-schemas="true">
+          <object-type-filter use-master-settings="true">
+            <object-type name="SCHEMA" enabled="true" />
+            <object-type name="USER" enabled="true" />
+            <object-type name="ROLE" enabled="true" />
+            <object-type name="PRIVILEGE" enabled="true" />
+            <object-type name="CHARSET" enabled="true" />
+            <object-type name="TABLE" enabled="true" />
+            <object-type name="VIEW" enabled="true" />
+            <object-type name="MATERIALIZED_VIEW" enabled="true" />
+            <object-type name="NESTED_TABLE" enabled="true" />
+            <object-type name="COLUMN" enabled="true" />
+            <object-type name="INDEX" enabled="true" />
+            <object-type name="CONSTRAINT" enabled="true" />
+            <object-type name="DATASET_TRIGGER" enabled="true" />
+            <object-type name="DATABASE_TRIGGER" enabled="true" />
+            <object-type name="SYNONYM" enabled="true" />
+            <object-type name="SEQUENCE" enabled="true" />
+            <object-type name="PROCEDURE" enabled="true" />
+            <object-type name="FUNCTION" enabled="true" />
+            <object-type name="PACKAGE" enabled="true" />
+            <object-type name="TYPE" enabled="true" />
+            <object-type name="TYPE_ATTRIBUTE" enabled="true" />
+            <object-type name="ARGUMENT" enabled="true" />
+            <object-type name="DIMENSION" enabled="true" />
+            <object-type name="CLUSTER" enabled="true" />
+            <object-type name="DBLINK" enabled="true" />
+          </object-type-filter>
+          <object-name-filters />
+        </object-filters>
+      </connection>
+    </connections>
     <browser-settings>
       <general>
         <display-mode value="TABBED" />
