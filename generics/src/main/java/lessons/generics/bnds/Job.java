@@ -1,4 +1,4 @@
-package lessons.generics.bnds.genmethods;
+package lessons.generics.bnds;
 
 /**Научим GENERIC работать.
  * {@link Cell}. Заэкстендим Generic этим классом.

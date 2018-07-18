@@ -1,7 +1,7 @@
 package lessons.generics;
 
 
-import lessons.generics.bnds.genmethods.Laun4;
+import lessons.generics.bnds.Laun4;
 import lessons.generics.extend.LauncherLTwo;
 import lessons.generics.genmethods.Laun3;
 import lessons.generics.whatis.GenericsLesson;

@@ -1,4 +1,4 @@
-package lessons.generics.bnds.genmethods;
+package lessons.generics.bnds;
 
 
 import lessons.generics.StartMe;
