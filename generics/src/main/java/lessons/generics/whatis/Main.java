@@ -34,7 +34,7 @@ public class Main implements Lessons {
      */
     @Override
     public void launchMe() {
-        links.add(new Date()+" Generic 1");
+        links.add(new Date()+"\n"+this.getClass().getSimpleName());
         links.add("https://youtu.be/2Sbg8tJAQ2I?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX&t=511");
         saver.progressSaver(links, true);
         start();

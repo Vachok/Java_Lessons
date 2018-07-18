@@ -12,5 +12,6 @@ public interface Lessons {
      */
      default void launchMe(){
          System.out.print(this.getClass().getTypeName());
+
      }
 }
