@@ -1,6 +1,7 @@
 package lessons.generics;
 
 
+import lessons.generics.extend.LauncherLTwo;
 import lessons.generics.whatis.GenericsLesson;
 import lessons.generics.whatis.Lessons;
 import lessons.generics.whatis.Main;
@@ -31,12 +32,21 @@ public class StartMe implements GenericsLesson {
     private static DataConnectTo dataConnectTo = new RegRuMysql();
 
     /**
-     * Запуск урока номер 1. ("")
+     * Запуск урока номер 1. ("http://lesson.vachok.ru/generic/lessons/generics/whatis/package-summary.html")
      */
     private static Lessons whatIsGeneric = new Main();
 
+    /**<a href="https://www.youtube.com/watch?v=IsKnSd7SmHw&feature=youtu.be&list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Урок Java 311: Generic 2: Наследование Generics</a>
+     <p>
+     * <a href="https://github.com/Vachok/Java_Lessons/issues/618" target=_blank>GITHub</a>
+     <p>
+     <a href="http://lesson.vachok.ru/generic/overview-summary.html" target=_blank>Lesson DOCS</a>
+     */
+    private static Lessons extGenericsTwo = new LauncherLTwo();
+
     public static void main(String[] args) {
         whatIsGeneric.launchMe();
+        extGenericsTwo.launchMe();
     }
 
     @Override
