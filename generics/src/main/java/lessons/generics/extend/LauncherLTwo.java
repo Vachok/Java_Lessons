@@ -26,7 +26,7 @@ private static List<String> links = new ArrayList<>();
     public void launchMe() {
         GenericsLesson saver = new StartMe();
         links.add("Lesson 2. "+this.getClass().getTypeName());
-        saver.progressSaver(links, true);
+        saver.progressSaver(links, false);
         goLaunch();
     }
 
