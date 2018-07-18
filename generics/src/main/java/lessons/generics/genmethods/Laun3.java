@@ -30,13 +30,17 @@ public class Laun3 implements Lessons {
 
     /**
      * Запуск
-     * В стринговый GENEIC {@link Cell}, передадим {@link Integer} - {@link Cell#getE(Object)}
+     * В стринговый GENERIC {@link Cell}, передадим {@link Integer} - {@link Cell#getE(Object)}
      * {@link #methGen(Object)}
      */
     private void firstMeth() {
         System.out.println("Laun3.firstMeth");
-        Cell<String> cell = new Cell<>();
-        cell.getE(new Integer(5));
+        Cell<String> cell = new Cell<>(new Laun3());
+        System.out.println(cell.<Integer>getE(new Integer(5)));
+        consGener();
+    }
+
+    private void consGener() {
     }
 
     /** При создании generic-методов, обязательно до {@code void (int, String)}, не важно,

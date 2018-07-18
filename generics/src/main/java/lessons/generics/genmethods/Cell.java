@@ -7,6 +7,14 @@ package lessons.generics.genmethods;
  @param <T>  */
 class Cell<T>{
 
+    /** Конструктор тоже может быть GENERIC
+     @param x
+     @param <X>
+     */
+    <X> Cell(X x){
+
+    }
+
     /**
      * Generic Object
      */
