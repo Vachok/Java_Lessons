@@ -42,7 +42,6 @@ src/solid/java.lessons.solid.iws
 /src/solid/src/main/resources/java.docs
 /generics/src/test/
 .gradle/
-build.gradle
 generics/build/classes/java/main/generics/
 generics/build/tmp/
 generics/dosc/allclasses-frame.html
@@ -71,7 +70,6 @@ generics/src/test/
 gradle/wrapper/gradle-wrapper.properties
 gradlew
 gradlew.bat
-settings.gradle
 src/solid/src/main/resources/
 generics/build/classes/java/main/lessons/
 /generics/regpass

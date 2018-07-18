@@ -8,12 +8,22 @@ package lessons.generics.whatis;
  * @see Main
  */
 public class Cell<T> {
+
+    /**
+     * GENERIC Object
+     */
     T t;
 
+    /**
+     * @return generic
+     */
     public T getT() {
         return t;
     }
 
+    /**
+     * @param t generic
+     */
     public void setT(T t) {
         this.t = t;
     }

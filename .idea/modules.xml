@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java_Lessons.iml" filepath="$PROJECT_DIR$/Java_Lessons.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.lessons.solid.iml" filepath="$PROJECT_DIR$/.idea/modules/java.lessons.solid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.lessons.solid_main.iml" filepath="$PROJECT_DIR$/.idea/modules/java.lessons.solid_main.iml" group="java.lessons.solid" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java.lessons.solid_test.iml" filepath="$PROJECT_DIR$/.idea/modules/java.lessons.solid_test.iml" group="java.lessons.solid" />
+      <module fileurl="file://$PROJECT_DIR$/lessons.iml" filepath="$PROJECT_DIR$/lessons.iml" />
     </modules>
   </component>
 </project>

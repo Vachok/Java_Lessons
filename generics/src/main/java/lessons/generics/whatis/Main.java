@@ -43,6 +43,7 @@ public class Main implements Lessons {
     /**
      * {@link Cell} - так выглядит Generic.
      * До JAVA 5 было так: {@link #beforeFiveJavaWas()}
+     * Продолжение {@link #startTwo()}
      */
     private static void start() {
         Cell<String> stringCell = new Cell<>();
@@ -50,6 +51,19 @@ public class Main implements Lessons {
         String s = stringCell.getT();
         messageToUser.info(SOURCE_CLASS, "Now Actual", s);
         beforeFiveJavaWas();
+        startTwo();
+    }
+
+    /**{@link #start()}
+      Если класс содержит generic-объект, этот объект не обязательно указывать.
+      Без указаний типа - класс может хранить <b>любой</b> объект!
+     <p>
+     Сам по-себе пустой generic бесполезный. Чаще всего их используют в коллекциях
+     */
+    private static void startTwo(){
+        Cell<String> stringCell = new Cell<>();
+        Cell cell = new Cell();
+        cell.setT(new Cell<>());
     }
 
     /**
