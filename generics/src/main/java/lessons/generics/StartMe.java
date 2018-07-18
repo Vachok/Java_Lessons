@@ -1,6 +1,7 @@
 package lessons.generics;
 
 
+import lessons.generics.bnds.Laun4;
 import lessons.generics.extend.LauncherLTwo;
 import lessons.generics.genmethods.Laun3;
 import lessons.generics.whatis.GenericsLesson;
@@ -45,11 +46,13 @@ public class StartMe implements GenericsLesson {
      */
     private static Lessons extGenericsTwo = new LauncherLTwo();
     private static Lessons genMethThree = new Laun3();
+    private static Lessons genBoundsFour = new Laun4();
 
     public static void main(String[] args) {
         whatIsGeneric.launchMe();
         extGenericsTwo.launchMe();
         genMethThree.launchMe();
+        genBoundsFour.launchMe();
     }
 
     @Override

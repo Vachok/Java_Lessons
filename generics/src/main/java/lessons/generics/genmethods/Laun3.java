@@ -10,9 +10,9 @@ import java.util.List;
 
 
 /**
- * <a href="https://youtu.be/KkjCnEi3msI?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Generic методы</a>
+ * <b>Методы</b>
  * {@link #firstMeth()}
- * @since 18.07.2018 (13:24)
+ * @since 18.07.2018 (14:29)
 
  */
 public class Laun3 implements Lessons {
@@ -22,9 +22,9 @@ public class Laun3 implements Lessons {
         GenericsLesson g = new StartMe();
         links.add("Generic methods");
         links.add(this.getClass().getTypeName());
-        links.add("https://youtu.be/KkjCnEi3msI?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX&t=173");
+        links.add("https://www.youtube.com/watch?v=5et8IyafnWE&feature=youtu.be&list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX");
         firstMeth();
-        g.progressSaver(links, true);
+        g.progressSaver(links, false);
         System.out.println("links = " + links);
     }
 
@@ -34,7 +34,7 @@ public class Laun3 implements Lessons {
      * {@link #methGen(Object)}
      */
     private void firstMeth() {
-        System.out.println("Laun3.firstMeth");
+        System.out.println("Laun4.firstMeth");
         Cell<String> cell = new Cell<>(new Laun3());
         System.out.println(cell.<Integer>getE(new Integer(5)));
         consGener();
