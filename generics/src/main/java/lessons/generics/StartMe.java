@@ -2,6 +2,7 @@ package lessons.generics;
 
 
 import lessons.generics.extend.LauncherLTwo;
+import lessons.generics.genmethods.Laun3;
 import lessons.generics.whatis.GenericsLesson;
 import lessons.generics.whatis.Lessons;
 import lessons.generics.whatis.Main;
@@ -43,10 +44,12 @@ public class StartMe implements GenericsLesson {
      <a href="http://lesson.vachok.ru/generic/overview-summary.html" target=_blank>Lesson DOCS</a>
      */
     private static Lessons extGenericsTwo = new LauncherLTwo();
+    private static Lessons genMethThree = new Laun3();
 
     public static void main(String[] args) {
         whatIsGeneric.launchMe();
         extGenericsTwo.launchMe();
+        genMethThree.launchMe();
     }
 
     @Override
