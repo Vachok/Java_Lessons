@@ -2,8 +2,8 @@ package lessons.generics.genmethods;
 
 
 import lessons.generics.StartMe;
-import lessons.generics.whatis.GenericsLesson;
-import lessons.generics.whatis.Lessons;
+import lessons.generics.GenericsLesson;
+import lessons.generics.Lessons;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,7 +13,6 @@ import java.util.List;
  * <b>Методы</b>
  * {@link #firstMeth()}
  * @since 18.07.2018 (14:29)
-
  */
 public class Laun3 implements Lessons {
     private List<String> links = new ArrayList<>();
@@ -34,7 +33,7 @@ public class Laun3 implements Lessons {
      * {@link #methGen(Object)}
      */
     private void firstMeth() {
-        System.out.println("Laun4.firstMeth");
+        System.out.println("Launcher4.firstMeth");
         Cell<String> cell = new Cell<>(new Laun3());
         System.out.println(cell.<Integer>getE(new Integer(5)));
         consGener();

@@ -5,7 +5,7 @@ package lessons.generics.whatis;
  *В байтокоде дженерики выглядят примерно так: {@link CellMimicry}
  * @param <T> можно определить свой тип. (деньги, золото, пр.)
  * @since 17.07.2018 (17:23)
- * @see Main
+ * @see Launcher1
  */
 public class Cell<T> {
 
