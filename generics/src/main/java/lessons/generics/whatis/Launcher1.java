@@ -1,6 +1,8 @@
 package lessons.generics.whatis;
 
 
+import lessons.generics.GenericsLesson;
+import lessons.generics.Lessons;
 import lessons.generics.StartMe;
 import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageToUser;
@@ -16,11 +18,11 @@ import java.util.List;
  * {@link #start()}
  * @since 17.07.2018 (17:00)
  */
-public class Main implements Lessons {
+public class Launcher1 implements Lessons {
     /**
      * This Class Simple Name
      */
-    private static final String SOURCE_CLASS = Main.class.getSimpleName();
+    private static final String SOURCE_CLASS = Launcher1.class.getSimpleName();
 
     private static GenericsLesson saver = new StartMe();
 

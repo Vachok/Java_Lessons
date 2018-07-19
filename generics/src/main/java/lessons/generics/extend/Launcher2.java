@@ -2,8 +2,8 @@ package lessons.generics.extend;
 
 
 import lessons.generics.StartMe;
-import lessons.generics.whatis.GenericsLesson;
-import lessons.generics.whatis.Lessons;
+import lessons.generics.GenericsLesson;
+import lessons.generics.Lessons;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ import java.util.List;
 @see ParrentClass
  @see GenFace
  */
-public class LauncherLTwo implements Lessons {
+public class Launcher2 implements Lessons {
 private static List<String> links = new ArrayList<>();
     /**
      * Наследование Generics.
@@ -43,7 +43,7 @@ private static List<String> links = new ArrayList<>();
     }
 }
 
-/**{@link LauncherLTwo}
+/**{@link Launcher2}
  Можно создать Generic на базе класса
  * @since 18.07.2018 (12:31)
  @see GenParrent

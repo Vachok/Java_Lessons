@@ -3,7 +3,7 @@ package lessons.generics.bnds;
 
 import java.io.Serializable;
 
-/**  {@link Laun4}
+/**  {@link Launcher4}
 Можно расширить функционал интерфейсами.
  Они добавляются через апостроф
 

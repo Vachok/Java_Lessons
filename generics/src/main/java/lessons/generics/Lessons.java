@@ -1,10 +1,12 @@
-package lessons.generics.whatis;
+package lessons.generics;
 
+
+import lessons.generics.whatis.Launcher1;
 
 /**
  * Его должны имплементить уроки.
  * @see GenericsLesson
- * @see Main
+ * @see Launcher1
  */
 public interface Lessons {
     /**

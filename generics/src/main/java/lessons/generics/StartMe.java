@@ -1,12 +1,11 @@
 package lessons.generics;
 
 
-import lessons.generics.bnds.Laun4;
-import lessons.generics.extend.LauncherLTwo;
+import lessons.generics.bnds.Launcher4;
+import lessons.generics.extend.Launcher2;
 import lessons.generics.genmethods.Laun3;
-import lessons.generics.whatis.GenericsLesson;
-import lessons.generics.whatis.Lessons;
-import lessons.generics.whatis.Main;
+import lessons.generics.whatis.Launcher1;
+import lessons.generics.wildcards.Launcher5;
 import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.DataConnectTo;
@@ -36,7 +35,7 @@ public class StartMe implements GenericsLesson {
     /**
      * Запуск урока номер 1. ("http://lesson.vachok.ru/generic/lessons/generics/whatis/package-summary.html")
      */
-    private static Lessons whatIsGeneric = new Main();
+    private static Lessons whatIsGeneric = new Launcher1();
 
     /**<a href="https://www.youtube.com/watch?v=IsKnSd7SmHw&feature=youtu.be&list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Урок Java 311: Generic 2: Наследование Generics</a>
      <p>
@@ -44,15 +43,36 @@ public class StartMe implements GenericsLesson {
      <p>
      <a href="http://lesson.vachok.ru/generic/overview-summary.html" target=_blank>Lesson DOCS</a>
      */
-    private static Lessons extGenericsTwo = new LauncherLTwo();
+    private static Lessons extGenericsTwo = new Launcher2();
+
+    /**<a href="https://youtu.be/KkjCnEi3msI?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Урок Java 312: Generic 3: Generics методы</a>
+     <p>
+     * <a href="https://github.com/Vachok/Java_Lessons/issues/619" target=_blank>GITHub</a>
+     <p>
+     <a href="http://lesson.vachok.ru/generic/lessons/generics/extend/package-summary.html" target=_blank>Lesson DOCS</a>
+     */
     private static Lessons genMethThree = new Laun3();
-    private static Lessons genBoundsFour = new Laun4();
+    /**<a href="https://youtu.be/5et8IyafnWE?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Урок Java 313: Generic 4: Bounds</a>
+     <p>
+     * <a href="https://github.com/Vachok/Java_Lessons/issues/619" target=_blank>GITHub</a>
+     <p>
+     <a href="http://lesson.vachok.ru/generic/lessons/generics/bnds/package-summary.html" target=_blank>Lesson DOCS</a>
+     */
+    private static Lessons genBoundsFour = new Launcher4();
+    /**<a href="https://youtu.be/5et8IyafnWE?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX" target=_blank>Урок Java 313: Generic 4: Bounds</a>
+     <p>
+     * <a href="https://github.com/Vachok/Java_Lessons/issues/619" target=_blank>GITHub</a>
+     <p>
+     <a href="http://lesson.vachok.ru/generic/lessons/generics/bnds/package-summary.html" target=_blank>Lesson DOCS</a>
+     */
+    private static Lessons genWildCardFive = new Launcher5(true);
 
     public static void main(String[] args) {
         whatIsGeneric.launchMe();
         extGenericsTwo.launchMe();
         genMethThree.launchMe();
         genBoundsFour.launchMe();
+        genWildCardFive.launchMe();
     }
 
     @Override
@@ -62,7 +82,6 @@ public class StartMe implements GenericsLesson {
     }
 
     private void toFile(List<String>links) {
-
         try(FileOutputStream fileOutputStream = new FileOutputStream("lesson.now");
             BufferedOutputStream bufferedOutputStream = new BufferedOutputStream(fileOutputStream)){
             String s = new String((new Date() + "\n" + SOURCE_CLASS + "\n" + (links.toString().replaceAll(", ", "\n"))).getBytes(), "UTF-8");

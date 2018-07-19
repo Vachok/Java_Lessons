@@ -2,8 +2,8 @@ package lessons.generics.bnds;
 
 
 import lessons.generics.StartMe;
-import lessons.generics.whatis.GenericsLesson;
-import lessons.generics.whatis.Lessons;
+import lessons.generics.GenericsLesson;
+import lessons.generics.Lessons;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,8 +18,8 @@ import java.util.List;
  * {@link #firstMeth()}
  * @since 18.07.2018 (14:51)
  */
-public class Laun4 implements Lessons {
-    public List<String> links = new ArrayList<>();
+public class Launcher4 implements Lessons {
+    private List<String> links = new ArrayList<>();
     @Override
     public void launchMe() {
         GenericsLesson g = new StartMe();
@@ -27,10 +27,10 @@ public class Laun4 implements Lessons {
         links.add(this.getClass().getTypeName());
         links.add("https://www.youtube.com/watch?v=5et8IyafnWE&feature=youtu.be&list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX");
         firstMeth();
-        g.progressSaver(links, true);
+        g.progressSaver(links, false);
         System.out.println("links = " + links);
     }
-    public void showMe(String addToLinks){
+    private void showMe(String addToLinks){
         System.out.println(addToLinks);
         links.add(addToLinks);
         System.out.println("links.size: "+ links.size());
