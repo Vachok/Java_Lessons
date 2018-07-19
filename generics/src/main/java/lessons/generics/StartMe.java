@@ -3,6 +3,7 @@ package lessons.generics;
 
 import lessons.generics.bnds.Launcher4;
 import lessons.generics.extend.Launcher2;
+import lessons.generics.gen6.Launcher6;
 import lessons.generics.genmethods.Laun3;
 import lessons.generics.whatis.Launcher1;
 import lessons.generics.wildcards.Launcher5;
@@ -65,7 +66,8 @@ public class StartMe implements GenericsLesson {
      <p>
      <a href="http://lesson.vachok.ru/generic/lessons/generics/bnds/package-summary.html" target=_blank>Lesson DOCS</a>
      */
-    private static Lessons genWildCardFive = new Launcher5(true);
+    private static Lessons genWildCardFive = new Launcher5(false);
+    private static Lessons gen6 = new Launcher6(true);
 
     public static void main(String[] args) {
         whatIsGeneric.launchMe();
@@ -73,12 +75,22 @@ public class StartMe implements GenericsLesson {
         genMethThree.launchMe();
         genBoundsFour.launchMe();
         genWildCardFive.launchMe();
+        gen6.launchMe();
     }
-
-    @Override
-    public void progressSaver(List<String> links, boolean db) {
-        toFile(links);
-        if (db) toDB(links);
+    private static void toDB(Collection<String> links, double lessonID){
+        String sql = "insert into lessons (sclass, links, lessonid) values (?,?,?)";
+        String trunk = "truncate lessons";
+        try(Connection c = dataConnectTo.getDataSource().getConnection();
+            PreparedStatement pT = c.prepareStatement(trunk);
+            PreparedStatement p = c.prepareStatement(sql)){
+            pT.executeUpdate();
+            p.setString(1, SOURCE_CLASS);
+            p.setString(2, new String(links.toString().replaceAll(", ", "\n").getBytes()));
+            p.setDouble(3, lessonID);
+            p.executeUpdate();
+        }catch(SQLException e){
+            messageToUser.out(SOURCE_CLASS+"_26", (e.getMessage() + "\n\n" + Arrays.toString(e.getStackTrace()).replaceAll(", ", "\n")).getBytes());
+            messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()));}
     }
 
     private void toFile(List<String>links) {
@@ -91,18 +103,9 @@ public class StartMe implements GenericsLesson {
 
     }
 
-    private static void toDB(Collection<String> links){
-        String sql = "insert into lessons (sclass, links) values (?,?)";
-        String trunk = "truncate lessons";
-        try(Connection c = dataConnectTo.getDataSource().getConnection();
-            PreparedStatement pT = c.prepareStatement(trunk);
-            PreparedStatement p = c.prepareStatement(sql)){
-            pT.executeUpdate();
-            p.setString(1, SOURCE_CLASS);
-            p.setString(2, links.toString().replaceAll(", ", "\n"));
-            p.executeUpdate();
-        }catch(SQLException e){
-            messageToUser.out(SOURCE_CLASS+"_26", (e.getMessage() + "\n\n" + Arrays.toString(e.getStackTrace()).replaceAll(", ", "\n")).getBytes());
-            messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()));}
+    @Override
+    public void progressSaver(List<String> links, boolean db, double lessonID) {
+        toFile(links);
+        if (db) toDB(links, lessonID);
     }
 }

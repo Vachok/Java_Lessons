@@ -79,4 +79,8 @@ generics/build/classes/java/main/lessons/
 /generics/src/main/java/lessons/generics/LibsInetor.java
 generics/build/distributions/generics-1.tar
 generics/build/scripts/
-lesson.now
+/generics/lesson.now
+generics/build/distributions/generics-5.tar
+/generics/generics.iml
+/generics/generics.ipr
+/generics/generics.iws
