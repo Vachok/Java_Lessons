@@ -13,8 +13,6 @@ import java.util.List;
  * <b>Методы</b>
  * {@link #firstMeth()}
  * @since 18.07.2018 (14:29)
-
-
  */
 public class Laun3 implements Lessons {
     private List<String> links = new ArrayList<>();
