@@ -3,7 +3,7 @@ plugins {
     id 'application'
     id 'idea'
 }
-version '5'
+version '6'
 group 'lessons.generics'
 
 

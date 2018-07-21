@@ -1,5 +1,6 @@
 package lessons.generics.bnds;
 
+
 /**  {@link Launcher4}
  Generic class
  @since 18.07.2018 (13:34)

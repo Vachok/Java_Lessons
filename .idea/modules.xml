@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics/generics.iml" filepath="$PROJECT_DIR$/.idea/modules/generics/generics.iml" group="generics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics/generics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/generics/generics_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics/generics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/generics/generics_test.iml" />
       <module fileurl="file://$PROJECT_DIR$/lessons.iml" filepath="$PROJECT_DIR$/lessons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics/lessons-generics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/generics/lessons-generics_main.iml" group="generics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics/lessons-generics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/generics/lessons-generics_test.iml" group="generics" />
     </modules>
   </component>
 </project>

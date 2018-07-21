@@ -3,12 +3,10 @@ package lessons.generics.wildcards;
 import lessons.generics.GenericsLesson;
 import lessons.generics.Lessons;
 import lessons.generics.StartMe;
-import lessons.generics.whatis.Launcher1;
 import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageToUser;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**<b>Wild Card</b>
@@ -44,7 +42,7 @@ public class Launcher5 implements Lessons {
         links.add(this.getClass().getSimpleName()+ " -> List <String> links: ");
         links.add("Wild Card >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         links.add("https://youtu.be/gilxWHyGXbg?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX");
-        saver.progressSaver(links, db);
+        saver.progressSaver(links, db, 621.314);
         lessonStart();
     }
 
@@ -57,6 +55,6 @@ public class Launcher5 implements Lessons {
     private void lessonStart() {
         Cell<House> cell = new Cell<>();
         add(cell);
-        House house = cell.getT();
+//        House house = cell.getT(); Exception in thread "main" java.lang.ClassCastException:
     }
 }

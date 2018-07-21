@@ -23,7 +23,7 @@ public class Laun3 implements Lessons {
         links.add(this.getClass().getTypeName());
         links.add("https://www.youtube.com/watch?v=5et8IyafnWE&feature=youtu.be&list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX");
         firstMeth();
-        g.progressSaver(links, false);
+        g.progressSaver(links, false, 619.312);
         System.out.println("links = " + links);
     }
 
