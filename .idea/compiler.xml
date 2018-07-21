@@ -3,12 +3,10 @@
   <component name="CompilerConfiguration">
     <addNotNullAssertions enabled="false" />
     <bytecodeTargetLevel>
-      <module name="generics_main" target="1.10" />
-      <module name="generics_test" target="1.10" />
       <module name="java.lessons.solid_main" target="1.9" />
       <module name="java.lessons.solid_test" target="1.9" />
-      <module name="lessons-generics_main" target="1.10" />
-      <module name="lessons-generics_test" target="1.10" />
+      <module name="lessons.general_main" target="1.10" />
+      <module name="lessons.general_test" target="1.10" />
     </bytecodeTargetLevel>
   </component>
 </project>

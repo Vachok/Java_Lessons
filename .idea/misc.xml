@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="EncodingComponent">
+    <option name="projectEncoding" />
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="JavadocGenerationManager">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/generics/dosc" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/general/docs" />
     <option name="OPTION_SCOPE" value="private" />
     <option name="OTHER_OPTIONS" value="-linksource -keywords -encoding UTF-8 -nohelp -html5 -windowtitle &quot;JAVA Lessons&quot; -doctitle &quot;&lt;a href=&quot;https://github.com/Vachok/Java_Lessons/milestone/7&quot; target=_blank&gt;Patterns&lt;/a&gt;&quot; -bottom &quot;&lt;a href=&quot;https://github.com/Vachok/Java_Lessons/projects/1&quot;&gt;GitHub&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/playlist?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX&quot; target=_blank&gt;YouTube&lt;/a&gt;&quot; --allow-script-in-comments" />
     <option name="HEAP_SIZE" value="512" />
@@ -11,5 +14,8 @@
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_10" project-jdk-name="10" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="TaskProjectConfiguration">
+    <server type="JIRA" url="http://srv-acs:8080" />
   </component>
 </project>

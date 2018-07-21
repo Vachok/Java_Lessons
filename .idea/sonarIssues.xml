@@ -18,6 +18,86 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/StartMe.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/generics/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/lib/mysqlandprop-0.43.jar!/com/mysql/jdbc/jdbc2/optional/MysqlDataSource.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/lib/mysqlandprop-0.43.jar!/ru/vachok/mysqlandprops/DataConnectTo.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/lib/mysqlandprop-0.43.jar!/ru/vachok/mysqlandprops/props/DBRegProperties.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/lib/mysqlandprop-0.43.jar!/ru/vachok/mysqlandprops/props/FileProps.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/lib/mysqlandprop-0.43.jar!/ru/vachok/mysqlandprops/props/InitProperties.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/SaverProgress.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/StartMe.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/helper/SaveToDatabase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/helper/SaveToFile.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/helper/SaverProgress.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/java/lessons/general/tablecreate">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/main/resources/tablecreate">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lesson.general/src/test/java/lessons/general/helper/SaveToDatabaseTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/one/three/ThurdClass.java">
           <value>
             <set />
