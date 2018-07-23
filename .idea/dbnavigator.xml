@@ -35,6 +35,7 @@
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
     <filter-list connection-id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c" dataset="u0466446_liferpg.lessons" active-filter-id="EMPTY_FILTER" />
+    <filter-list connection-id="ef68d1f1-fff6-43d0-a7fa-cfaf4410a63c" dataset="u0466446_lessons.general" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">
     <last-used-providers />
@@ -43,28 +44,10 @@
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
-    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
@@ -74,7 +57,25 @@
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
@@ -86,7 +87,188 @@
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
+    <mapping file-url="file://$PROJECT_DIR$/src/jdbc/conn/theory/lesson.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
     <mapping file-url="file://$PROJECT_DIR$/src/jdbc/manyresprocedure/getCount.sql" connection-id="0bf0ac30-ec9f-4431-8826-169a08f5b68a" session-id="MAIN" current-schema="lesson" />
   </component>
   <component name="DBNavigator.Project.MethodExecutionManager">
@@ -321,7 +503,6 @@
           <content-type name="SQL" enabled="true" />
           <content-type name="PL/SQL" enabled="true" />
           <content-type name="Groovy" enabled="true" />
-          <content-type name="AIDL" enabled="true" />
           <content-type name="YAML" enabled="true" />
           <content-type name="Manifest" enabled="true" />
         </content-types>
