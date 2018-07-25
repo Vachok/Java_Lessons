@@ -25,8 +25,8 @@ public class QdeQ implements Lessons {
      */
     @Override
     public void launchMe() {
-        System.out.println("QdeQ.launchMe");
-        links.put("QdeQ","launchMe");
+        System.out.println("BinSearch.launchMe");
+        links.put("BinSearch","launchMe");
         stackWorks();
         queueWorks();
         deQueueWorks();
@@ -40,8 +40,8 @@ public class QdeQ implements Lessons {
      * @see lessons.general.alistllistone.ALLists
      */
     private void deQueueWorks() {
-        System.out.println("QdeQ.deQueueWorks");
-        links.put("QdeQ","deQueueWorks");
+        System.out.println("BinSearch.deQueueWorks");
+        links.put("BinSearch","deQueueWorks");
         Deque<String> dequeArr = new ArrayDeque<>();
         Deque<String> dequeLis = new LinkedList<>();
         /*Варианты добавления*/
@@ -64,7 +64,7 @@ public class QdeQ implements Lessons {
      * @param dequeArr {@link #deQueueWorks()}
      */
     private void remDeq(Deque<String> dequeArr) {
-        links.put("QdeQ","remDeq");
+        links.put("BinSearch","remDeq");
         String s1=dequeArr.removeLast();
         String s7=dequeArr.removeFirst();
         /*get и peek - только забирают элементы, не удаляя*/
@@ -94,8 +94,8 @@ public class QdeQ implements Lessons {
      {@code peek} - достанет, без удаления.
      */
     private void queueWorks() {
-        System.out.println("QdeQ.queueWorks");
-        links.put("QdeQ","queueWorks");
+        System.out.println("BinSearch.queueWorks");
+        links.put("BinSearch","queueWorks");
         Queue<String> queue = new PriorityQueue<>();
         queue.add("one");
         queue.add("two");
@@ -120,8 +120,8 @@ public class QdeQ implements Lessons {
 
      */
     private void stackWorks() {
-        System.out.println("QdeQ.stackWorks");
-        links.put("QdeQ","stackWorks");
+        System.out.println("BinSearch.stackWorks");
+        links.put("BinSearch","stackWorks");
         Stack<String> stack = new Stack();
         stack.add("one");
         stack.add("two");

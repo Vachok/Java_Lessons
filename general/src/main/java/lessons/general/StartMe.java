@@ -1,6 +1,7 @@
 package lessons.general;
 
 import lessons.general.alistllistone.ALLists;
+import lessons.general.binsearch.BinSearch;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
@@ -30,8 +31,11 @@ public class StartMe implements Lessons {
     public static void main(String[] args) {
         ALLists alLists = new ALLists();
         QdeQ qdeQ = new QdeQ();
-        qdeQ.launchMe();
-        alLists.launchMe();
+        BinSearch binSearch = new BinSearch();
+//        qdeQ.launchMe();
+//        alLists.launchMe();
+        binSearch.launchMe();
+
     }
     @Override
     public void launchMe() {
