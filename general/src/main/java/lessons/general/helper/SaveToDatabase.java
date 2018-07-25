@@ -17,12 +17,19 @@ import java.util.Set;
 public class SaveToDatabase implements SaverProgress, DataConnectTo {
     private static final String SOURCE_CLASS = SaveToDatabase.class.getSimpleName();
     private static MessageToUser messageToUser = new MessageCons();
-    Savepoint savepoint;
-    private Connection c = getDefaultConnection();
+    private static DataConnectTo dataConnectTo = new RegRuMysql();
+    private static final Connection DEF_CON = dataConnectTo.getDefaultConnection();
+    private static Savepoint savepoint;
 
-    private static void createTable() {
-        RegRuMysql regRuMysql = new RegRuMysql();
-        MysqlDataSource u0466446_lessons = regRuMysql.getDataSourceSchema("u0466446_lessons");
+    public SaveToDatabase() {
+        try {
+            savepoint = DEF_CON.setSavepoint("initialPoint");
+        } catch (SQLException e) {
+            messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()).replaceAll(", ", "\n"));
+        }
+    }
+
+    private static void createTable(){
         String sql = "CREATE TABLE IF NOT EXISTS general (\n" +
             "  `identry` int(11) NOT NULL AUTO_INCREMENT,\n" +
             "  `idlesson` double NOT NULL,\n" +
@@ -32,34 +39,20 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
             "  PRIMARY KEY (`identry`),\n" +
             "  UNIQUE KEY `idlesson` (`idlesson`)\n" +
             ") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;";
-        try (Connection c = u0466446_lessons.getConnection();
-             PreparedStatement p = c.prepareStatement(sql)) {
+        try {
+            PreparedStatement p = DEF_CON.prepareStatement(sql);
             p.executeUpdate();
         } catch (SQLException e) {
+            relSavepoint();
             messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()));
         }
 
     }
 
-    @Override
-    public boolean isSaved() {
-        return false;
-    }
-
-    @Override
-    public void saveMap(Map<?, ?> dataToSave, double idLesson) {
-        String sql = "insert into u0466446_lessons.general (idlesson, lessonname, links) values (?,?,?)";
-        Set<?> keySet = dataToSave.keySet();
-        try (PreparedStatement p = c.prepareStatement(sql)) {
-            for (Object key : keySet) {
-                savepoint = c.setSavepoint(idLesson + " sPoint");
-                p.setDouble(1, idLesson);
-                p.setString(2, key.toString());
-                p.setString(3, String.valueOf(dataToSave.get(key.toString())));
-                p.executeUpdate();
-            }
+    private static void relSavepoint() {
+        try {
+            DEF_CON.releaseSavepoint(savepoint);
         } catch (SQLException e) {
-            relSavepoint();
             messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()));
         }
     }
@@ -72,15 +65,22 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
         return new RegRuMysql().getDataSource();
     }
 
-    private void relSavepoint() {
-        String savepointName = null;
-        try {
-            c.releaseSavepoint(savepoint);
-            savepointName = savepoint.getSavepointName() + " released";
+    @Override
+    public boolean isSaved(Map<?, ?> dataToSave, double idLesson) {
+        String sql = "insert into u0466446_lessons.general (idlesson, lessonname, links) values (?,?,?)";
+        Set<?> keySet = dataToSave.keySet();
+        try (PreparedStatement p = DEF_CON.prepareStatement(sql)) {
+            for (Object key : keySet) {
+                p.setDouble(1, idLesson);
+                p.setString(2, key.toString());
+                p.setString(3, String.valueOf(dataToSave.get(key.toString())));
+                p.executeUpdate();
+            }
+            return true;
         } catch (SQLException e) {
-            messageToUser.errorAlert(SOURCE_CLASS, e.getMessage() + "\n" + savepointName, Arrays.toString(e.getStackTrace()));
+            relSavepoint();
+            messageToUser.errorAlert(SOURCE_CLASS, e.getMessage(), Arrays.toString(e.getStackTrace()));
+            return false;
         }
     }
-
-
 }
