@@ -83,6 +83,4 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
             return false;
         }
     }
-
-
 }
