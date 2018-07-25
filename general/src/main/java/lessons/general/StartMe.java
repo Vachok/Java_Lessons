@@ -5,23 +5,28 @@ import lessons.general.binsearch.BinSearch;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
+import lessons.general.methodexception.MethExc;
 import lessons.general.stackqdeq.QdeQ;
 import ru.vachok.messenger.MessageCons;
+import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
+import ru.vachok.mysqlandprops.props.DBRegProperties;
 import ru.vachok.mysqlandprops.props.FileProps;
 import ru.vachok.mysqlandprops.props.InitProperties;
 
 import java.util.Map;
 import java.util.Properties;
+import java.util.logging.Logger;
 
 public class StartMe implements Lessons {
+    private static Lessons lessons = new MethExc();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
-    private static InitProperties initProperties = new FileProps(SOURCE_CLASS);
-    private static MessageToUser messageToUser = new MessageCons();
     private Map<String, String> javaID;
+    private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() + "-" + SOURCE_CLASS);
     private double idLesson;
+    private MessageToUser messageToUser = new MessageSwing();
 
     public StartMe(Map<String, String> javaID, double idLesson) {
         this.javaID = javaID;
@@ -29,12 +34,7 @@ public class StartMe implements Lessons {
     }
 
     public static void main(String[] args) {
-        ALLists alLists = new ALLists();
-        QdeQ qdeQ = new QdeQ();
-        BinSearch binSearch = new BinSearch();
-//        qdeQ.launchMe();
-//        alLists.launchMe();
-        binSearch.launchMe();
+        lessons.launchMe();
 
     }
     @Override

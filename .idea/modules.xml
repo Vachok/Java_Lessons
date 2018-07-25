@@ -10,6 +10,9 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics.iml" filepath="$PROJECT_DIR$/.idea/modules/generics.iml" group="generics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics_main.iml" filepath="$PROJECT_DIR$/.idea/modules/generics_main.iml" group="generics" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generics_test.iml" filepath="$PROJECT_DIR$/.idea/modules/generics_test.iml" group="generics" />
       <module fileurl="file://$PROJECT_DIR$/lessons.iml" filepath="$PROJECT_DIR$/lessons.iml" />
     </modules>
   </component>
