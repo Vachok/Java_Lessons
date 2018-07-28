@@ -23,6 +23,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/StartMe.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/helper/SaveToDatabase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/methodexception/Base.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/methodexception/MethExc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/generics/build.gradle">
           <value>
             <set />

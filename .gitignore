@@ -173,3 +173,5 @@ generics/src/main/java/lessons/generics/bounds/
 /623.316
 untrack.txt
 generics/src/main/java/lessons/generics/GenericsLesson.java~HEAD
+/.idea/modules.xml
+/.idea/sonarIssues.xml

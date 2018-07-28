@@ -6,7 +6,10 @@ import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.DataConnectTo;
 import ru.vachok.mysqlandprops.RegRuMysql;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Savepoint;
 import java.util.Arrays;
 import java.util.Map;
 import java.util.Set;
@@ -14,11 +17,11 @@ import java.util.Set;
 /**
  * @since 21.07.2018 (23:42)
  */
-public class SaveToDatabase implements SaverProgress, DataConnectTo {
+public class SaveToDatabase implements SaverProgress {
     private static final String SOURCE_CLASS = SaveToDatabase.class.getSimpleName();
     private static MessageToUser messageToUser = new MessageCons();
     private static DataConnectTo dataConnectTo = new RegRuMysql();
-    private static final Connection DEF_CON = dataConnectTo.getDefaultConnection();
+    private static final Connection DEF_CON = dataConnectTo.getDefaultConnection("u0466446_lessons");
     private static Savepoint savepoint;
 
     public SaveToDatabase() {
@@ -29,7 +32,7 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
         }
     }
 
-    private static void createTable(){
+    private static void createTable() {
         String sql = "CREATE TABLE IF NOT EXISTS general (\n" +
             "  `identry` int(11) NOT NULL AUTO_INCREMENT,\n" +
             "  `idlesson` double NOT NULL,\n" +
@@ -39,8 +42,8 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
             "  PRIMARY KEY (`identry`),\n" +
             "  UNIQUE KEY `idlesson` (`idlesson`)\n" +
             ") ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;";
-        try {
-            PreparedStatement p = DEF_CON.prepareStatement(sql);
+
+        try (PreparedStatement p = DEF_CON.prepareStatement(sql)) {
             p.executeUpdate();
         } catch (SQLException e) {
             relSavepoint();
@@ -60,7 +63,6 @@ public class SaveToDatabase implements SaverProgress, DataConnectTo {
     /**
      * @return {@link RegRuMysql#getDataSource()}
      */
-    @Override
     public MysqlDataSource getDataSource() {
         return new RegRuMysql().getDataSource();
     }
