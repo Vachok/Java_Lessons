@@ -52,6 +52,7 @@ public class MethExc implements Lessons {
      * @param links      in DB
      * @param saveToDB   true = save
      */
+
     public void linksPut(String lessonname, String links, boolean saveToDB) {
         linksToSave.put(lessonname, links);
         if (saveToDB) saverProgress.isSaved(linksToSave, ID_LESSON);
