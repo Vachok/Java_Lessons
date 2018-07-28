@@ -23,7 +23,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/Lessons.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/StartMe.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/alistllistone/ALLists.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/binsearch/BinSearch.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/expipelin/ExPip.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/expipelin/package-info.java">
           <value>
             <set />
           </value>
@@ -39,6 +64,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/methodexception/MethExc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/general/src/main/java/lessons/general/stackqdeq/QdeQ.java">
           <value>
             <set />
           </value>

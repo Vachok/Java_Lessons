@@ -10,4 +10,6 @@ public interface Lessons {
      * Загрузочный метод. Запуск класса.
      */
     void launchMe();
+
+    void linksPut(String lessonname, String links, boolean saveToDB);
 }
