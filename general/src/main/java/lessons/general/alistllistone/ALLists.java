@@ -30,6 +30,11 @@ public class ALLists implements Lessons {
         System.out.println(" saved: "+saverProgress.isSaved(links, 623.316)+ " 24.07.2018 (16:37) ");*/
     }
 
+    @Override
+    public void linksPut(String lessonname, String links, boolean saveToDB) {
+
+    }
+
     /**
      * Есть A и L листы. Оба имплементят {@link java.util.List} (доступ может быть осуществлён по-индексу.)
      * Все элементы индексируются и хранятся с индексами.
