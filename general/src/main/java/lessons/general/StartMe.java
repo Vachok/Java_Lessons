@@ -2,6 +2,7 @@ package lessons.general;
 
 import lessons.general.alistllistone.ALLists;
 import lessons.general.binsearch.BinSearch;
+import lessons.general.expipelin.ExPip;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
@@ -19,7 +20,7 @@ import java.util.Properties;
 import java.util.logging.Logger;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new MethExc();
+    private static Lessons lessons = new ExPip();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
@@ -42,8 +43,15 @@ public class StartMe implements Lessons {
         javaID.put(APP_NAME, SOURCE_CLASS);
         properties.put(APP_NAME, SOURCE_CLASS);
         initProperties.setProps(properties);
-        aSave();
     }
+
+    @Override
+    public void linksPut(String lessonname, String links, boolean saveToDB) {
+        SaverProgress saverToFile = new SaveToFile();
+        boolean savedFile = saverToFile.isSaved(javaID, idLesson);
+        messageToUser.info(idLesson + "", "DB=" + false, "file = " + savedFile);
+    }
+
     private void aSave(){
         SaverProgress saverProgress = new SaveToDatabase();
         SaverProgress saverToFile = new SaveToFile();

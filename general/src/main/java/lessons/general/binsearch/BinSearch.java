@@ -77,7 +77,7 @@ public class BinSearch implements Lessons {
      * @param s параметр
      * @param needToSave нужно ли сохранять.
      */
-    private void linksPut(String x, String s, boolean needToSave) {
+    public void linksPut(String x, String s, boolean needToSave) {
         links.put(x, s);
 
         System.out.println("index = " + x);
