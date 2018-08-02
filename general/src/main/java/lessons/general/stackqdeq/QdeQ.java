@@ -20,6 +20,12 @@ import static java.util.logging.Level.INFO;
 public class QdeQ implements Lessons {
     private SaverProgress saverProgress = new SaveToDatabase();
     private Map<String, String> links = new ConcurrentHashMap<>();
+
+    @Override
+    public void linksPut(String lessonname, String links, boolean saveToDB) {
+
+    }
+
     /**
      * {@link #stackWorks()} , {@link #queueWorks()}, {@link #deQueueWorks()}
      */

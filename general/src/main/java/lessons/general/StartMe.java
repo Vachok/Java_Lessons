@@ -1,31 +1,25 @@
 package lessons.general;
 
-import lessons.general.alistllistone.ALLists;
-import lessons.general.binsearch.BinSearch;
-import lessons.general.expipelin.ExPip;
+import lessons.general.autoclose.ACHowTo;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
-import lessons.general.methodexception.MethExc;
-import lessons.general.stackqdeq.QdeQ;
-import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.props.DBRegProperties;
-import ru.vachok.mysqlandprops.props.FileProps;
 import ru.vachok.mysqlandprops.props.InitProperties;
 
 import java.util.Map;
 import java.util.Properties;
-import java.util.logging.Logger;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new ExPip();
+    private static Lessons lessons = new ACHowTo();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
     private Map<String, String> javaID;
-    private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() + "-" + SOURCE_CLASS);
+    private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
+        "-" + SOURCE_CLASS);
     private double idLesson;
     private MessageToUser messageToUser = new MessageSwing();
 
@@ -36,7 +30,6 @@ public class StartMe implements Lessons {
 
     public static void main(String[] args) {
         lessons.launchMe();
-
     }
     @Override
     public void launchMe() {
@@ -46,7 +39,7 @@ public class StartMe implements Lessons {
     }
 
     @Override
-    public void linksPut(String lessonname, String links, boolean saveToDB) {
+    public void linksPut(String lessonName, String links, boolean saveToDB) {
         SaverProgress saverToFile = new SaveToFile();
         boolean savedFile = saverToFile.isSaved(javaID, idLesson);
         messageToUser.info(idLesson + "", "DB=" + false, "file = " + savedFile);
@@ -57,7 +50,6 @@ public class StartMe implements Lessons {
         SaverProgress saverToFile = new SaveToFile();
         boolean savedToDB = saverProgress.isSaved(javaID, idLesson);
         boolean savedFile = saverToFile.isSaved(javaID, idLesson);
-
         messageToUser.info(idLesson+"", "DB="+savedToDB, "file = "+savedFile);
 
     }
