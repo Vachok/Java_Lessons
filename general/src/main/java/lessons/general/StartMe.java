@@ -39,7 +39,7 @@ public class StartMe implements Lessons {
     }
 
     @Override
-    public void linksPut(String lessonname, String links, boolean saveToDB) {
+    public void linksPut(String lessonName, String links, boolean saveToDB) {
         SaverProgress saverToFile = new SaveToFile();
         boolean savedFile = saverToFile.isSaved(javaID, idLesson);
         messageToUser.info(idLesson + "", "DB=" + false, "file = " + savedFile);
