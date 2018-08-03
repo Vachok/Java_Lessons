@@ -1,9 +1,9 @@
-package lessons.general;
+package lessons.j8;
 
-import lessons.general.helper.SaveToDatabase;
-import lessons.general.helper.SaveToFile;
-import lessons.general.helper.SaverProgress;
-import lessons.general.rwlock.RWLock;
+import lessons.j8.funcprog.FuncClass;
+import lessons.j8.helper.SaveToDatabase;
+import lessons.j8.helper.SaveToFile;
+import lessons.j8.helper.SaverProgress;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.props.DBRegProperties;
@@ -13,13 +13,13 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new RWLock();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
+    private static Lessons lessons = new FuncClass();
     private static Properties properties = new Properties();
-    private Map<String, String> javaID;
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);
+    private Map<String, String> javaID;
     private double idLesson;
     private MessageToUser messageToUser = new MessageSwing();
 
