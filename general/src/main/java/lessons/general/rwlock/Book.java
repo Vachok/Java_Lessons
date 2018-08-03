@@ -4,12 +4,16 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import static lessons.general.rwlock.RWLock.linksToSave;
+
 /**
  * <h1>Класс-пример. Книга</h1>
  *
  * @since 03.08.2018 (14:28)
+ * @see RWLock
  */
 class Book{
+    private static final String SOURCE_CLASS = Book.class.getSimpleName();
     /**
      * <h2>Название книги</h2>
      */
@@ -19,7 +23,7 @@ class Book{
      */
     int buyTime;
     /**
-     * <>Интерфейс {@link ReadWriteLock}</>
+     * <h2>фейс</h2> {@link ReadWriteLock}
      * получим из него {@link ReentrantReadWriteLock}
      */
     ReadWriteLock readWriteLock = new ReentrantReadWriteLock();
@@ -33,13 +37,30 @@ class Book{
     Lock writeLock = readWriteLock.writeLock();
 
     /**<h2>Добавить экземпляр</h2>
+     *
      * Все потоки, которые будут заходить в этот метод, будут просить JAVA
      * поставить {@link Lock } на запись.
+     * {@link #howManyBooks()}
      *
      */
     public void abbBuy(){
         writeLock.lock();
         buyTime++;
         writeLock.lock();
+    }
+
+    /**
+     * <h2>Сколько экземпляров</h2>
+     * Тоже необходимо залочить. Чтобы не отличались цифры в отчётах.
+     */
+    public void howManyBooks(){
+        readLock.lock();
+        System.out.println("Book.howManyBooks "+buyTime);
+        linksToSave.put(SOURCE_CLASS, "Book.howManyBooks");
+        sendReport();
+        readLock.unlock();
+    }
+    private void sendReport(){
+
     }
 }
