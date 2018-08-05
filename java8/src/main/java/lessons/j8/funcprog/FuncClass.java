@@ -25,13 +25,14 @@ public class FuncClass implements Lessons {
     private static final Double ID_LESSON = 640.325;
 
     private static final String SOURCE_CLASS = FuncClass.class.getSimpleName();
-    /**<h2>Пример "функционалки"</h2>
-     <p>
-     *Тут точно нет side effect. Начальное состояние объекта не меняется.
+    /**
+     * <h2>Пример "функционалки"</h2>
+     * <p>
+     * Тут точно нет side effect. Начальное состояние объекта не меняется.
      * Лямбды это элемент функционального программирования. Но сам по-себе язык не является функциональным.
      * Потому что методы с <i>side effect</i> всё ещё возможны.
      */
-    Function<Integer, Integer> add1 = x->x*x;
+    Function<Integer, Integer> add1 = x -> x * x;
     /**
      * {@link Map}, для отправки в БД/файл.
      */
@@ -94,8 +95,9 @@ public class FuncClass implements Lessons {
     /**
      * <h2>Публичный метод</h2>
      * Проблема - мы не знаем ,что происходит внутри.
-     * Нужно разбираться что там проиходит. Меняется ли состояние объекта. И т.п.
-     *{@link #getCurrentProgram(TVGuide, int)}
+     * Нужно разбираться что там проиходит. Меняется ли состояние объекта. и т.п.
+     * {@link #getCurrentProgram(TVGuide, int)}
+     *
      * @param channel какой-то канал.
      * @return какой-то boolean
      */
@@ -106,32 +108,36 @@ public class FuncClass implements Lessons {
         return true || false;
     }
 
-    /**<h2>Сколько тут входных параметров?</h2>
-     <p>
-     Метод ужасен. Нормальное тестирование невозможно. Из-за new {@link Date} внутри метода.
-     Это скрытый параметр. Метод имеет <i>side effect</i>. Побочный эффект.
-     Это решает функциональное программирование.
-     В Java - это лямбды. {@link #add1}
-     {@link #getCurrentProgram(TVGuide, int, Date)} - правильный вариант.
-     * @param guide test
+    /**
+     * <h2>Сколько тут входных параметров?</h2>
+     * <p>
+     * Метод ужасен. Нормальное тестирование невозможно. из-за new {@link Date} внутри метода.
+     * Это скрытый параметр. Метод имеет <i>side effect</i>. Побочный эффект.
+     * Это решает функциональное программирование.
+     * В Java - это лямбды. {@link #add1}
+     * {@link #getCurrentProgram(TVGuide, int, Date)} - правильный вариант.
+     *
+     * @param guide   test
      * @param channel test
      * @return test
      * @deprecated
      */
-    public Program getCurrentProgram(TVGuide guide, int channel){
+    public Program getCurrentProgram(TVGuide guide, int channel) {
         Schedule schedule = guide.getSchedule(channel);
         Program current = schedule.programAt(new Date());
         return current;
     }
 
-    /**<b>Правильный метод</b>
+    /**
+     * <b>Правильный метод</b>
      * {@link #getCurrentProgram(TVGuide, int)} - так не делать.
-     * @param guide тест
+     *
+     * @param guide   тест
      * @param channel тест
-     * @param date тест
+     * @param date    тест
      * @return тест
      */
-    public Program getCurrentProgram(TVGuide guide, int channel,  Date date){
+    public Program getCurrentProgram(TVGuide guide, int channel, Date date) {
         Schedule schedule = guide.getSchedule(channel);
         Program current = schedule.programAt(date);
         return current;
