@@ -1,5 +1,6 @@
 package lessons.j8;
 
+import lessons.j8.defstat.DefAndStat;
 import lessons.j8.funcfaces.FuncFace;
 import lessons.j8.funcprog.FuncClass;
 import lessons.j8.helper.SaveToDatabase;
@@ -14,11 +15,15 @@ import ru.vachok.mysqlandprops.props.InitProperties;
 
 import java.util.Map;
 import java.util.Properties;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.stream.Stream;
 
 public class StartMe implements Lessons {
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
-    private static Lessons lessons = new Str();
+    private static Lessons lessons = new DefAndStat();
     private static Properties properties = new Properties();
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);
