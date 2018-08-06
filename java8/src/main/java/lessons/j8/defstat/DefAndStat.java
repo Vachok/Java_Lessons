@@ -1,8 +1,6 @@
 package lessons.j8.defstat;
 
 import lessons.j8.Lessons;
-import lessons.j8.helper.SaveToDatabase;
-import lessons.j8.helper.SaverProgress;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,7 +52,7 @@ public class DefAndStat implements Lessons {
         boolean isSaved = true;
         linksPut(this.getClass().getPackageName(), SOURCE_CLASS, isSaved);
         linksPut(getClass().getSimpleName(), "https://github.com/Vachok/Java_Lessons/issues/654", isSaved);
-        linksPut(getClass().getSimpleName(), "https://youtu.be/ABbVCzoaQow?t=240", isSaved);
+        linksPut(getClass().getSimpleName(), "https://youtu.be/ABbVCzoaQow", isSaved);
         goApp(isSaved);
     }
 
