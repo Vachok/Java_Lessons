@@ -5,6 +5,8 @@
     <bytecodeTargetLevel>
       <module name="java.lessons.solid_main" target="1.9" />
       <module name="java.lessons.solid_test" target="1.9" />
+      <module name="lesson.general_main" target="1.10" />
+      <module name="lesson.general_test" target="1.10" />
       <module name="lessons.general_main" target="1.10" />
       <module name="lessons.general_test" target="1.10" />
     </bytecodeTargetLevel>

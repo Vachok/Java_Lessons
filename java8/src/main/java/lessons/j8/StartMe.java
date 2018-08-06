@@ -1,5 +1,6 @@
 package lessons.j8;
 
+import lessons.j8.funcfaces.FuncFace;
 import lessons.j8.funcprog.FuncClass;
 import lessons.j8.helper.SaveToDatabase;
 import lessons.j8.helper.SaveToFile;
@@ -16,7 +17,7 @@ import java.util.Properties;
 public class StartMe implements Lessons {
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
-    private static Lessons lessons = new LaMbaDa();
+    private static Lessons lessons = new FuncFace();
     private static Properties properties = new Properties();
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);
