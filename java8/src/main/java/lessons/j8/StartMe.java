@@ -6,6 +6,7 @@ import lessons.j8.helper.SaveToDatabase;
 import lessons.j8.helper.SaveToFile;
 import lessons.j8.helper.SaverProgress;
 import lessons.j8.lambada.LaMbaDa;
+import lessons.j8.streams.Str;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.props.DBRegProperties;
@@ -17,7 +18,7 @@ import java.util.Properties;
 public class StartMe implements Lessons {
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
-    private static Lessons lessons = new FuncFace();
+    private static Lessons lessons = new Str();
     private static Properties properties = new Properties();
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);
