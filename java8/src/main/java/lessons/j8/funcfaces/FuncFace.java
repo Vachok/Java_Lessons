@@ -1,13 +1,23 @@
 package lessons.j8.funcfaces;
 
 
+import lessons.j8.Lessons;
+import lessons.j8.helper.SaveToDatabase;
+import lessons.j8.helper.SaverProgress;
 import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageToUser;
 
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 
 /**
- @since 05.08.2018 (18:44) */
-public class FuncFace {
+ * @since 05.08.2018 (18:44)
+ */
+public class FuncFace implements Lessons {
 
     /**
      * Simple Name класса, для поиска настроек
