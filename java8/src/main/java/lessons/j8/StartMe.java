@@ -3,6 +3,7 @@ package lessons.j8;
 import lessons.j8.helper.SaveToDatabase;
 import lessons.j8.helper.SaveToFile;
 import lessons.j8.helper.SaverProgress;
+import lessons.j8.methref.MethRef;
 import lessons.j8.opti.Option;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
@@ -15,7 +16,7 @@ import java.util.Properties;
 public class StartMe implements Lessons {
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
-    private static Lessons lessons = new Option();
+    private static Lessons lessons = new MethRef();
     private static Properties properties = new Properties();
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);

@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/general/src/main/java/lessons/general/alistllistone/ALLists.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/generics/src/main/java/lessons/generics/whatis/package-info.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java8/src/main/java/lessons/j8/methref/MethRef.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/solid/gradle/wrapper/gradle-wrapper.properties" charset="UTF-8" />
   </component>
 </project>
