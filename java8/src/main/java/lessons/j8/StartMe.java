@@ -1,5 +1,6 @@
 package lessons.j8;
 
+import lessons.j8.colle.Collie;
 import lessons.j8.helper.SaveToDatabase;
 import lessons.j8.helper.SaveToFile;
 import lessons.j8.helper.SaverProgress;
@@ -20,7 +21,7 @@ import java.util.stream.Stream;
 public class StartMe implements Lessons {
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
-    private static Lessons lessons = new MethRef();
+    private static Lessons lessons = new Collie();
     private static Properties properties = new Properties();
     private static InitProperties initProperties = new DBRegProperties(StartMe.class.getPackageName() +
         "-" + SOURCE_CLASS);
