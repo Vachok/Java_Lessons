@@ -41,9 +41,67 @@ public class LocDateClass implements Lessons {
         linksPut(getClass().getSimpleName(), "https://youtu.be/3yJD7PClPjE", isSaved);
         goApp(isSaved);
     }
-
+    /**
+     * <h2>Как было раньше</h2>
+     * Как раньше выводили дату. Брали класс {@link Date}, создавали {@link Calendar}.
+     * Потом через {@link SimpleDateFormat} приводили к нужному виду, и всё это можно было
+     * вывести на экран. {@code INFO: 08/08/2018}.
+     * <p>
+     * Как предлагается делать сейчас. {@link #whatNow(boolean)}.
+     *
+     * @param isSaved to db
+     */
     private void goApp(boolean isSaved) {
-        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, "go-go-go LocalDate" + " " + isSaved);
-        linksPut(SOURCE_CLASS, "go-go-go LocalDate", isSaved);
+        Date date = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        calendar.set(Calendar.MONTH, 2);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, simpleDateFormat.format(date) + " " + isSaved);
+        linksPut(SOURCE_CLASS, simpleDateFormat.format(date), isSaved);
+
+        try {
+            Date date1 = simpleDateFormat.parse("14/10/2018");
+            Logger.getLogger(SOURCE_CLASS).log(Level.INFO, date1.toString() + " " + isSaved);
+            linksPut(SOURCE_CLASS, date1.toString(), isSaved);
+        } catch (ParseException e) {
+            Logger.getLogger(SOURCE_CLASS).log(Level.WARNING, e.getMessage());
+        }
+        whatNow(isSaved);
+    }
+
+    /**
+     * <h2>Класс {@link LocalDate}</h2>
+     * В JAVA 1.8, появился повый класс {@link LocalDate}, который предоставляет множество методов.
+     * Для форматирования и парсинга используется {@link DateTimeFormatter}.
+     * {@code LocalDate localDate3 = LocalDate.parse("14/10/2018", dateTimeFormatter);}
+     *
+     * @param isSaved to db
+     */
+    private void whatNow(boolean isSaved) {
+        LocalDate localDate = LocalDate.now();
+        LocalDate localDate1 = localDate.minusDays(5);
+        LocalDate localDate2 = localDate.plusMonths(5);
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, localDate.toString() + " " + isSaved);
+        linksPut(SOURCE_CLASS, localDate.toString(), isSaved);
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, localDate1.toString() + " " + isSaved);
+        linksPut(SOURCE_CLASS, localDate1.toString(), isSaved);
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, localDate2.toString() + " " + isSaved);
+        linksPut(SOURCE_CLASS, localDate2.toString(), isSaved);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, localDate.format(dateTimeFormatter) + " " + isSaved);
+        linksPut(SOURCE_CLASS, localDate.format(dateTimeFormatter), isSaved);
+        LocalDate localDate3 = LocalDate.parse("14/10/2018", dateTimeFormatter);
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO, localDate3.toString() + " " + isSaved);
+        linksPut(SOURCE_CLASS, localDate3.toString(), isSaved);
+        String s = null;
+        try {
+            s = new String(" ".getBytes(), "UNICODE");
+        } catch (UnsupportedEncodingException e) {
+            Logger.getLogger(SOURCE_CLASS).log(Level.WARNING, e.getMessage());
+
+        }
+        Logger.getLogger(SOURCE_CLASS).log(Level.INFO,s +" " + isSaved);
+        linksPut(SOURCE_CLASS, s, isSaved);
     }
 }
