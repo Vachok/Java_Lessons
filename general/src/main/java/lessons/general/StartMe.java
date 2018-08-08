@@ -1,9 +1,9 @@
 package lessons.general;
 
+import lessons.general.eqhash.EqHash;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
-import lessons.general.rwlock.RWLock;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
 import ru.vachok.mysqlandprops.props.DBRegProperties;
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new RWLock();
+    private static Lessons lessons = new EqHash();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();

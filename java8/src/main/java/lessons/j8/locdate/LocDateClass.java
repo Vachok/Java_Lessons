@@ -3,11 +3,23 @@ package lessons.j8.locdate;
 import lessons.j8.Lessons;
 import lessons.j8.lambada.LaMbaDa;
 
+
+import java.io.UnsupportedEncodingException;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
+/**
+ * <h1>Local Date</h1>
+ *
+=======
 /**<h1>Local Date</h1>
  * @since 07.08.2018 (17:13)
  */
@@ -17,7 +29,7 @@ public class LocDateClass implements Lessons {
      */
     private static final Double ID_LESSON = 659.334;
 
-    private static final String SOURCE_CLASS = LaMbaDa.class.getSimpleName();
+    private static final String SOURCE_CLASS = LocDateClass.class.getSimpleName();
     /**
      * {@link Map}, для отправки в БД/файл.
      */

@@ -39,11 +39,6 @@ public class QdeQ implements Lessons {
         Logger.getLogger(getClass().getSimpleName()).log(INFO, "Saved? "+saverProgress.isSaved(links, 630.317));
     }
 
-    @Override
-    public void linksPut(String lessonname, String links, boolean saveToDB) {
-
-    }
-
     /**
      *<b>Deque</b> .
      * Разница {@link ArrayDeque} vs {@link LinkedList} - такая же как и у листов.
