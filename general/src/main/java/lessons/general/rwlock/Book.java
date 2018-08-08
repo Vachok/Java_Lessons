@@ -4,13 +4,11 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import static lessons.general.rwlock.RWLock.linksToSave;
-
 /**
  * <h1>Класс-пример. Книга</h1>
  *
  * @since 03.08.2018 (14:28)
- * @see RWLock
+ * @see ReadWriteLock
  */
 class Book{
     private static final String SOURCE_CLASS = Book.class.getSimpleName();
@@ -56,7 +54,7 @@ class Book{
     public void howManyBooks(){
         readLock.lock();
         System.out.println("Book.howManyBooks "+buyTime);
-        linksToSave.put(SOURCE_CLASS, "Book.howManyBooks");
+
         sendReport();
         readLock.unlock();
     }
