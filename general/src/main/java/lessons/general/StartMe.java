@@ -1,7 +1,6 @@
 package lessons.general;
 
 import lessons.general.clonmore.CloneMore;
-import lessons.general.eqhash.EqHash;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;

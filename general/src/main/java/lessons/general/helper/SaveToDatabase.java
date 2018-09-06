@@ -3,6 +3,7 @@ package lessons.general.helper;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import ru.vachok.messenger.MessageCons;
 import ru.vachok.messenger.MessageToUser;
+import ru.vachok.messenger.MessagesNull;
 import ru.vachok.mysqlandprops.DataConnectTo;
 import ru.vachok.mysqlandprops.RegRuMysql;
 
@@ -19,7 +20,7 @@ import java.util.Set;
  */
 public class SaveToDatabase implements SaverProgress {
     private static final String SOURCE_CLASS = SaveToDatabase.class.getSimpleName();
-    private static MessageToUser messageToUser = new MessageCons();
+    private static MessageToUser messageToUser = new MessagesNull();
     private static DataConnectTo dataConnectTo = new RegRuMysql();
     private static final Connection DEF_CON = dataConnectTo.getDefaultConnection("u0466446_lessons");
     private static Savepoint savepoint;
