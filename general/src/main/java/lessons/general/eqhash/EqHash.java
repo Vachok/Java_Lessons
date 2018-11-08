@@ -1,5 +1,6 @@
 package lessons.general.eqhash;
 
+import lessons.general.ConstantsFor;
 import lessons.general.Lessons;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaverProgress;
@@ -19,14 +20,16 @@ import java.util.logging.Logger;
  */
 @SuppressWarnings("ALL")
 public class EqHash implements Lessons {
-    private static final Double ID_LESSON = 661.336;
+    private static final String ID_LESSON = ConstantsFor.getIDLesson();
     private static final String SOURCE_CLASS = EqHash.class.getSimpleName();
+
     /**
      * {@link Map}, для отправки в БД/файл.
      */
     private Map<String, String> linksToSave = new ConcurrentHashMap<>();
 
     public static void goApp() {
+
     }
 
     /**
@@ -52,6 +55,7 @@ public class EqHash implements Lessons {
      */
     @Override
     public void launchMe() {
+        Logger.getLogger("Lesson").info(ID_LESSON + " id Lesson");
         boolean isSaved = true;
         linksPut(this.getClass().getPackageName(), SOURCE_CLASS, isSaved);
         linksPut(getClass().getSimpleName(), "https://github.com/Vachok/Java_Lessons/issues/661", isSaved);
@@ -61,14 +65,15 @@ public class EqHash implements Lessons {
 
     /**
      * <h1>Класс пример</h1>
-     <p>
-     Можем ли мы сравнить по хэшу поля?
-     EQUALS должен сравнивать по <b>уникальным</b> полям.
-     В классе должно быть уникальное поле, для каждого объекта. Напр. {@link #number} .
-     Можно сравнивать и по-всем, но лучше по-уникалам. По всем полям - это лишний код. {@link #equals(Object)}
-     {@link #hashCode()}
-     <p>
-     Eq и Хэш имеют контракт. Если Равны Екв - значит равны и по Хэш. Но если равны по Хэш, необязательно равны Екв.
+     * <p>
+     * Можем ли мы сравнить по хэшу поля?
+     * EQUALS должен сравнивать по <b>уникальным</b> полям.
+     * В классе должно быть уникальное поле, для каждого объекта. Напр. {@link #number} .
+     * Можно сравнивать и по-всем, но лучше по-уникалам. По всем полям - это лишний код. {@link #equals(Object)}
+     * {@link #hashCode()}
+     * <p>
+     * Eq и Хэш имеют контракт. Если Равны Екв - значит равны и по Хэш. Но если равны по Хэш, необязательно равны Екв.
+     *
      * @since 08.08.2018 (14:18)
      */
     static class CarCar {
@@ -87,11 +92,13 @@ public class EqHash implements Lessons {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
             CarCar carCar = (CarCar) o;
-            return number!=null?number.equals(carCar.number):carCar.number==null;
+            return number != null ? number.equals(carCar.number) : carCar.number == null;
         }
 
-        /**Генерить Хеш нужно по тем же полям, что и equals
-         * Использовать другие поля в хэше можно только ели эти поля константны.
+        /**
+         * Генерить Хеш нужно по тем же полям, что и equals
+         * использовать другие поля в хэше можно только ели эти поля константны.
+         *
          * @return hashCode
          */
         @Override

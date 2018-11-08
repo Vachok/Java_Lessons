@@ -11,5 +11,5 @@ import java.util.Map;
  */
 public interface SaverProgress {
 
-    boolean isSaved(Map<?, ?> dataToSave, double idLesson);
+    boolean isSaved(Map<?, ?> dataToSave, String idLesson);
 }
