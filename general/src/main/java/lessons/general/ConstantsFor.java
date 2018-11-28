@@ -43,8 +43,10 @@ public class ConstantsFor {
 
     public static String getBookmark() {
         for (String s : buildGradle) {
-            if (s.toLowerCase().contains("https://")) return s.split(" ")[1];
+            if (s.toLowerCase().contains("https://")) {
+                return s.split(" ")[1];
+            }
         }
-        throw new IllegalReceiveException();
-    }
+    return "https://www.youtube.com/channel/UCBk48R8tFfqaDWUB84NENLQ";
+    };
 }

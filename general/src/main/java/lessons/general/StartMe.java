@@ -29,8 +29,6 @@ public class StartMe implements Lessons {
     }
     public static void main(String[] args) {
         lessons.launchMe();
-        ConstantsFor constantsFor = new ConstantsFor();
-        System.out.println("constantsFor = " + constantsFor);
     }
     @Override
     public void launchMe() {
