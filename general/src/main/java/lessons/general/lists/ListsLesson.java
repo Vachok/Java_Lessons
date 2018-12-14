@@ -49,10 +49,12 @@ public class ListsLesson implements Lessons {
     }
 
     /**
-     *
+     Бинарный поиск
+     <p>
+     Работает быстрее. Но элементы должны быть отсортированы.
      */
-    private static void binSearch() {  // TODO: 28.11.2018 https://youtu.be/Yj7aBWizGyg?t=1357
-        LOGGER.info("ListsLesson.studentList");
+    private static List<String> binSearch() {
+        LOGGER.info("ListsLesson.binSearch");
         List<String> ar = new ArrayList<>();
         ar.add("A");
         ar.add("B");
@@ -61,11 +63,33 @@ public class ListsLesson implements Lessons {
         for (String s : ar) {
             LOGGER.info(String.valueOf(s));
         }
-        Collections.sort(ar);
+//        Collections.sort(ar);
         LOGGER.warning("Sorted");
         for (String s : ar) {
             LOGGER.info(String.valueOf(s));
         }
+        LOGGER.info(ar.get(Collections.binarySearch(ar, "B")));
+        return ar;
+    }
+
+    /**
+     Превращение листа в массив и массива в лист
+     <p>
+     toString выведет {@code [A, B, C]} <br>
+     araList.equals(stringList) = true <br>
+     {@code    HashMap<List<String>, String> hashMap = new HashMap();}
+     - будет работать. Но это мутабельно. Нельзя добавить. <br>
+     Листы НЕ сравниваются.
+
+     * @param araList {@link List} для примера
+     */
+    private static void fromAraToMassiv(List<String> araList) {
+        String[] strings = new String[araList.size()];
+        strings=    araList.toArray(strings);
+        List<String> stringList = Arrays.asList(strings);
+        LOGGER.info(araList.toString());
+        LOGGER.info(araList.equals(stringList)+"");
+        HashMap<List<String>, String> hashMap = new HashMap();
     }
 
     @Override
@@ -96,11 +120,7 @@ public class ListsLesson implements Lessons {
      */
     private void goApp() {
         LOGGER.info("ListsLesson.goApp");
-        List<String> arrayList = araList();
-        List<String> linkedList = linkeD();
-        List<String> vector = vector();
-        List<String> stringStack = new Stack<>();
-        List<String> synchronizedList = Collections.synchronizedList(new ArrayList<>());
+
     }
 
     /**
@@ -161,17 +181,24 @@ public class ListsLesson implements Lessons {
     }
 
     /**
-     * LinkedList с синхронизированными методами.
-     * Вместо него можно использовать {@code Collections.synchronizedList}
-     *
+     LinkedList с синхронизированными методами.
+     <p>
+     Вместо него можно использовать {@code Collections.synchronizedList} <br>
+     Если имеется готовая коллекция, лучше просто использовать синхронизацию. <br>
+     {@link Vector} коллекция самостоятельная.<br>
+     {@link Vector} будет немного больше занисать в памяти,
+     но он работает быстрее. Т.к. он расширяет себя в 2 или 1,5 (sync) раза. <br>
+
+     @see VectorVSSync
      * @return {@link Vector}
      */
     private List<String> vector() {
         LOGGER.info("ListsLesson.vector");
         List<String> vector = new Vector<>();
+        new VectorVSSync();
         return vector;
     }
-
+    
     /**
      * Безопасен для потоков.
      *
@@ -182,37 +209,4 @@ public class ListsLesson implements Lessons {
         return new Stack<>();
     }
 
-    /**
-     * Класс Student
-     * <p>
-     * Для возможности сортировки ( {@link ListsLesson#studentList()} ), необходимо заимплементить {@link Comparable} <br>
-     * и переопределить {@link #compareTo(Object)}
-     */
-    static class Student implements Comparable {
-        int idS;
-        String nameS;
-
-        public Student(int idS) {
-            LOGGER.info("Student.Student");
-            this.idS = idS;
-        }
-
-        /**
-         * Метод сравнения. <br>
-         * {@link Student}1 - текущий объект <br>
-         * {@link Student}2 - сравниваемый объект
-         * <p>
-         * Концепция: <br>
-         * Если возвращается 0 - {@link Student}1 == {@link Student}2
-         * Если {@link #idS} отрицательная - {@link Student}1 < {@link Student}2
-         * Если {@link #idS} положительная - {@link Student}1 < {@link Student}2
-         *
-         * @param o {@link Object} {@link Student}2
-         * @return {@code idS - ((Student)o).idS}
-         */
-        @Override
-        public int compareTo(Object o) {
-            return idS - ((Student) o).idS;
-        }
-    }
 }

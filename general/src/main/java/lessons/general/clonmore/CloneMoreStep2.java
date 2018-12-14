@@ -28,11 +28,11 @@ public class CloneMoreStep2  {
      <p>
      Убрав интерфейс {@link Cloneable}, получаем эксепшн:
      <code>
-     > Task :CloneMoreStep2.main() FAILED
-     Exception in thread "main" java.lang.CloneNotSupportedException: lessons.general.clonmore.CloneMoreStep2
+     > Task :CloneMoreStep2.addToList() FAILED
+     Exception in thread "addToList" java.lang.CloneNotSupportedException: lessons.general.clonmore.CloneMoreStep2
      at java.base/java.lang.Object.clone(Native Method)
      at lessons.general.clonmore.CloneMoreStep2.clone(CloneMoreStep2.java:45)
-     at lessons.general.clonmore.CloneMoreStep2.main(CloneMoreStep2.java:39)
+     at lessons.general.clonmore.CloneMoreStep2.addToList(CloneMoreStep2.java:39)
 
      FAILURE: Build failed with an exception.
      * </code>
