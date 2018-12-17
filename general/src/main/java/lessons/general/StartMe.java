@@ -4,6 +4,7 @@ import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
 import lessons.general.lists.ListsLesson;
+import lessons.general.queues.QueueLesson;
 import lessons.general.sets.SetLesson;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
@@ -14,7 +15,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new SetLesson();
+    private static Lessons lessons = new QueueLesson();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
