@@ -15,7 +15,7 @@ public class SaveToFile implements SaverProgress {
     private static final String SOURCE_CLASS = SaveToFile.class.getSimpleName();
     private MessageToUser messageToUser = new MessageCons();
     @Override
-    public boolean isSaved(Map<?, ?> dataToSave, double idLesson) {
+    public boolean isSaved(Map<?, ?> dataToSave, String idLesson) {
         File file = new File(idLesson+"");
         try(FileOutputStream fileOutputStream = new FileOutputStream(file)){
             Set<?> keys = dataToSave.keySet();

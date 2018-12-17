@@ -20,7 +20,7 @@ import java.util.Set;
  */
 public class SaveToDatabase implements SaverProgress {
     private static final String SOURCE_CLASS = SaveToDatabase.class.getSimpleName();
-    private static MessageToUser messageToUser = new MessagesNull();
+    private static MessageToUser messageToUser = new MessageCons();
     private static DataConnectTo dataConnectTo = new RegRuMysql();
     private static final Connection DEF_CON = dataConnectTo.getDefaultConnection("u0466446_lessons");
     private static Savepoint savepoint;
@@ -69,12 +69,12 @@ public class SaveToDatabase implements SaverProgress {
     }
 
     @Override
-    public boolean isSaved(Map<?, ?> dataToSave, double idLesson) {
+    public boolean isSaved(Map<?, ?> dataToSave, String idLesson) {
         String sql = "insert into u0466446_lessons.general (idlesson, lessonname, links) values (?,?,?)";
         Set<?> keySet = dataToSave.keySet();
         try (PreparedStatement p = DEF_CON.prepareStatement(sql)) {
             for (Object key : keySet) {
-                p.setDouble(1, idLesson);
+                p.setString(1, idLesson);
                 p.setString(2, key.toString());
                 p.setString(3, String.valueOf(dataToSave.get(key.toString())));
                 p.executeUpdate();

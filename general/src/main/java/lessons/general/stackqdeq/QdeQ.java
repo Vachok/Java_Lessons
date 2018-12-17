@@ -36,7 +36,7 @@ public class QdeQ implements Lessons {
         stackWorks();
         queueWorks();
         deQueueWorks();
-        Logger.getLogger(getClass().getSimpleName()).log(INFO, "Saved? "+saverProgress.isSaved(links, 630.317));
+        Logger.getLogger(getClass().getSimpleName()).log(INFO, "Saved? "+saverProgress.isSaved(links, "630.317"));
     }
 
     /**
@@ -87,7 +87,7 @@ public class QdeQ implements Lessons {
         /**/
         Logger.getLogger(getClass().getSimpleName()).log(INFO, dequeArr.toString());
         links.put("remDeq(Deque<String> dequeArr)" ,dequeArr.toString());
-        boolean progressSaved = saverProgress.isSaved(links, 630.317);
+        boolean progressSaved = saverProgress.isSaved(links, "630.317");
         System.out.println("progressSaved = " + progressSaved);
 
     }

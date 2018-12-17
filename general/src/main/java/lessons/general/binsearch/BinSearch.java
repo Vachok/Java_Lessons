@@ -83,7 +83,7 @@ public class BinSearch implements Lessons {
         System.out.println("index = " + x);
        Logger.getLogger(getClass().getSimpleName()).log(INFO, "result is " + s);
 
-        if(needToSave) Logger.getLogger(getClass().getSimpleName()).log(INFO, "Saved? " + saverProgress.isSaved(links, idLesson));
+        if(needToSave) Logger.getLogger(getClass().getSimpleName()).log(INFO, "Saved? " + saverProgress.isSaved(links, String.valueOf(idLesson)));
         else Logger.getLogger(getClass().getSimpleName()).log(WARNING, "NO SAVE!");
     }
 

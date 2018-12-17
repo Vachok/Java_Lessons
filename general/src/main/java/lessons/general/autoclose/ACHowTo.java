@@ -77,7 +77,7 @@ public class ACHowTo implements Lessons {
         linksToSave.put(lessonName, links);
         SaverProgress saverProgress = new SaveToDatabase();
         if (saveToDB) {
-            saverProgress.isSaved(linksToSave, ID_LESSON);
+            saverProgress.isSaved(linksToSave, String.valueOf(ID_LESSON));
         } else {
             Logger.getLogger(getClass().getSimpleName()).log(Level.WARNING, "NOT SAVED!");
         }

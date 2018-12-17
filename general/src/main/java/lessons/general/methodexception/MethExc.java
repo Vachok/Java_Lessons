@@ -55,7 +55,7 @@ public class MethExc implements Lessons {
 
     public void linksPut(String lessonname, String links, boolean saveToDB) {
         linksToSave.put(lessonname, links);
-        if (saveToDB) saverProgress.isSaved(linksToSave, ID_LESSON);
+        if (saveToDB) saverProgress.isSaved(linksToSave, String.valueOf(ID_LESSON));
         else Logger.getLogger(getClass().getSimpleName()).log(Level.WARNING, "NOT SAVED!");
     }
 

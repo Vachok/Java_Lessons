@@ -31,7 +31,7 @@ public class ColLect implements Lessons {
         linksToSave.put(LESSON_NAME, links);
         SaverProgress saverProgress = new SaveToDatabase();
         if (saveToDB) {
-            saverProgress.isSaved(linksToSave, ID_LESSON);
+            saverProgress.isSaved(linksToSave, String.valueOf(ID_LESSON));
         } else{
             logger.log(Level.WARNING, "NOT SAVED!");
         }
@@ -136,6 +136,6 @@ public class ColLect implements Lessons {
         map.remove("1");
         logger.info(map.get("1"));
         map.put(null, "three");
-        logger.info(map.get(null));
+        map.get(null);
     }
 }
