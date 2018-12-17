@@ -40,16 +40,16 @@ public class MapsLesson implements Lessons {
 
     /**
      * {@link HashMap}
-     <p>
-     Основное преимущество - быстродействие. Элементы хранятся в виде:
-     хэш ключа, сам ключ, значение и ссылка на следующий элемент.<br>
-     Всё хранится в виде {@code transient} {@link java.util.stream.Node}{@code [] table;}. <br>
-     Работает за счет {@link #equals(Object)} и {@link #hashCode()} .
-     <p>
-     Ячейки памяти: <br>
-     <code>
-     / 1 / 2 {@link java.util.stream.Node} / 3 /
-     </code>
+     * <p>
+     * Основное преимущество - быстродействие. Элементы хранятся в виде:
+     * хэш ключа, сам ключ, значение и ссылка на следующий элемент.<br>
+     * Всё хранится в виде {@code transient} {@link java.util.stream.Node}{@code [] table;}. <br>
+     * Работает за счет {@link #equals(Object)} и {@link #hashCode()} .
+     * <p>
+     * Ячейки памяти: <br>
+     * <code>
+     * / 1 / 2 {@link java.util.stream.Node} / 3 /
+     * </code>
      */
     private Map<String, String> hashMap() {
         Map<String, String> stringStringMap = new HashMap<>();
