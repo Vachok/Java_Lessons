@@ -13,6 +13,8 @@ import java.util.logging.Logger;
  * <p>
  * Осносные имплементации: <br>
  * {@link #hashMap()} , {@link #linkedHMap()}, {@link #treeMap()}, {@link #hashTable()}, {@link #syncedMap()}.
+ <p>
+ {@link HashMap} занимает <b>больше</b> места в памяти, чем {@link TreeMap}.
  *
  * @since 17.12.2018 (14:10)
  */
@@ -35,7 +37,7 @@ public class MapsLesson implements Lessons {
     @Override
     public void launchMe() {
         LOGGER.info("MapsLesson.launchMe");
-        linksPut("Maps Lesson", "https://youtu.be/YiHqSwG0jbI?t=1892", true);
+        linksPut("Maps Lesson", "https://youtu.be/YiHqSwG0jbI?t=2098", true);
         treeMap();
     }
 
@@ -55,20 +57,20 @@ public class MapsLesson implements Lessons {
      * <p>
      * Изначальная длина ({@link HashMap#DEFAULT_INITIAL_CAPACITY}) = 16. <br>
      * Максимальная вместимость = 2^30.
-     <p>
-     {@link HashMap#loadFactor}. Хэш-мапа кладёт элементы с одинаковым хэш в одну ячейку памяти. <br>
-     {@code loadFactor} - говорит о том, когда надо перехэшировать таблицу. Т.е. есть например 16 элементов с одним хэш.
-     Мы забиваем их в одну ячейку. LoadFactor по-умолчанию = 0.75 .
-     Не даст заполнить более 12и элементов (75% от 16и изначальных).<br>
-     Этот параметр нужен для контроля коллизий. Его можно регулировать.
-     <p>
-     В одной и той же ячейке памяти <b>могут</b> лежать объекты с разным хэш! В данном случае произойдёт коллизия.
-     Борьба - уменьшить load factor.
-     <p>
-     Java 8 из {@link LinkedList}, превращает элементы в двоичное дерево. Это хорошо ускоряет работу,
-     когда происходит много коллизий. Логика там заложена не простая.
-     <p>
-     ХэшМапа скорее всего не может становиться меньше. <b>?</b>
+     * <p>
+     * {@link HashMap#loadFactor}. Хэш-мапа кладёт элементы с одинаковым хэш в одну ячейку памяти. <br>
+     * {@code loadFactor} - говорит о том, когда надо перехэшировать таблицу. Т.е. есть например 16 элементов с одним хэш.
+     * Мы забиваем их в одну ячейку. LoadFactor по-умолчанию = 0.75 .
+     * Не даст заполнить более 12и элементов (75% от 16и изначальных).<br>
+     * Этот параметр нужен для контроля коллизий. Его можно регулировать.
+     * <p>
+     * В одной и той же ячейке памяти <b>могут</b> лежать объекты с разным хэш! В данном случае произойдёт коллизия.
+     * Борьба - уменьшить load factor.
+     * <p>
+     * Java 8 из {@link LinkedList}, превращает элементы в двоичное дерево. Это хорошо ускоряет работу,
+     * когда происходит много коллизий. Логика там заложена не простая.
+     * <p>
+     * ХэшМапа скорее всего не может становиться меньше. <b>?</b>
      */
     private Map<String, String> hashMap() {
         Map<String, String> stringStringMap = new HashMap<>();
@@ -92,37 +94,51 @@ public class MapsLesson implements Lessons {
      * Все объекты сортируются. Чтобы сложить в {@link TreeMap}, нужно заимплементить {@link Comparable}. <br>
      * Элементы хранятся как {@link javax.swing.RowFilter.Entry}.
      * Мы получаем <b>сбалансированное красное дерево</b>
-     <p>
-     Она может быть {@link NavigableMap}
-     @see {@link #navigThisMap(Map)}
+     * <p>
+     * Она может быть {@link NavigableMap}
+     *
+     * @see {@link #navigThisMap(Map)}
      */
     private Map<String, String> treeMap() {
         Map<String, String> stringStringMap = new TreeMap<>();
-        stringStringMap.put("a","1");
-        stringStringMap.put("d","4");
-        stringStringMap.put("c","3");
-        stringStringMap.put("b","2");
+        stringStringMap.put("a", "1");
+        stringStringMap.put("d", "4");
+        stringStringMap.put("c", "3");
+        stringStringMap.put("b", "2");
         navigThisMap((TreeMap<String, String>) stringStringMap);
         return stringStringMap;
     }
 
     /**
      * Навигация по {@link TreeMap}
-     <p>
-     Создаются 2 sub-map. От "a" до "b" (не включительно)<br>
-     От "c" до "d" (не включительно). <br>
-     Как пример - расписание поездов. Нужно получить с какого-то по какое-то время.
-     Это предоставляет интерфейс {@link SortedMap}.
-     <p>
-     Получаем first и last ключи.
+     * <p>
+     * Создаются 2 sub-map. От "a" до "b" (не включительно)<br>
+     * От "c" до "d" (не включительно). <br>
+     * Как пример - расписание поездов. Нужно получить с какого-то по какое-то время.
+     * Это предоставляет интерфейс {@link SortedMap}.
+     * <p>
+     * Получаем first и last ключи.
+     * <p>
+     * Получаем "tailmap" - хвост.
+     * <p>
+     * Получаем headMap("c") - голову.
+     * <p>
+     * Получаем ближайшее значение. headMap("c").lastKey()
+     *
      * @param stringStringMap {@link TreeMap}
      */
     private void navigThisMap(TreeMap<String, String> stringStringMap) {
-        LOGGER.info(stringStringMap.subMap("a", "b").toString()+" subMap(\"a\", \"b\")");
-        LOGGER.info(stringStringMap.subMap("c", "d").toString()+" subMap(\"c\", \"d\")");
+        LOGGER.info(stringStringMap.subMap("a", "b").toString() + " subMap(\"a\", \"b\")");
+        LOGGER.info(stringStringMap.subMap("c", "d").toString() + " subMap(\"c\", \"d\")");
 
-        LOGGER.info(stringStringMap.firstKey()+" firstKey");
-        LOGGER.info(stringStringMap.lastKey()+" lastKey");
+        LOGGER.info(stringStringMap.firstKey() + " firstKey");
+        LOGGER.info(stringStringMap.lastKey() + " lastKey");
+
+        LOGGER.info(stringStringMap.tailMap("c").toString() + " tailMap(\"c\")");
+
+        LOGGER.info(stringStringMap.headMap("c").toString() + " headMap(\"c\")");
+
+        LOGGER.info(stringStringMap.headMap("c").lastKey() + " headMap(\"c\").lastKey()");
     }
 
     /**
