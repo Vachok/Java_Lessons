@@ -86,4 +86,12 @@ public class SaveToDatabase implements SaverProgress {
             return false;
         }
     }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("SaveToDatabase{");
+        sb.append("SOURCE_CLASS='").append(SOURCE_CLASS).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
