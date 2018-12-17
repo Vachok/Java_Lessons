@@ -7,7 +7,7 @@ import java.util.TreeSet;
 import java.util.logging.Logger;
 
 /**
- * Сколько раз будет запущен {@link #hashCode()} при добавлении 3х элементов в {@link #hashSet()} (3)  <p>
+ * Сколько раз будет запущен {@link #hashCode()} при добавлении 3х элементов в {@link #hashSet()} (3)
  * <p>
  * Сколько раз будет запущен {@link #hashCode()} при добавлении 3х элементов в {@link #treeSet()} (ни разу) <br>
  * Потому что {@link Student} нужно как-то сравнить. Для этого класс нужно как-то сравнить (impl {@link Comparable}). <br>
