@@ -35,7 +35,7 @@ public class MapsLesson implements Lessons {
     @Override
     public void launchMe() {
         LOGGER.info("MapsLesson.launchMe");
-        linksPut("Maps Lesson", "https://youtu.be/YiHqSwG0jbI?t=358", false);
+        linksPut("Maps Lesson", "https://youtu.be/YiHqSwG0jbI?t=589", true);
     }
 
     /**
