@@ -48,8 +48,9 @@ public class MapsLesson implements Lessons {
      * <p>
      * Ячейки памяти: <br>
      * <code>
-     * / 1 / 2 {@link java.util.stream.Node} / 3 /
-     * </code>
+     * / 1 / 2 {@link java.util.stream.Node} \ {@link java.util.stream.Node} / 3 / 4 /
+     * </code> <br>
+     *     
      */
     private Map<String, String> hashMap() {
         Map<String, String> stringStringMap = new HashMap<>();
