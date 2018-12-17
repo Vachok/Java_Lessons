@@ -14,26 +14,18 @@ public class SaveToFile implements SaverProgress {
 
     private static final String SOURCE_CLASS = SaveToFile.class.getSimpleName();
     private MessageToUser messageToUser = new MessageCons();
+
     @Override
     public boolean isSaved(Map<?, ?> dataToSave, String idLesson) {
-        File file = new File(idLesson+"");
-        try(FileOutputStream fileOutputStream = new FileOutputStream(file)){
-            Set<?> keys = dataToSave.keySet();
-            for (Object o:keys){
-                Object o1 = dataToSave.get(keys.toString());
-                PrintWriter printWriter = new PrintWriter(fileOutputStream);
-                String writable;
-               try{
-                   writable= o.toString()+" key; "+o1.toString()+" value";}catch (NullPointerException e){continue;}
-                for(byte b:o.toString().getBytes()){
-                    printWriter.append((char) b);
-                }
-                return true;
-            }
-        }catch (IOException e){
-            messageToUser.errorAlert(SOURCE_CLASS, "ID - 18", e.getMessage());
+        File file = new File(idLesson + ".txt");
+        try (FileOutputStream fileOutputStream = new FileOutputStream(file);
+             PrintWriter printWriter = new PrintWriter(fileOutputStream, true)) {
+            dataToSave.forEach((x,y)->{
+                printWriter.println(x.toString()+" ; "+y.toString());
+            });
+            return true;
+        } catch (IOException e) {
             return false;
         }
-    return false;
     }
 }
