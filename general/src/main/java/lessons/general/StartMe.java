@@ -1,5 +1,6 @@
 package lessons.general;
 
+import lessons.general.dataoncollections.DataOnCol;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
@@ -16,7 +17,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new MapsLesson();
+    private static Lessons lessons = new DataOnCol();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
