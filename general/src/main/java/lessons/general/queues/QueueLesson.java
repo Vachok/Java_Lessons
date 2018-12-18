@@ -23,7 +23,7 @@ import java.util.logging.Logger;
  * Но он отлично подходит в качестве {@link Queue}, потому что позволяет быстро находить первый и последний элемент.) <br>
  * {@link LinkedList} универсален. Он может работать как {@link Queue}, так и {@link Deque}.
  * <p>
- * {@link #linkedQ()} , {@link #linkedDeq()}, {@link #arrayQue()}, {@link #prioQ()}
+ * {@link #linkedQ()}, {@link #linkedDeq()}, {@link #arrayDeque()}, {@link #prioQ()}
  * <p>
  * Существует ещё {@link java.util.concurrent.BlockingQueue}, но она входит в {@link java.util.concurrent}, и стоит отдельного упоминания.
  *

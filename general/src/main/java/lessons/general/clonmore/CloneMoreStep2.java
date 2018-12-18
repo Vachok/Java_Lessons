@@ -28,7 +28,7 @@ public class CloneMoreStep2  {
      <p>
      Убрав интерфейс {@link Cloneable}, получаем эксепшн:
      <code>
-     > Task :CloneMoreStep2.addToList() FAILED
+     Task :CloneMoreStep2.addToList() FAILED
      Exception in thread "addToList" java.lang.CloneNotSupportedException: lessons.general.clonmore.CloneMoreStep2
      at java.base/java.lang.Object.clone(Native Method)
      at lessons.general.clonmore.CloneMoreStep2.clone(CloneMoreStep2.java:45)

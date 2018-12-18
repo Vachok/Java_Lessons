@@ -27,8 +27,8 @@ class Student implements Comparable {
      * <p>
      * Концепция: <br>
      * Если возвращается 0 - {@link Student}1 == {@link Student}2
-     * Если {@link #idS} отрицательная - {@link Student}1 < {@link Student}2
-     * Если {@link #idS} положительная - {@link Student}1 < {@link Student}2
+     * Если {@link #idS} отрицательная - {@link Student}1 меньше {@link Student}2
+     * Если {@link #idS} положительная - {@link Student}1 меньше {@link Student}2
      *
      * @param o {@link Object} {@link Student}2
      * @return {@code idS - ((Student)o).idS}
