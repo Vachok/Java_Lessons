@@ -60,7 +60,7 @@ public class DataOnCol implements Lessons {
     }
 
     /**
-     * Использует линейный алгоритм. <b>O(n)</b>
+     * Линейный алгоритм. <b>O(n)</b>
      *
      * @return {@link LinkedList}
      */
@@ -102,7 +102,7 @@ public class DataOnCol implements Lessons {
     /**
      * {@link TreeMap} ({@link TreeSet}).
      * <p>
-     * Используют логарифмический поиск. <b>O(log(n))</b>.
+     Логарифмический поиск. <b>O(log(n))</b>.
      *
      * @return {@link TreeMap}
      */

@@ -55,7 +55,7 @@ public class MapsLesson implements Lessons {
      * </code> <br>
      * Объект в данном случае будет с одним хэш-кодом, но <b>не будет равен по-equals</b>.
      * <p>
-     * Изначальная длина ({@link HashMap#DEFAULT_INITIAL_CAPACITY}) = 16. <br>
+     * Начальная длина ({@link HashMap#DEFAULT_INITIAL_CAPACITY}) = 16. <br>
      * Максимальная вместимость = 2^30.
      * <p>
      * {@link HashMap#loadFactor}. Хэш-мапа кладёт элементы с одинаковым хэш в одну ячейку памяти. <br>
