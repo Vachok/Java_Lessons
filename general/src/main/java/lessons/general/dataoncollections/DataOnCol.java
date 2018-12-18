@@ -52,7 +52,7 @@ public class DataOnCol implements Lessons {
      * Работает на основе массива.
      *
      * @return {@link ArrayList}
-     * @see {@link #strings()}
+     * @see  #strings()
      */
     private ArrayList<String> arrayList() {
         List<String> stringList = new ArrayList<>();
@@ -73,7 +73,7 @@ public class DataOnCol implements Lessons {
      * Работает на основе массива.
      *
      * @return {@link ArrayDeque}
-     * @see {@link #strings()}
+     * @see #strings()
      */
     private ArrayDeque<String> arrayDeque() {
         List<String> stringList = new ArrayList<>();
@@ -92,7 +92,7 @@ public class DataOnCol implements Lessons {
 
     /**
      * @return {@link LinkedHashSet}
-     * @see {@link #hashSet()}
+     * @see  #hashSet()
      */
     private LinkedHashMap<String, String> linkedHashMap() {
         Map<String, String> stringStringMap = new HashMap<>();
@@ -123,7 +123,7 @@ public class DataOnCol implements Lessons {
 
     /**
      * @return {@link LinkedHashSet}
-     * @see {@link #hashSet()}
+     * @see  #hashSet()
      */
     private LinkedHashSet<String> linkedHashSet() {
         Set<String> stringSet = new LinkedHashSet<>();

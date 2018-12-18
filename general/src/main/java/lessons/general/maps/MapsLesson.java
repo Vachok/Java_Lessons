@@ -97,7 +97,7 @@ public class MapsLesson implements Lessons {
      * <p>
      * Она может быть {@link NavigableMap}
      *
-     * @see {@link #navigThisMap(Map)}
+     * @see #navigThisMap(TreeMap)
      */
     private Map<String, String> treeMap() {
         Map<String, String> stringStringMap = new TreeMap<>();

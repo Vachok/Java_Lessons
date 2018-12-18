@@ -10,6 +10,7 @@
     <option name="OTHER_OPTIONS" value="-linksource -keywords -encoding UTF-8 -nohelp -html5 -windowtitle &quot;JAVA Lessons&quot; -doctitle &quot;&lt;a href=&quot;https://github.com/Vachok/Java_Lessons/milestone/7&quot; target=_blank&gt;Patterns&lt;/a&gt;&quot; -bottom &quot;&lt;a href=&quot;https://github.com/Vachok/Java_Lessons/projects/1&quot;&gt;GitHub&lt;/a&gt; &lt;a href=&quot;https://www.youtube.com/playlist?list=PL786bPIlqEjRDXpAKYbzpdTaOYsWyjtCX&quot; target=_blank&gt;YouTube&lt;/a&gt;&quot; --allow-script-in-comments" />
     <option name="HEAP_SIZE" value="512" />
     <option name="LOCALE" value="ru_RU" />
+    <option name="OPEN_IN_BROWSER" value="false" />
     <option name="OPTION_INCLUDE_LIBS" value="true" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
