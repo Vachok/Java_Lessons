@@ -9,6 +9,7 @@ import lessons.general.helper.SaverProgress;
 import lessons.general.lists.ListsLesson;
 import lessons.general.maps.MapsLesson;
 import lessons.general.memmodel.MModel;
+import lessons.general.overheap.OverHeap;
 import lessons.general.queues.QueueLesson;
 import lessons.general.reftypes.RefTypesLesson;
 import lessons.general.sets.SetLesson;
@@ -23,7 +24,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new StrPull();
+    private static Lessons lessons = new OverHeap();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
