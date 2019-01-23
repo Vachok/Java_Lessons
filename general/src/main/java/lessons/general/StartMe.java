@@ -7,6 +7,8 @@ import lessons.general.doublechk.DoubleChkProblem;
 import lessons.general.helper.SaveToDatabase;
 import lessons.general.helper.SaveToFile;
 import lessons.general.helper.SaverProgress;
+import lessons.general.immucollection.ImuCollect;
+import lessons.general.immun.ImmuteClass;
 import lessons.general.lists.ListsLesson;
 import lessons.general.maps.MapsLesson;
 import lessons.general.memmodel.MModel;
@@ -25,7 +27,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new NewBalance();
+    private static Lessons lessons = new ImuCollect();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
