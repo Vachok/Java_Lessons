@@ -57,7 +57,46 @@ public class GRASPPattern implements Lessons {
      */
     private void inDir() {
         LOGGER.warning("GRASPPattern.inDir");
+        lowCoupling();
     }
 
+    /**
+     * Low Coupling
+     * <p>
+     * Классы должны знать <b>минимум</b> о струтуре других классов.
+     * Общаться исключительно через {@code Public Interfaces}.
+     */
+    private void lowCoupling() {
+        LOGGER.warning("GRASPPattern.lowCoupling");
+        plymorfNeed();
+    }
 
+    /**
+     * Polymorphism
+     * <p>
+     * Use полиморфизм
+     */
+    private void plymorfNeed() {
+        LOGGER.warning("GRASPPattern.plymorfNeed");
+        protectedVariations();
+    }
+
+    /**
+     * Protected Variations
+     * <p>
+     * Use интерфейсы!
+     */
+    private void protectedVariations() {
+        LOGGER.warning("GRASPPattern.protectedVariations");
+        pureFabrication();
+    }
+
+    /**
+     * Pure Fabrications
+     * <p>
+     * Use сервисы.
+     */
+    private void pureFabrication() {
+        LOGGER.warning("GRASPPattern.pureFabrication");
+    }
 }
