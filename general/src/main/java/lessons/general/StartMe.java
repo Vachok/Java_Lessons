@@ -18,6 +18,7 @@ import lessons.general.queues.QueueLesson;
 import lessons.general.reftypes.RefTypesLesson;
 import lessons.general.sets.SetLesson;
 import lessons.general.stringpull.StrPull;
+import lessons.general.syncbad.WhySyncIsBad;
 import lessons.general.volatilepack.VolaVola;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
@@ -28,7 +29,7 @@ import java.util.Map;
 import java.util.Properties;
 
 public class StartMe implements Lessons {
-    private static Lessons lessons = new HiLoadClasse();
+    private static Lessons lessons = new WhySyncIsBad();
     private static final String APP_NAME =  "u0466446_lessons-";
     private static final String SOURCE_CLASS = StartMe.class.getSimpleName();
     private static Properties properties = new Properties();
