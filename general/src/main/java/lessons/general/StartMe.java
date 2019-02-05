@@ -23,6 +23,7 @@ import lessons.general.reftypes.RefTypesLesson;
 import lessons.general.sets.SetLesson;
 import lessons.general.stringpull.StrPull;
 import lessons.general.syncbad.WhySyncIsBad;
+import lessons.general.thrlocal.ThrLocal;
 import lessons.general.volatilepack.VolaVola;
 import ru.vachok.messenger.MessageSwing;
 import ru.vachok.messenger.MessageToUser;
