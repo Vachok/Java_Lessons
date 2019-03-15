@@ -52,7 +52,7 @@ public class ThrLocal implements Lessons {
     public static class ThrOne extends Thread {
         @Override
         public void run() {
-            threadLocal.set(toString());
+            threadLocal.set(toString()+" one");
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
@@ -69,7 +69,7 @@ public class ThrLocal implements Lessons {
     public static class ThrTwo extends Thread {
         @Override
         public void run() {
-            threadLocal.set(toString());
+            threadLocal.set(toString()+" two");
             new MessageCons().infoNoTitles("ThreadTwo " + threadLocal.get());
         }
     }
